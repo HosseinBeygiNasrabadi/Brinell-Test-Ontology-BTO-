@@ -1,0 +1,1085 @@
+@prefix : <https://kupferdigital.gitlab.io/ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix kd: <https://kupferdigital.gitlab.io/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmd: <https://material-digital.de/pmdco/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wikiba: <http://wikiba.se/ontology#> .
+@base <https://kupferdigital.gitlab.io/ontology#> .
+
+<https://kupferdigital.gitlab.io/ontology#> rdf:type owl:Ontology ;
+                                             owl:imports pmd: ;
+                                             dc:creator "Birgit Skrotzki" ,
+                                                        "Hossein Beygi Nasrabadi" ,
+                                                        "Yue Chen" ;
+                                             dc:title "Brinell Hardness Ontology" ;
+                                             rdfs:comment """Contact:
+Hossein Beygi Nasrabadi
+
+Bundesanstalt für Materialforschung und -prüfung (BAM)
+5.2 Fachbereich Experimentelle und modellbasierte Werkstoffmechanik
+Unter den Eichen 87
+12205 Berlin
+hossein.beygi-nasrabadi@bam.de""" ;
+                                             owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://kupferdigital.gitlab.io/ontology#designated_by
+kd:designated_by rdf:type owl:ObjectProperty ;
+                 rdfs:comment """Is equivalent to: http://www.ontologyrepository.com/CommonCoreOntologies/designated_by
+
+x designated_by y iff y is an instance of Information Content Entity and x is an instance of Entity, such that given some context, y uniquely distinguishes x from other entities.
+is cured in ontology: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology""" ;
+                 rdfs:label "designated_by" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasCrmCertifiedBrinellHardness
+kd:hasCrmCertifiedBrinellHardness rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf pmd:hasQuantitativePrimaryMetadata ;
+                                  rdfs:domain kd:HardnessTest ;
+                                  rdfs:range wikiba:QuantityValue ;
+                                  rdfs:comment "This property is used to describe the nominal certified hardness value of the hardness reference block used for the calibration of hardness testing machine." ;
+                                  rdfs:label "has crm certified brinell hardness" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasIndentationNumber
+kd:hasIndentationNumber rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf pmd:hasQuantitativeMetadataMeasurement ;
+                        rdfs:domain kd:HardnessTest ;
+                        rdfs:range wikiba:QuantityValue ;
+                        rdfs:comment "This property is used to describe the number of repetitions for each brinell hardness measurement." ;
+                        rdfs:label "has indentation number" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasIndenterDiameter
+kd:hasIndenterDiameter rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf pmd:hasQuantitativePrimaryMetadata ;
+                       rdfs:domain kd:HardnessTest ;
+                       rdfs:range wikiba:QuantityValue ;
+                       rdfs:comment "This property is used to describe the nominal diameter of the tungsten carbide composite ball used for the Brinell Hardness measurements." ;
+                       rdfs:label "has indenter diameter" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredAgingTemperature
+kd:hasMeasuredAgingTemperature rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf pmd:hasQuantitativeMetadataMeasurement ;
+                               rdfs:domain pmd:Process ;
+                               rdfs:range wikiba:QuantityValue ;
+                               rdfs:comment "This property is used to describe the nominal maintenance temperature of the aging heat treatment process which is performed on the samples before the hardness test measurement." ;
+                               rdfs:label "has measured aging temperature" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredAgingTime
+kd:hasMeasuredAgingTime rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf pmd:hasQuantitativeMetadataMeasurement ;
+                        rdfs:domain pmd:Process ;
+                        rdfs:range wikiba:QuantityValue ;
+                        rdfs:comment "This property is used to describe the nominal maintenance time of the aging heat treatment process which is performed on the samples before the hardness test measurement." ;
+                        rdfs:label "has measured aging time" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredAverageDiameter
+kd:hasMeasuredAverageDiameter rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf pmd:hasQuantitativeSecondaryMeasurement ;
+                              rdfs:domain kd:HardnessTest ;
+                              rdfs:range wikiba:QuantityValue ;
+                              rdfs:comment "This property is used to describe the arithmetic mean of the measured indentation diametrs, at two perpendicular directions, during the Brinell Hardness measurements." ;
+                              rdfs:label "has measured average diameter" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredBrinellHardness
+kd:hasMeasuredBrinellHardness rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf pmd:hasQuantitativeSecondaryMeasurement ;
+                              rdfs:domain kd:HardnessTest ;
+                              rdfs:range wikiba:QuantityValue ;
+                              rdfs:comment "This property is used to describe the measured Brinell hardness  which is proportional to the quotient obtained by dividing the test force by the curved surface area of the indentation. The indentation is assumed to take the shape of the unloaded ball indenter, and its surface area is calculated from the mean indentation diameter and the ball diameter." ;
+                              rdfs:label "has measured brinell hardness" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredBrinellHardnessAverage
+kd:hasMeasuredBrinellHardnessAverage rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf pmd:hasQuantitativeSecondaryMeasurement ;
+                                     rdfs:domain kd:HardnessTest ;
+                                     rdfs:range wikiba:QuantityValue ;
+                                     rdfs:comment "This property is used to describe the measured average of Brinell hardness values for each test pieces after specific numbers of measurements repetitions." ;
+                                     rdfs:label "has measured brinell hardness average" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredBrinellHardnessStandardDeviation
+kd:hasMeasuredBrinellHardnessStandardDeviation rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf pmd:hasQuantitativeSecondaryMeasurement ;
+                                               rdfs:domain kd:HardnessTest ;
+                                               rdfs:range wikiba:QuantityValue ;
+                                               rdfs:comment "This property is used to describe the measured standard deviation of Brinell hardness values for each test pieces after specific numbers of measurements repetitions." ;
+                                               rdfs:label "has measured brinell hardness standard deviation" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredCrmBrinellHardnessAverage
+kd:hasMeasuredCrmBrinellHardnessAverage rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf pmd:hasQuantitativeSecondaryMeasurement ;
+                                        rdfs:domain kd:HardnessTest ;
+                                        rdfs:range wikiba:QuantityValue ;
+                                        rdfs:comment "This property is used to describe the measured average of Brinell hardness values for the hardness reference block after specific numbers of measurements repetitions." ;
+                                        rdfs:label "has measured crm brinell hardness average" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredCrmBrinellHardnessStandardDeviation
+kd:hasMeasuredCrmBrinellHardnessStandardDeviation rdf:type owl:ObjectProperty ;
+                                                  rdfs:subPropertyOf pmd:hasQuantitativeSecondaryMeasurement ;
+                                                  rdfs:domain kd:HardnessTest ;
+                                                  rdfs:range wikiba:QuantityValue ;
+                                                  rdfs:comment "This property is used to describe the measured standard deviation of Brinell hardness values for the hardness reference block after specific numbers of measurements repetitions." ;
+                                                  rdfs:label "has measured crm brinell hardness standard deviation" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredIndentation-EdgeDistance
+kd:hasMeasuredIndentation-EdgeDistance rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf pmd:hasQuantitativeMetadataMeasurement ;
+                                       rdfs:domain kd:HardnessTest ;
+                                       rdfs:range wikiba:QuantityValue ;
+                                       rdfs:comment "This property is used to describe the measured distance from the edge of the test piece to the centre of each indentation." ;
+                                       rdfs:label "has measured indentation- edge distance" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredIndentationDiameterHorizontal
+kd:hasMeasuredIndentationDiameterHorizontal rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf pmd:hasQuantitativePrimaryMetadata ;
+                                            rdfs:domain kd:HardnessTest ;
+                                            rdfs:range wikiba:QuantityValue ;
+                                            rdfs:comment "This property is used to describe the measured diameter of each indentation in horizontal direction ,approximately perpendicular to the vertical direction, during the Brinell Hardness measurements." ;
+                                            rdfs:label "has measured indentation diameter horizontal" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredIndentationDiameterVertical
+kd:hasMeasuredIndentationDiameterVertical rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf pmd:hasQuantitativePrimaryMetadata ;
+                                          rdfs:domain kd:HardnessTest ;
+                                          rdfs:range wikiba:QuantityValue ;
+                                          rdfs:comment "This property is used to describe the measured diameter of each indentation in vertical direction ,approximately perpendicular to the horizontal direction, during the Brinell Hardness measurements." ;
+                                          rdfs:label "has measured indentation diameter vertical" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredIndentationsDistance
+kd:hasMeasuredIndentationsDistance rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf pmd:hasQuantitativeMetadataMeasurement ;
+                                   rdfs:domain kd:HardnessTest ;
+                                   rdfs:range wikiba:QuantityValue ;
+                                   rdfs:comment "This property is used to describe the measured distance between the centres of two adjacent indentations." ;
+                                   rdfs:label "has measured indentations distance" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredLoadingTime
+kd:hasMeasuredLoadingTime rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf pmd:hasQuantitativeMetadataMeasurement ;
+                          rdfs:domain kd:HardnessTest ;
+                          rdfs:range wikiba:QuantityValue ;
+                          rdfs:comment "This property is used to describe the nominal time of force application during the Brinell hardness measurement,  i.e. the time from the initial application of force to the time the full test force and also the maintain time at the full test force." ;
+                          rdfs:label "has measured loading time" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredTemperature
+kd:hasMeasuredTemperature rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf pmd:hasQuantitativeMetadataMeasurement ;
+                          rdfs:domain kd:HardnessTest ;
+                          rdfs:range wikiba:QuantityValue ;
+                          rdfs:comment "This property is used to describe the nominal temperature in which the Brinell hardness measurement is carried on." ;
+                          rdfs:label "has measured temperature" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredThickness
+kd:hasMeasuredThickness rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf pmd:hasQuantitativeMetadataMeasurement ;
+                        rdfs:domain kd:HardnessTest ,
+                                    pmd:Component ;
+                        rdfs:range wikiba:QuantityValue ;
+                        rdfs:comment "This property is used to describe the measured thickness of the test piece." ;
+                        rdfs:label "has measured thickness" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredTotalAverageDiameter
+kd:hasMeasuredTotalAverageDiameter rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf pmd:hasQuantitativeSecondaryMeasurement ;
+                                   rdfs:domain kd:HardnessTest ;
+                                   rdfs:range wikiba:QuantityValue ;
+                                   rdfs:comment "This property is used to describe the measured average of all \"mean indentation diameters\" for each test pieces after specific numbers of measurements repetitions." ;
+                                   rdfs:label "has measured total average diameter" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasMeasuredUncertainity
+kd:hasMeasuredUncertainity rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf pmd:hasQuantitativeSecondaryMeasurement ;
+                           rdfs:domain kd:HardnessTest ;
+                           rdfs:range wikiba:QuantityValue ;
+                           rdfs:comment "This property is used to describe the measured uncertainty of the measured Brinell hardness value, affecting from different sources of errors." ;
+                           rdfs:label "has measured uncertainity" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#hasTestForce
+kd:hasTestForce rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf pmd:hasQuantitativePrimaryMetadata ;
+                rdfs:domain kd:HardnessTest ;
+                rdfs:range wikiba:QuantityValue ;
+                rdfs:comment "This property is used to describe the nominal test force used for the Brinell Hardness measurements." ;
+                rdfs:label "has test force" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#has_function
+kd:has_function rdf:type owl:ObjectProperty ;
+                rdfs:comment """Is equivalent to: http://www.purl.obolibrary.org/obo/RO_0000085
+
+a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence
+alternative term: has_function
+example of usage: this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)
+editor note: A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can""" ;
+                rdfs:label "has_function" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#has_quality
+kd:has_quality rdf:type owl:ObjectProperty ;
+               rdfs:comment """Is equivalent to: http://www.purl.obolibrary.org/obo/RO_0000086
+
+a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence
+alternative term: has_quality
+example of usage: this apple has quality this red color
+editor note: A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist.""" ;
+               rdfs:label "has_quality" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#in_accordance_with
+kd:in_accordance_with rdf:type owl:ObjectProperty ;
+                      rdfs:comment "Is equivalent to: http://www.purl.matolab.org/MSEO/mid/in_accordance_with" ;
+                      rdfs:label "in_accordance_with" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#occurs_on
+kd:occurs_on rdf:type owl:ObjectProperty ;
+             rdfs:comment """Is equivalent to: http://www.ontologyrepository.com/CommonCoreOntologies/occurs_on
+
+x occurs_on y iff x is an instance of a process or process boundary and y is an instance of a temporal region, such that the duration of x temporally projects on y.
+is cured in ontology: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology""" ;
+             rdfs:label "occurs_on" .
+
+
+###  https://material-digital.de/pmdco/composedBy
+pmd:composedBy rdf:type owl:ObjectProperty ;
+               rdfs:label "composed by" .
+
+
+###  https://material-digital.de/pmdco/hasDataResource
+pmd:hasDataResource rdf:type owl:ObjectProperty ;
+                    rdfs:label "has data resource" .
+
+
+###  https://material-digital.de/pmdco/hasFinalProcess
+pmd:hasFinalProcess rdf:type owl:ObjectProperty ;
+                    rdfs:label "has final process" .
+
+
+###  https://material-digital.de/pmdco/hasGeneratedIdentifier
+pmd:hasGeneratedIdentifier rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf pmd:hasNominalMetadataParameter .
+
+
+###  https://material-digital.de/pmdco/hasInitialProcess
+pmd:hasInitialProcess rdf:type owl:ObjectProperty ;
+                      rdfs:label "has initial process" .
+
+
+###  https://material-digital.de/pmdco/hasInputObject
+pmd:hasInputObject rdf:type owl:ObjectProperty ;
+                   rdfs:label "has input object" .
+
+
+###  https://material-digital.de/pmdco/hasMeasurement
+pmd:hasMeasurement rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf pmd:hasParameter .
+
+
+###  https://material-digital.de/pmdco/hasMetadataMeasurement
+pmd:hasMetadataMeasurement rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf pmd:hasMeasurement .
+
+
+###  https://material-digital.de/pmdco/hasNextProcess
+pmd:hasNextProcess rdf:type owl:ObjectProperty ;
+                   rdfs:label "has next process" .
+
+
+###  https://material-digital.de/pmdco/hasNominalMetadataParameter
+pmd:hasNominalMetadataParameter rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf pmd:hasNominalParameter .
+
+
+###  https://material-digital.de/pmdco/hasNominalParameter
+pmd:hasNominalParameter rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf pmd:hasParameter .
+
+
+###  https://material-digital.de/pmdco/hasNominalPrimaryParameter
+pmd:hasNominalPrimaryParameter rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf pmd:hasNominalParameter .
+
+
+###  https://material-digital.de/pmdco/hasNominalSecondaryParameter
+pmd:hasNominalSecondaryParameter rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf pmd:hasNominalParameter .
+
+
+###  https://material-digital.de/pmdco/hasOutputObject
+pmd:hasOutputObject rdf:type owl:ObjectProperty ;
+                    rdfs:label "has output object" .
+
+
+###  https://material-digital.de/pmdco/hasPmdUnit
+pmd:hasPmdUnit rdf:type owl:ObjectProperty ;
+               rdfs:label "has pmd unit" .
+
+
+###  https://material-digital.de/pmdco/hasPreviousProcess
+pmd:hasPreviousProcess rdf:type owl:ObjectProperty ;
+                       rdfs:label "has previous process" .
+
+
+###  https://material-digital.de/pmdco/hasPrimaryMeasurement
+pmd:hasPrimaryMeasurement rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf pmd:hasMeasurement .
+
+
+###  https://material-digital.de/pmdco/hasProcessNodeComponent
+pmd:hasProcessNodeComponent rdf:type owl:ObjectProperty ;
+                            rdfs:label "has process node component" .
+
+
+###  https://material-digital.de/pmdco/hasQualifyingProcessAnnotation
+pmd:hasQualifyingProcessAnnotation rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf pmd:hasNominalMetadataParameter .
+
+
+###  https://material-digital.de/pmdco/hasQuantitativeMeasurement
+pmd:hasQuantitativeMeasurement rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf pmd:hasQuantitativeParameter ;
+                               rdfs:label "has quantitative measurement" .
+
+
+###  https://material-digital.de/pmdco/hasQuantitativeMetadataMeasurement
+pmd:hasQuantitativeMetadataMeasurement rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf pmd:hasQuantitativeMeasurement ;
+                                       rdfs:label "has quantitative metadata measurement" .
+
+
+###  https://material-digital.de/pmdco/hasQuantitativeNominalMetadataParameter
+pmd:hasQuantitativeNominalMetadataParameter rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf pmd:hasQuantitativeNominalParameter ;
+                                            rdfs:label "has quantitative nominal metadata parameter" .
+
+
+###  https://material-digital.de/pmdco/hasQuantitativeNominalParameter
+pmd:hasQuantitativeNominalParameter rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf pmd:hasQuantitativeParameter ;
+                                    rdfs:label "has quantitative nominal parameter" .
+
+
+###  https://material-digital.de/pmdco/hasQuantitativeNominalPrimaryParameter
+pmd:hasQuantitativeNominalPrimaryParameter rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf pmd:hasQuantitativeNominalParameter ;
+                                           rdfs:label "has quantitative nominal primary parameter" .
+
+
+###  https://material-digital.de/pmdco/hasQuantitativeNominalSecondaryParameter
+pmd:hasQuantitativeNominalSecondaryParameter rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf pmd:hasQuantitativeNominalParameter ;
+                                             rdfs:label "has quantitative nominal secondary parameter" .
+
+
+###  https://material-digital.de/pmdco/hasQuantitativeParameter
+pmd:hasQuantitativeParameter rdf:type owl:ObjectProperty ;
+                             rdfs:label "has quantitative parameter" .
+
+
+###  https://material-digital.de/pmdco/hasQuantitativePrimaryMetadata
+pmd:hasQuantitativePrimaryMetadata rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf pmd:hasQuantitativeMeasurement ;
+                                   rdfs:label "has quantitative primary metadata" .
+
+
+###  https://material-digital.de/pmdco/hasQuantitativeSecondaryMeasurement
+pmd:hasQuantitativeSecondaryMeasurement rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf pmd:hasQuantitativeMeasurement ;
+                                        rdfs:label "has quantitative secondary measurement" .
+
+
+###  https://material-digital.de/pmdco/hasSecondaryMeasurement
+pmd:hasSecondaryMeasurement rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf pmd:hasMeasurement .
+
+
+###  https://material-digital.de/pmdco/hasSequenceNumber
+pmd:hasSequenceNumber rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf pmd:hasNominalMetadataParameter .
+
+
+###  https://material-digital.de/pmdco/hasSubordinateProcess
+pmd:hasSubordinateProcess rdf:type owl:ObjectProperty ;
+                          rdfs:label "has subordinate process" .
+
+
+###  https://material-digital.de/pmdco/hasSuppliedIdentifier
+pmd:hasSuppliedIdentifier rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf pmd:hasNominalMetadataParameter .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://material-digital.de/pmdco/dataResourceCharacteristic
+pmd:dataResourceCharacteristic rdf:type owl:DatatypeProperty ;
+                               rdfs:label "data resource characteristic" .
+
+
+###  https://material-digital.de/pmdco/hasAcquisitionDate
+pmd:hasAcquisitionDate rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf pmd:hasProcessNodeCharacteristic ;
+                       rdfs:label "has acquisition date" .
+
+
+###  https://material-digital.de/pmdco/hasDataResourceLocation
+pmd:hasDataResourceLocation rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf pmd:dataResourceCharacteristic ;
+                            rdfs:label "has data resource location" .
+
+
+###  https://material-digital.de/pmdco/hasGeneratedIdentifier
+pmd:hasGeneratedIdentifier rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasMeasurement
+pmd:hasMeasurement rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasMetadataMeasurement
+pmd:hasMetadataMeasurement rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasNominalMetadataParameter
+pmd:hasNominalMetadataParameter rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasNominalParameter
+pmd:hasNominalParameter rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasNominalPrimaryParameter
+pmd:hasNominalPrimaryParameter rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasNominalSecondaryParameter
+pmd:hasNominalSecondaryParameter rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasParameter
+pmd:hasParameter rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasPrimaryMeasurement
+pmd:hasPrimaryMeasurement rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasProcessNodeCharacteristic
+pmd:hasProcessNodeCharacteristic rdf:type owl:DatatypeProperty ;
+                                 rdfs:label "has process node characteristic" .
+
+
+###  https://material-digital.de/pmdco/hasQualifyingProcessAnnotation
+pmd:hasQualifyingProcessAnnotation rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasSecondaryMeasurement
+pmd:hasSecondaryMeasurement rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasSequenceNumber
+pmd:hasSequenceNumber rdf:type owl:DatatypeProperty .
+
+
+###  https://material-digital.de/pmdco/hasSuppliedIdentifier
+pmd:hasSuppliedIdentifier rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://wikiba.se/ontology#QuantityValue
+wikiba:QuantityValue rdf:type owl:Class ;
+                     rdfs:subClassOf wikiba:Value ;
+                     rdfs:label "Quantity Value" .
+
+
+###  http://wikiba.se/ontology#Value
+wikiba:Value rdf:type owl:Class ;
+             rdfs:label "Value" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#Algorithm
+kd:Algorithm rdf:type owl:Class ;
+             rdfs:comment """Is equivalent to: http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm
+
+A Directive Information Content Entity that prescribes the inputs and output of mathematical functions as well as workflow of execution for achieving a predefined objective.
+is cured in ontology: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology
+definition source: http://purl.obolibrary.org/obo/IAO_0000064""" ;
+             rdfs:label "Algorithm" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#ArtifactFunction
+kd:ArtifactFunction rdf:type owl:Class ;
+                    rdfs:comment """Is equivalent to: http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction
+
+A Function that inheres in some Artifact in virtue of that Artifact being designed to be used in processes that require that Function to be realized.
+is cured in ontology: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology""" ;
+                    rdfs:label "Artifact Function" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellTest
+kd:BrinellTest rdf:type owl:Class ;
+               rdfs:subClassOf kd:HardnessTest ;
+               rdfs:comment "A test method for measuring the resistance of materials to indentation caused by a \"tungsten carbide composite ball\" indenter." ;
+               rdfs:label "Brinell Test" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellTestCalibration
+kd:BrinellTestCalibration rdf:type owl:Class ;
+                          rdfs:subClassOf kd:BrinellTest ;
+                          rdfs:comment "The process of measuring Brinell hardness value." ;
+                          rdfs:label "Brinell Test Calibration" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellTestProcedure
+kd:BrinellTestProcedure rdf:type owl:Class ;
+                        rdfs:subClassOf kd:BrinellTest ;
+                        rdfs:comment "The process of calibration of brinell testing machines and verification of Brinell hardness values." ;
+                        rdfs:label "Brinell Test Procedure" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#CalendarDateIdentifier
+kd:CalendarDateIdentifier rdf:type owl:Class ;
+                          rdfs:comment """Is equivalent to: http://www.ontologyrepository.com/CommonCoreOntologies/CalendarDateIdentifier
+
+A Date Identifier that designates some Day by using a combination of Day, Week, Month, or Year Identifiers formatted according to an implementation of a Calendar System.
+is cured in ontology: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology
+example of usage: January 1, 2018; 1 January 2018; 01/01/18; 01Jan18""" ;
+                          rdfs:label "Calendar Date Identifier" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#Day
+kd:Day rdf:type owl:Class ;
+       rdfs:comment """Is equivalent to: http://www.ontologyrepository.com/CommonCoreOntologies/Day
+
+A One-Dimensional Temporal Region that is equal to the approximate length of time required for an Astronomical Body to complete one rotation around its Rotational Axis as specified relative to a particular Temporal Reference System.
+is cured in ontology: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/TimeOntology
+definition source: http://wordnetweb.princeton.edu/perl/webwn?s=day
+elucidation: Unless otherwise specified, a Day is assumed to be relative to the rotational motion of the Earth and is approximately equal to a twenty-four hour temporal region for which the start and end times are specified by the Temporal Reference System used.""" ;
+       rdfs:label "Day" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#HardnessTest
+kd:HardnessTest rdf:type owl:Class ;
+                rdfs:subClassOf pmd:TransformativeAnalysisProcess ;
+                rdfs:comment "A test method for measuring the resistance of materials to indentation." ;
+                rdfs:label "Hardness Test" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#NonNameIdentifier
+kd:NonNameIdentifier rdf:type owl:Class ;
+                     rdfs:comment """Is equivalent to: http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier
+
+A Designative Information Content Entity that consists of a string of characters that designates an entity within a specified namespace or context, is not a Designative Name, may be automatically or randomly generated, and typically has no preexisting cultural or social significance.
+alternative label:ID
+alternative label: Identifier
+is cured in ontology: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology""" ;
+                     rdfs:label "Non Name Identifier" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#Regulation
+kd:Regulation rdf:type owl:Class ;
+              rdfs:comment "Is equivalent to: http://www.purl.matolab.org/MSEO/mid/Regulation" ;
+              rdfs:label "Regulation" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#ThreeDimensionalShape
+kd:ThreeDimensionalShape rdf:type owl:Class ;
+                         rdfs:comment """Is equivalent to: http://www.ontologyrepository.com/CommonCoreOntologies/ThreeDimensionalShape
+
+A Shape Quality that inheres only in a three dimensional entity.
+is cured in ontology: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology""" ;
+                         rdfs:label "Three Dimensional Shape" .
+
+
+###  https://material-digital.de/pmdco/AnalysisProcess
+pmd:AnalysisProcess rdf:type owl:Class ;
+                    rdfs:subClassOf pmd:Process ;
+                    rdfs:label "Analysis Process" .
+
+
+###  https://material-digital.de/pmdco/Component
+pmd:Component rdf:type owl:Class ;
+              rdfs:subClassOf pmd:Object ;
+              rdfs:label "Component" .
+
+
+###  https://material-digital.de/pmdco/DataResource
+pmd:DataResource rdf:type owl:Class ;
+                 rdfs:label "Data Resource" .
+
+
+###  https://material-digital.de/pmdco/ManufactureProcess
+pmd:ManufactureProcess rdf:type owl:Class ;
+                       rdfs:subClassOf pmd:Process ;
+                       rdfs:label "Manufacture Process" .
+
+
+###  https://material-digital.de/pmdco/Material
+pmd:Material rdf:type owl:Class ;
+             rdfs:label "Material" .
+
+
+###  https://material-digital.de/pmdco/Object
+pmd:Object rdf:type owl:Class ;
+           rdfs:label "Object" .
+
+
+###  https://material-digital.de/pmdco/PmdSiUnit
+pmd:PmdSiUnit rdf:type owl:Class ;
+              rdfs:label "Pmd Si Unit" .
+
+
+###  https://material-digital.de/pmdco/Process
+pmd:Process rdf:type owl:Class ;
+            rdfs:label "Process" .
+
+
+###  https://material-digital.de/pmdco/ProcessNodeComponent
+pmd:ProcessNodeComponent rdf:type owl:Class ;
+                         rdfs:label "Process Node Component" .
+
+
+###  https://material-digital.de/pmdco/TransformativeAnalysisProcess
+pmd:TransformativeAnalysisProcess rdf:type owl:Class ;
+                                  rdfs:subClassOf pmd:AnalysisProcess ;
+                                  rdfs:label "Transformative Analysis Process" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://kupferdigital.gitlab.io/ontology#AgingTemperature
+kd:AgingTemperature rdf:type owl:NamedIndividual ,
+                             wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#AgingTime
+kd:AgingTime rdf:type owl:NamedIndividual ,
+                      wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#AlloyCompositionIdentifier
+kd:AlloyCompositionIdentifier rdf:type owl:NamedIndividual ,
+                                       kd:NonNameIdentifier .
+
+
+###  https://kupferdigital.gitlab.io/ontology#ApplyTestForce
+kd:ApplyTestForce rdf:type owl:NamedIndividual ,
+                           kd:BrinellTestProcedure .
+
+
+###  https://kupferdigital.gitlab.io/ontology#AverageFunctionDiameter
+kd:AverageFunctionDiameter rdf:type owl:NamedIndividual ,
+                                    kd:Algorithm .
+
+
+###  https://kupferdigital.gitlab.io/ontology#AverageFunctionHardness
+kd:AverageFunctionHardness rdf:type owl:NamedIndividual ,
+                                    kd:Algorithm .
+
+
+###  https://kupferdigital.gitlab.io/ontology#AverageFunctionTotalDiameter
+kd:AverageFunctionTotalDiameter rdf:type owl:NamedIndividual ,
+                                         kd:Algorithm .
+
+
+###  https://kupferdigital.gitlab.io/ontology#Ball
+kd:Ball rdf:type owl:NamedIndividual ,
+                 kd:ThreeDimensionalShape .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellHardness
+kd:BrinellHardness rdf:type owl:NamedIndividual ,
+                            wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellHardnessAverage
+kd:BrinellHardnessAverage rdf:type owl:NamedIndividual ,
+                                   wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellHardnessFunction
+kd:BrinellHardnessFunction rdf:type owl:NamedIndividual ,
+                                    kd:Algorithm .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellHardnessStandardDeviation
+kd:BrinellHardnessStandardDeviation rdf:type owl:NamedIndividual ,
+                                             wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellIndenter
+kd:BrinellIndenter rdf:type owl:NamedIndividual ,
+                            pmd:ProcessNodeComponent .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellIndenterArtifactFunction
+kd:BrinellIndenterArtifactFunction rdf:type owl:NamedIndividual ,
+                                            kd:ArtifactFunction .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellIndenterIdentifier
+kd:BrinellIndenterIdentifier rdf:type owl:NamedIndividual ,
+                                      kd:NonNameIdentifier .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellOpticalMeasuringSystem
+kd:BrinellOpticalMeasuringSystem rdf:type owl:NamedIndividual ,
+                                          pmd:ProcessNodeComponent .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellOpticalMeasuringSystemArtifactFunction
+kd:BrinellOpticalMeasuringSystemArtifactFunction rdf:type owl:NamedIndividual ,
+                                                          kd:ArtifactFunction .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellOpticalMeasuringSystemIdentifier
+kd:BrinellOpticalMeasuringSystemIdentifier rdf:type owl:NamedIndividual ,
+                                                    kd:NonNameIdentifier .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellTestPiece
+kd:BrinellTestPiece rdf:type owl:NamedIndividual ,
+                             pmd:Component .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellTestingMachine
+kd:BrinellTestingMachine rdf:type owl:NamedIndividual ,
+                                  pmd:ProcessNodeComponent .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellTestingMachineArtifactFunction
+kd:BrinellTestingMachineArtifactFunction rdf:type owl:NamedIndividual ,
+                                                  kd:ArtifactFunction .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellTestingMachineIdentifier
+kd:BrinellTestingMachineIdentifier rdf:type owl:NamedIndividual ,
+                                            kd:NonNameIdentifier .
+
+
+###  https://kupferdigital.gitlab.io/ontology#BrinellUncernityFunctionM1
+kd:BrinellUncernityFunctionM1 rdf:type owl:NamedIndividual ,
+                                       kd:Algorithm .
+
+
+###  https://kupferdigital.gitlab.io/ontology#CRMBrinellHardnessAverage
+kd:CRMBrinellHardnessAverage rdf:type owl:NamedIndividual ,
+                                      wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#CRMBrinellHardnessStandardDeviation
+kd:CRMBrinellHardnessStandardDeviation rdf:type owl:NamedIndividual ,
+                                                wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#CRMCertifiedBrinellHardness
+kd:CRMCertifiedBrinellHardness rdf:type owl:NamedIndividual ,
+                                        wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#CalculateAverageBrinellHardness
+kd:CalculateAverageBrinellHardness rdf:type owl:NamedIndividual ,
+                                            kd:BrinellTestProcedure .
+
+
+###  https://kupferdigital.gitlab.io/ontology#CalculateBrinellHardness
+kd:CalculateBrinellHardness rdf:type owl:NamedIndividual ,
+                                     kd:BrinellTestProcedure .
+
+
+###  https://kupferdigital.gitlab.io/ontology#CertifiedReferenceMaterialCRM
+kd:CertifiedReferenceMaterialCRM rdf:type owl:NamedIndividual ,
+                                          pmd:ProcessNodeComponent .
+
+
+###  https://kupferdigital.gitlab.io/ontology#ChooseTestForce
+kd:ChooseTestForce rdf:type owl:NamedIndividual ,
+                            kd:BrinellTestProcedure .
+
+
+###  https://kupferdigital.gitlab.io/ontology#ControlTemperature
+kd:ControlTemperature rdf:type owl:NamedIndividual ,
+                               kd:BrinellTestProcedure .
+
+
+###  https://kupferdigital.gitlab.io/ontology#CopperAlloy
+kd:CopperAlloy rdf:type owl:NamedIndividual ,
+                        pmd:Material .
+
+
+###  https://kupferdigital.gitlab.io/ontology#DirectBrinellTestCalibration
+kd:DirectBrinellTestCalibration rdf:type owl:NamedIndividual ,
+                                         kd:BrinellTestCalibration .
+
+
+###  https://kupferdigital.gitlab.io/ontology#HBW
+kd:HBW rdf:type owl:NamedIndividual ,
+                pmd:PmdSiUnit ;
+       rdfs:comment "HBW (H from hardness, B from Brinell and W from the material of the indenter, tungsten (wolfram) carbide) is the common scale for Brinell Hardness. This number is proportional to the applied load in kilogram-force (kgf) of an indenter to the calculated curved area of the indentation formed (mm2). Therefore, the SI unit of hardness is kgf/mm2. When the number is multiplied by the acceleration due to gravity, 9.80665 m/s2, it is converted to N/mm². The unit megapascals is thus can be used for hardness as well but hardness must not be confused with pressure" .
+
+
+###  https://kupferdigital.gitlab.io/ontology#HeatTreatmentProcess
+kd:HeatTreatmentProcess rdf:type owl:NamedIndividual ,
+                                 pmd:ManufactureProcess .
+
+
+###  https://kupferdigital.gitlab.io/ontology#Hour
+kd:Hour rdf:type owl:NamedIndividual ,
+                 pmd:PmdSiUnit .
+
+
+###  https://kupferdigital.gitlab.io/ontology#Indentation-EdgeDistance
+kd:Indentation-EdgeDistance rdf:type owl:NamedIndividual ,
+                                     wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#IndentationDiameterHorizontal
+kd:IndentationDiameterHorizontal rdf:type owl:NamedIndividual ,
+                                          wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#IndentationDiameterMean
+kd:IndentationDiameterMean rdf:type owl:NamedIndividual ,
+                                    wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#IndentationDiameterVertical
+kd:IndentationDiameterVertical rdf:type owl:NamedIndividual ,
+                                        wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#IndentationNumber
+kd:IndentationNumber rdf:type owl:NamedIndividual ,
+                              wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#IndentationSurfaceArea
+kd:IndentationSurfaceArea rdf:type owl:NamedIndividual ,
+                                   wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#IndentationsDistance
+kd:IndentationsDistance rdf:type owl:NamedIndividual ,
+                                 wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#IndenterDiameter
+kd:IndenterDiameter rdf:type owl:NamedIndividual ,
+                             wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#IndirectBrinellTestCalibration
+kd:IndirectBrinellTestCalibration rdf:type owl:NamedIndividual ,
+                                           kd:BrinellTestCalibration .
+
+
+###  https://kupferdigital.gitlab.io/ontology#LoadingTime
+kd:LoadingTime rdf:type owl:NamedIndividual ,
+                        wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#OpticalMeasurementTheIndentationDiameter
+kd:OpticalMeasurementTheIndentationDiameter rdf:type owl:NamedIndividual .
+
+
+###  https://kupferdigital.gitlab.io/ontology#PositioningTestPiece
+kd:PositioningTestPiece rdf:type owl:NamedIndividual ,
+                                 kd:BrinellTestProcedure .
+
+
+###  https://kupferdigital.gitlab.io/ontology#StandardDeviationFunctionHardness
+kd:StandardDeviationFunctionHardness rdf:type owl:NamedIndividual ,
+                                              kd:Algorithm .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestDataFile
+kd:TestDataFile rdf:type owl:NamedIndividual ,
+                         pmd:DataResource .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestDate
+kd:TestDate rdf:type owl:NamedIndividual ,
+                     kd:Day .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestDateIdentifier
+kd:TestDateIdentifier rdf:type owl:NamedIndividual ,
+                               kd:CalendarDateIdentifier .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestForce
+kd:TestForce rdf:type owl:NamedIndividual .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestPieceFunction
+kd:TestPieceFunction rdf:type owl:NamedIndividual ,
+                              kd:ArtifactFunction .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestPieceIdentifier
+kd:TestPieceIdentifier rdf:type owl:NamedIndividual ,
+                                kd:NonNameIdentifier .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestPieceProcessing
+kd:TestPieceProcessing rdf:type owl:NamedIndividual ,
+                                pmd:ManufactureProcess .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestPieceThickness
+kd:TestPieceThickness rdf:type owl:NamedIndividual ,
+                               wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestStandard
+kd:TestStandard rdf:type owl:NamedIndividual ,
+                         kd:Regulation .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestStandardIdentifier
+kd:TestStandardIdentifier rdf:type owl:NamedIndividual ,
+                                   kd:NonNameIdentifier .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TestTemperature
+kd:TestTemperature rdf:type owl:NamedIndividual ,
+                            wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TotalIndentationDiameterMean
+kd:TotalIndentationDiameterMean rdf:type owl:NamedIndividual ,
+                                         wikiba:QuantityValue .
+
+
+###  https://kupferdigital.gitlab.io/ontology#TungstenCarbideComposite
+kd:TungstenCarbideComposite rdf:type owl:NamedIndividual ,
+                                     pmd:Material .
+
+
+###  https://kupferdigital.gitlab.io/ontology#Uncertainty
+kd:Uncertainty rdf:type owl:NamedIndividual ,
+                        wikiba:QuantityValue .
+
+
+###  https://material-digital.de/pmdco/degreeCelsius
+pmd:degreeCelsius rdf:type owl:NamedIndividual ,
+                           pmd:PmdSiUnit .
+
+
+###  https://material-digital.de/pmdco/megapascal
+pmd:megapascal rdf:type owl:NamedIndividual ,
+                        pmd:PmdSiUnit .
+
+
+###  https://material-digital.de/pmdco/millimetre
+pmd:millimetre rdf:type owl:NamedIndividual ,
+                        pmd:PmdSiUnit .
+
+
+###  https://material-digital.de/pmdco/newton
+pmd:newton rdf:type owl:NamedIndividual ,
+                    pmd:PmdSiUnit .
+
+
+###  https://material-digital.de/pmdco/second
+pmd:second rdf:type owl:NamedIndividual ,
+                    pmd:PmdSiUnit .
+
+
+###  https://material-digital.de/pmdco/squaremillimetre
+pmd:squaremillimetre rdf:type owl:NamedIndividual ,
+                              pmd:PmdSiUnit .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+pmd:hasGeneratedIdentifier rdfs:label "has generated identifier" .
+
+
+pmd:hasMeasurement rdfs:label "has measurement" .
+
+
+pmd:hasMetadataMeasurement rdfs:label "has metadata measurement" .
+
+
+pmd:hasNominalMetadataParameter rdfs:label "has nominal metadata parameter" .
+
+
+pmd:hasNominalParameter rdfs:label "has nominal parameter" .
+
+
+pmd:hasNominalPrimaryParameter rdfs:label "has nominal primary parameter" .
+
+
+pmd:hasNominalSecondaryParameter rdfs:label "has nominal secondary parameter" .
+
+
+pmd:hasParameter rdfs:label "has parameter" .
+
+
+pmd:hasPrimaryMeasurement rdfs:label "has primary measurement" .
+
+
+pmd:hasQualifyingProcessAnnotation rdfs:label "has qualifying process annotation" .
+
+
+pmd:hasSecondaryMeasurement rdfs:label "has secondary measurement" .
+
+
+pmd:hasSequenceNumber rdfs:label "has sequence number" .
+
+
+pmd:hasSuppliedIdentifier rdfs:label "has supplied identifier" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
