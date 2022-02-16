@@ -1,6 +1,5 @@
-# PmdKdBrinell
-
-
+# Vickers Hardness-Test
+Ontology for the Vickers hardness testing according to the DIN_EN_ISO_6507-1 standard
 
 ## Getting started
 
