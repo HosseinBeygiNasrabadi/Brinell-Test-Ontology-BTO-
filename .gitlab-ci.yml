@@ -1,5 +1,5 @@
 pages:
-  image: registry.gitlab.com/infai/ontoflow/ontoflow:latest
+  image: registry.gitlab.com/infai/ontoflow/ontoflow:main
   services:
     - docker:dind
   stage: deploy
