@@ -1,0 +1,513 @@
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix mt: <http://emmo.info/emmo/domain/mechanical-testing#> .
+@prefix cd: <http://www.semanticweb.org/kupfer-digital#> .
+@prefix mero: <http://emmo.info/emmo/top/mereotopology#> .
+@prefix holistic: <http://emmo.info/emmo/middle/holistic#> .
+@prefix semiotics: <http://emmo.info/emmo/middle/semiotics#> .
+@prefix reductionistics: <http://emmo.info/emmo/middle/reductionistic#> .
+@prefix perc: <http://emmo.info/emmo/middle/perceptual#> .
+@prefix reductionistic: <http://emmo.info/emmo/middle/reductionistic#> .
+@prefix isq: <http://emmo.info/emmo/middle/isq#> .
+@prefix method: <http://tensile-test-method.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix #Added by Tobias: <http#Added by Tobias> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
+@base <http://emmo.info/emmo/domain/mechanical-testing#> .
+
+<http://emmo.info/emmo/domain/mechanical-testing#> rdf:type owl:Ontology ;
+			dc:creator "Klesta Toti" ;
+			owl:versionInfo "0.0.1" ;
+			dc:title "EMMO ABox minimal" ;
+			dc:description "Ontology code created by Chowlk" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+### emmo:hasSubprocess
+emmo:hasSubprocess rdf:type owl:ObjectProperty ;
+		rdfs:label "has subprocess" .
+
+### emmo:hasParticipant
+emmo:hasParticipant rdf:type owl:ObjectProperty ;
+		rdfs:label "has participant" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasSign
+emmo:hasSign rdf:type owl:ObjectProperty ;
+		rdfs:label "has sign" .
+
+### emmo:hasProcessInput
+emmo:hasProcessInput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process input" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasProcessOutput
+emmo:hasProcessOutput rdf:type owl:ObjectProperty ;
+		rdfs:label "has process output" .
+
+### emmo:hasSubprocess
+emmo:hasSubprocess rdf:type owl:ObjectProperty ;
+		rdfs:label "has subprocess" .
+
+### emmo:hasParticipant
+emmo:hasParticipant rdf:type owl:ObjectProperty ;
+		rdfs:label "has participant" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasPart
+emmo:hasPart rdf:type owl:ObjectProperty ;
+		rdfs:label "has part" .
+
+### emmo:hasPart
+emmo:hasPart rdf:type owl:ObjectProperty ;
+		rdfs:label "has part" .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+#################################################################
+#    Classes
+#################################################################
+
+### cd:HardnessTestExperiment
+cd:HardnessTestExperiment rdf:type owl:Class ;
+	rdfs:label "Hardness Test Experiment" ;
+	rdfs:subClassOf emmo:Measurement .
+
+### cd:Indentation
+cd:Indentation rdf:type owl:Class ;
+	rdfs:label "Indentation" ;
+	rdfs:subClassOf emmo:Subprocess .
+
+### emmo:Measurement
+emmo:Measurement rdf:type owl:Class ;
+	rdfs:label "Measurement" .
+
+### emmo:Subprocess
+emmo:Subprocess rdf:type owl:Class ;
+	rdfs:label "Subprocess" .
+
+### cd:IndentationID
+cd:IndentationID rdf:type owl:Class ;
+	rdfs:label "Indentation I D" ;
+	rdfs:subClassOf mt:Identifier .
+
+### mt:Identifier
+mt:Identifier rdf:type owl:Class ;
+	rdfs:label "Identifier" .
+
+### mt:Specimen
+mt:Specimen rdf:type owl:Class ;
+	rdfs:label "Specimen" .
+
+### mt:ShortName
+mt:ShortName rdf:type owl:Class ;
+	rdfs:label "Short Name" ;
+	rdfs:subClassOf mt:MaterialName .
+
+### mt:MaterialName
+mt:MaterialName rdf:type owl:Class ;
+	rdfs:label "Material Name" .
+
+### cd:TestPieceProducer
+cd:TestPieceProducer rdf:type owl:Class ;
+	rdfs:label "Test Piece Producer" ;
+	rdfs:subClassOf emmo:Property .
+
+### emmo:Property
+emmo:Property rdf:type owl:Class ;
+	rdfs:label "Property" .
+
+### cd:IndentationRepetation
+cd:IndentationRepetation rdf:type owl:Class ;
+	rdfs:label "Indentation Repetation" ;
+	rdfs:subClassOf emmo:Property .
+
+### emmo:Property
+emmo:Property rdf:type owl:Class ;
+	rdfs:label "Property" .
+
+### cd:IndentationHorizontalDiameter
+cd:IndentationHorizontalDiameter rdf:type owl:Class ;
+	rdfs:label "Indentation Horizontal Diameter" ;
+	rdfs:subClassOf emmo:Length .
+
+### emmo:Length
+emmo:Length rdf:type owl:Class ;
+	rdfs:label "Length" .
+
+### cd:IndentationVerticalDiameter
+cd:IndentationVerticalDiameter rdf:type owl:Class ;
+	rdfs:label "Indentation Vertical Diameter" ;
+	rdfs:subClassOf emmo:Length .
+
+### emmo:Length
+emmo:Length rdf:type owl:Class ;
+	rdfs:label "Length" .
+
+### cd:IndentationAverageDiameter
+cd:IndentationAverageDiameter rdf:type owl:Class ;
+	rdfs:label "Indentation Average Diameter" ;
+	rdfs:subClassOf emmo:Length .
+
+### emmo:Length
+emmo:Length rdf:type owl:Class ;
+	rdfs:label "Length" .
+
+### cd:BrinellHardness
+cd:BrinellHardness rdf:type owl:Class ;
+	rdfs:label "Brinell Hardness" ;
+	rdfs:subClassOf emmo:ProcedureUnit .
+
+### emmo:ProcedureUnit
+emmo:ProcedureUnit rdf:type owl:Class ;
+	rdfs:label "Procedure Unit" .
+
+### cd:BrinellHardness
+cd:BrinellHardness rdf:type owl:Class ;
+	rdfs:label "Brinell Hardness" ;
+	rdfs:subClassOf emmo:ProcedureUnit .
+
+### emmo:ProcedureUnit
+emmo:ProcedureUnit rdf:type owl:Class ;
+	rdfs:label "Procedure Unit" .
+
+### cd:HardnessTestMeasurement
+cd:HardnessTestMeasurement rdf:type owl:Class ;
+	rdfs:label "Hardness Test Measurement" ;
+	rdfs:subClassOf emmo:Measurement .
+
+### emmo:Measurement
+emmo:Measurement rdf:type owl:Class ;
+	rdfs:label "Measurement" .
+
+### cd:TotalAverageDiameter
+cd:TotalAverageDiameter rdf:type owl:Class ;
+	rdfs:label "Total Average Diameter" ;
+	rdfs:subClassOf emmo:Length .
+
+### emmo:Length
+emmo:Length rdf:type owl:Class ;
+	rdfs:label "Length" .
+
+### cd:AverageBrinellHardness
+cd:AverageBrinellHardness rdf:type owl:Class ;
+	rdfs:label "Average Brinell Hardness" ;
+	rdfs:subClassOf cd:BrinellHardness .
+
+### cd:BrinellHardness
+cd:BrinellHardness rdf:type owl:Class ;
+	rdfs:label "Brinell Hardness" .
+
+### cd:StandardDeviationBrinellHardness
+cd:StandardDeviationBrinellHardness rdf:type owl:Class ;
+	rdfs:label "Standard Deviation Brinell Hardness" ;
+	rdfs:subClassOf emmo:MeasuredUncertainty .
+
+### emmo:MeasuredUncertainty
+emmo:MeasuredUncertainty rdf:type owl:Class ;
+	rdfs:label "Measured Uncertainty" .
+
+### chameo:CalibrationMeasurement
+chameo:CalibrationMeasurement rdf:type owl:Class ;
+	rdfs:label "Calibration Measurement" .
+
+### mt:HardnessTestingMachine
+mt:HardnessTestingMachine rdf:type owl:Class ;
+	rdfs:label "Hardness Testing Machine" ;
+	rdfs:subClassOf emmo:MeasuringSystem .
+
+### emmo:MeasuringSystem
+emmo:MeasuringSystem rdf:type owl:Class ;
+	rdfs:label "Measuring System" .
+
+### cd:TestingMachineUncertainty
+cd:TestingMachineUncertainty rdf:type owl:Class ;
+	rdfs:label "Testing Machine Uncertainty" ;
+	rdfs:subClassOf emmo:MeasuredUncertainty .
+
+### emmo:MeasuredUncertainty
+emmo:MeasuredUncertainty rdf:type owl:Class ;
+	rdfs:label "Measured Uncertainty" .
+
+### cd:MeasurementResolutionUncertainty
+cd:MeasurementResolutionUncertainty rdf:type owl:Class ;
+	rdfs:label "Measurement Resolution Uncertainty" ;
+	rdfs:subClassOf emmo:MeasuredUncertainty .
+
+### emmo:MeasuredUncertainty
+emmo:MeasuredUncertainty rdf:type owl:Class ;
+	rdfs:label "Measured Uncertainty" .
+
+### cd:PermissibleUncertainty
+cd:PermissibleUncertainty rdf:type owl:Class ;
+	rdfs:label "Permissible Uncertainty" ;
+	rdfs:subClassOf emmo:MeasuredUncertainty .
+
+### emmo:MeasuredUncertainty
+emmo:MeasuredUncertainty rdf:type owl:Class ;
+	rdfs:label "Measured Uncertainty" .
+
+### cd:BrinellHardnessUnvertainty
+cd:BrinellHardnessUnvertainty rdf:type owl:Class ;
+	rdfs:label "Brinell Hardness Unvertainty" ;
+	rdfs:subClassOf emmo:MeasuredUncertainty .
+
+### emmo:MeasuredUncertainty
+emmo:MeasuredUncertainty rdf:type owl:Class ;
+	rdfs:label "Measured Uncertainty" .
+
+### cd:BrinellHardnessUnvertainty
+cd:BrinellHardnessUnvertainty rdf:type owl:Class ;
+	rdfs:label "Brinell Hardness Unvertainty" ;
+	rdfs:subClassOf emmo:MeasurementResult .
+
+### emmo:MeasurementResult
+emmo:MeasurementResult rdf:type owl:Class ;
+	rdfs:label "Measurement Result" .
+
+### cd:CRMAverageBrinellHardness
+cd:CRMAverageBrinellHardness rdf:type owl:Class ;
+	rdfs:label "C R M Average Brinell Hardness" ;
+	rdfs:subClassOf cd:BrinellHardness .
+
+### cd:BrinellHardness
+cd:BrinellHardness rdf:type owl:Class ;
+	rdfs:label "Brinell Hardness" .
+
+### cd:PermissibleUncertainty
+cd:PermissibleUncertainty rdf:type owl:Class ;
+	rdfs:label "Permissible Uncertainty" .
+
+### cd:CRMUncertainty
+cd:CRMUncertainty rdf:type owl:Class ;
+	rdfs:label "C R M Uncertainty" ;
+	rdfs:subClassOf emmo:MeasuredUncertainty .
+
+### emmo:MeasuredUncertainty
+emmo:MeasuredUncertainty rdf:type owl:Class ;
+	rdfs:label "Measured Uncertainty" .
+
+### cd:CRMStandardDeviationBrinellHardness
+cd:CRMStandardDeviationBrinellHardness rdf:type owl:Class ;
+	rdfs:label "C R M Standard Deviation Brinell Hardness" ;
+	rdfs:subClassOf emmo:MeasuredUncertainty .
+
+### emmo:MeasuredUncertainty
+emmo:MeasuredUncertainty rdf:type owl:Class ;
+	rdfs:label "Measured Uncertainty" .
+
+#################################################################
+#    Instances
+#################################################################
+
+### method:HardnessTestExperiment
+method:HardnessTestExperiment rdf:type owl:NamedIndividual;
+		rdf:type cd:HardnessTestExperiment .
+
+### method:Indentation
+method:Indentation rdf:type owl:NamedIndividual;
+		rdf:type cd:Indentation .
+
+### method:IndentationID
+method:IndentationID rdf:type owl:NamedIndividual;
+		rdf:type cd:IndentationID .
+
+### method:Specimen
+method:Specimen rdf:type owl:NamedIndividual;
+		rdf:type mt:Specimen .
+
+### method:ShortName
+method:ShortName rdf:type owl:NamedIndividual;
+		rdf:type mt:ShortName .
+
+### method:TestPieceProducer
+method:TestPieceProducer rdf:type owl:NamedIndividual;
+		rdf:type cd:TestPieceProducer .
+
+### method:IndentationRepetation
+method:IndentationRepetation rdf:type owl:NamedIndividual;
+		rdf:type cd:IndentationRepetation .
+
+### method:IndentationHorizontalDiameter
+method:IndentationHorizontalDiameter rdf:type owl:NamedIndividual;
+		rdf:type cd:IndentationHorizontalDiameter .
+
+### method:IndentationVerticalDiameter
+method:IndentationVerticalDiameter rdf:type owl:NamedIndividual;
+		rdf:type cd:IndentationVerticalDiameter .
+
+### method:IndentationAverageDiameter
+method:IndentationAverageDiameter rdf:type owl:NamedIndividual;
+		rdf:type cd:IndentationAverageDiameter .
+
+### method:BrinellHardness
+method:BrinellHardness rdf:type owl:NamedIndividual;
+		rdf:type cd:BrinellHardness .
+
+### method:BrinellHardness
+method:BrinellHardness rdf:type owl:NamedIndividual;
+		rdf:type cd:BrinellHardness .
+
+### method:HardnessTestMeasurement
+method:HardnessTestMeasurement rdf:type owl:NamedIndividual;
+		rdf:type cd:HardnessTestMeasurement .
+
+### method:TotalAverageDiameter
+method:TotalAverageDiameter rdf:type owl:NamedIndividual;
+		rdf:type cd:TotalAverageDiameter .
+
+### method:AverageBrinellHardness
+method:AverageBrinellHardness rdf:type owl:NamedIndividual;
+		rdf:type cd:AverageBrinellHardness .
+
+### method:StandardDeviationBrinellHardness
+method:StandardDeviationBrinellHardness rdf:type owl:NamedIndividual;
+		rdf:type cd:StandardDeviationBrinellHardness .
+
+### method:CalibrationMeasurement
+method:CalibrationMeasurement rdf:type owl:NamedIndividual;
+		rdf:type chameo:CalibrationMeasurement .
+
+### method:HardnessTestingMachine
+method:HardnessTestingMachine rdf:type owl:NamedIndividual;
+		rdf:type mt:HardnessTestingMachine .
+
+### method:TestingMachineUncertainty
+method:TestingMachineUncertainty rdf:type owl:NamedIndividual;
+		rdf:type cd:TestingMachineUncertainty .
+
+### method:MeasurementResolutionUncertainty
+method:MeasurementResolutionUncertainty rdf:type owl:NamedIndividual;
+		rdf:type cd:MeasurementResolutionUncertainty .
+
+### method:PermissibleUncertainty
+method:PermissibleUncertainty rdf:type owl:NamedIndividual;
+		rdf:type cd:PermissibleUncertainty .
+
+### method:BrinellHardnessUnvertainty
+method:BrinellHardnessUnvertainty rdf:type owl:NamedIndividual;
+		rdf:type cd:BrinellHardnessUnvertainty .
+
+### method:BrinellHardnessUnvertainty
+method:BrinellHardnessUnvertainty rdf:type owl:NamedIndividual;
+		rdf:type cd:BrinellHardnessUnvertainty .
+
+### method:CRMAverageBrinellHardness
+method:CRMAverageBrinellHardness rdf:type owl:NamedIndividual;
+		rdf:type cd:CRMAverageBrinellHardness .
+
+### method:PermissibleUncertainty
+method:PermissibleUncertainty rdf:type owl:NamedIndividual;
+		rdf:type cd:PermissibleUncertainty .
+
+### method:CRMUncertainty
+method:CRMUncertainty rdf:type owl:NamedIndividual;
+		rdf:type cd:CRMUncertainty .
+
+### method:CRMStandardDeviationBrinellHardness
+method:CRMStandardDeviationBrinellHardness rdf:type owl:NamedIndividual;
+		rdf:type cd:CRMStandardDeviationBrinellHardness .
+
+method:HardnessTestExperiment emmo:hasParticipant method:HardnessTestMeasurement .
+method:HardnessTestExperiment emmo:hasSubprocess method:CalibrationMeasurement .
+method:HardnessTestExperiment emmo:hasParticipant method:HardnessTestingMachine .
+method:Indentation emmo:hasProperty method:IndentationRepetation .
+method:Indentation emmo:hasProcessOutput method:IndentationHorizontalDiameter .
+method:Indentation emmo:hasSign method:IndentationID .
+method:Indentation emmo:hasProcessInput method:Specimen .
+method:Indentation emmo:hasProcessOutput method:IndentationVerticalDiameter .
+method:Specimen emmo:hasProperty method:ShortName .
+method:Specimen emmo:hasProperty method:TestPieceProducer .
+method:HardnessTestMeasurement emmo:hasSubprocess method:Indentation .
+method:HardnessTestMeasurement emmo:hasProcessOutput method:TotalAverageDiameter .
+method:HardnessTestMeasurement emmo:hasProcessOutput method:AverageBrinellHardness .
+method:HardnessTestMeasurement emmo:hasProcessOutput method:StandardDeviationBrinellHardness .
+method:CalibrationMeasurement emmo:hasProcessOutput method:CRMAverageBrinellHardness .
+method:CalibrationMeasurement emmo:hasProcessOutput method:PermissibleUncertainty .
+method:CalibrationMeasurement emmo:hasProcessOutput method:CRMUncertainty .
+method:CalibrationMeasurement emmo:hasProcessOutput method:CRMStandardDeviationBrinellHardness .
+method:HardnessTestingMachine emmo:hasProperty method:TestingMachineUncertainty .
+method:HardnessTestingMachine emmo:hasProperty method:MeasurementResolutionUncertainty .
+method:HardnessTestingMachine emmo:hasProperty method:PermissibleUncertainty .
+method:BrinellHardnessUnvertainty emmo:hasPart method:BrinellHardness .
+#################################################################
+#    General Axioms
+#################################################################
+
