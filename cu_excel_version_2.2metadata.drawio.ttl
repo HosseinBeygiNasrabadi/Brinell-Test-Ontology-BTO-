@@ -1,0 +1,577 @@
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix mt: <http://emmo.info/emmo/domain/mechanical-testing#> .
+@prefix cd: <http://www.semanticweb.org/kupfer-digital#> .
+@prefix mero: <http://emmo.info/emmo/top/mereotopology#> .
+@prefix holistic: <http://emmo.info/emmo/middle/holistic#> .
+@prefix semiotics: <http://emmo.info/emmo/middle/semiotics#> .
+@prefix reductionistics: <http://emmo.info/emmo/middle/reductionistic#> .
+@prefix perc: <http://emmo.info/emmo/middle/perceptual#> .
+@prefix reductionistic: <http://emmo.info/emmo/middle/reductionistic#> .
+@prefix isq: <http://emmo.info/emmo/middle/isq#> .
+@prefix method: <http://tensile-test-method.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix #Added by Tobias: <http#Added by Tobias> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
+@base <http://emmo.info/emmo/domain/mechanical-testing#> .
+
+<http://emmo.info/emmo/domain/mechanical-testing#> rdf:type owl:Ontology ;
+			dc:creator "Klesta Toti" ;
+			owl:versionInfo "0.0.1" ;
+			dc:title "EMMO ABox minimal" ;
+			dc:description "Ontology code created by Chowlk" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+### chameo:hasMeasurementTime
+chameo:hasMeasurementTime rdf:type owl:ObjectProperty ;
+		rdfs:label "has measurement time" .
+
+### semiotics:hasProperty
+semiotics:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasConventional
+emmo:hasConventional rdf:type owl:ObjectProperty ;
+		rdfs:label "has conventional" .
+
+### emmo:hasParticipant
+emmo:hasParticipant rdf:type owl:ObjectProperty ;
+		rdfs:label "has participant" .
+
+### chameo:hasCharacterisationEnvironment
+chameo:hasCharacterisationEnvironment rdf:type owl:ObjectProperty ;
+		rdfs:label "has characterisation environment" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasPart
+emmo:hasPart rdf:type owl:ObjectProperty ;
+		rdfs:label "has part" .
+
+### emmo:hasSign
+emmo:hasSign rdf:type owl:ObjectProperty ;
+		rdfs:label "has sign" .
+
+### emmo:hasPart
+emmo:hasPart rdf:type owl:ObjectProperty ;
+		rdfs:label "has part" .
+
+### emmo:hasSign
+emmo:hasSign rdf:type owl:ObjectProperty ;
+		rdfs:label "has sign" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasSign
+emmo:hasSign rdf:type owl:ObjectProperty ;
+		rdfs:label "has sign" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasSubprocess
+emmo:hasSubprocess rdf:type owl:ObjectProperty ;
+		rdfs:label "has subprocess" .
+
+### chameo:hasMeasuredSpecimen
+chameo:hasMeasuredSpecimen rdf:type owl:ObjectProperty ;
+		rdfs:label "has measured specimen" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+### emmo:hasProperty
+emmo:hasProperty rdf:type owl:ObjectProperty ;
+		rdfs:label "has property" .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+#################################################################
+#    Classes
+#################################################################
+
+### cd:HardnessTestExperiment
+cd:HardnessTestExperiment rdf:type owl:Class ;
+	rdfs:label "Hardness Test Experiment" ;
+	rdfs:subClassOf emmo:Measurement .
+
+### chameo:MeasurementTime
+chameo:MeasurementTime rdf:type owl:Class ;
+	rdfs:label "Measurement Time" .
+
+### cd:FileLocation
+cd:FileLocation rdf:type owl:Class ;
+	rdfs:label "File Location" ;
+	rdfs:subClassOf mt:Reference .
+
+### cd:TestStandard
+cd:TestStandard rdf:type owl:Class ;
+	rdfs:label "Test Standard" ;
+	rdfs:subClassOf emmo:Conventional .
+
+### mt:HardnessTestingMachine
+mt:HardnessTestingMachine rdf:type owl:Class ;
+	rdfs:label "Hardness Testing Machine" ;
+	rdfs:subClassOf emmo:MeasuringSystem .
+
+### cd:Material
+cd:Material rdf:type owl:Class ;
+	rdfs:label "Material" .
+
+### cd:Indenter
+cd:Indenter rdf:type owl:Class ;
+	rdfs:label "Indenter" ;
+	rdfs:subClassOf emmo:Component .
+
+### cd:Material
+cd:Material rdf:type owl:Class ;
+	rdfs:label "Material" .
+
+### emmo:CelsiusTemperature
+emmo:CelsiusTemperature rdf:type owl:Class ;
+	rdfs:label "Celsius Temperature" .
+
+### cd:CRMCertifiedBrinellHardness
+cd:CRMCertifiedBrinellHardness rdf:type owl:Class ;
+	rdfs:label "C R M Certified Brinell Hardness" ;
+	rdfs:subClassOf cd:BrinellHardness .
+
+### cd:CRMIndentationReputation
+cd:CRMIndentationReputation rdf:type owl:Class ;
+	rdfs:label "C R M Indentation Reputation" ;
+	rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+### cd:Material
+cd:Material rdf:type owl:Class ;
+	rdfs:label "Material" .
+
+### cd:MachineName
+cd:MachineName rdf:type owl:Class ;
+	rdfs:label "Machine Name" ;
+	rdfs:subClassOf mt:Identifier .
+
+### cd:Material
+cd:Material rdf:type owl:Class ;
+	rdfs:label "Material" .
+
+### cd:OpticalSystemName
+cd:OpticalSystemName rdf:type owl:Class ;
+	rdfs:label "Optical System Name" ;
+	rdfs:subClassOf emmo:MeasuringInstrument .
+
+### cd:IndenterName
+cd:IndenterName rdf:type owl:Class ;
+	rdfs:label "Indenter Name" ;
+	rdfs:subClassOf mt:Identifier .
+
+### cd:IndenterDiameter
+cd:IndenterDiameter rdf:type owl:Class ;
+	rdfs:label "Indenter Diameter" ;
+	rdfs:subClassOf emmo:Length .
+
+### cd:OpticalSystemName
+cd:OpticalSystemName rdf:type owl:Class ;
+	rdfs:label "Optical System Name" ;
+	rdfs:subClassOf mt:Identifier .
+
+### cd:IndenterShape
+cd:IndenterShape rdf:type owl:Class ;
+	rdfs:label "Indenter Shape" ;
+	rdfs:subClassOf emmo:Geometrical .
+
+### mt:MaterialName
+mt:MaterialName rdf:type owl:Class ;
+	rdfs:label "Material Name" ;
+	rdfs:subClassOf emmo:Chemical .
+
+### emmo:Measurement
+emmo:Measurement rdf:type owl:Class ;
+	rdfs:label "Measurement" .
+
+### mt:Reference
+mt:Reference rdf:type owl:Class ;
+	rdfs:label "Reference" .
+
+### emmo:Conventional
+emmo:Conventional rdf:type owl:Class ;
+	rdfs:label "Conventional" .
+
+### mt:Identifier
+mt:Identifier rdf:type owl:Class ;
+	rdfs:label "Identifier" .
+
+### emmo:MeasuringSystem
+emmo:MeasuringSystem rdf:type owl:Class ;
+	rdfs:label "Measuring System" .
+
+### emmo:MeasuringInstrument
+emmo:MeasuringInstrument rdf:type owl:Class ;
+	rdfs:label "Measuring Instrument" .
+
+### mt:Identifier
+mt:Identifier rdf:type owl:Class ;
+	rdfs:label "Identifier" .
+
+### emmo:Component
+emmo:Component rdf:type owl:Class ;
+	rdfs:label "Component" .
+
+### mt:Identifier
+mt:Identifier rdf:type owl:Class ;
+	rdfs:label "Identifier" .
+
+### emmo:Length
+emmo:Length rdf:type owl:Class ;
+	rdfs:label "Length" .
+
+### emmo:Geometrical
+emmo:Geometrical rdf:type owl:Class ;
+	rdfs:label "Geometrical" .
+
+### emmo:Chemical
+emmo:Chemical rdf:type owl:Class ;
+	rdfs:label "Chemical" .
+
+### cd:ForceDiameterIndex
+cd:ForceDiameterIndex rdf:type owl:Class ;
+	rdfs:label "Force Diameter Index" ;
+	rdfs:subClassOf emmo:Property .
+
+### emmo:Property
+emmo:Property rdf:type owl:Class ;
+	rdfs:label "Property" .
+
+### cd:TestPointEdgeDistance
+cd:TestPointEdgeDistance rdf:type owl:Class ;
+	rdfs:label "Test Point Edge Distance" ;
+	rdfs:subClassOf emmo:Length .
+
+### emmo:Length
+emmo:Length rdf:type owl:Class ;
+	rdfs:label "Length" .
+
+### cd:TestPointDistance
+cd:TestPointDistance rdf:type owl:Class ;
+	rdfs:label "Test Point Distance" .
+
+### emmo:Length
+emmo:Length rdf:type owl:Class ;
+	rdfs:label "Length" .
+
+### cd:LoadingTime
+cd:LoadingTime rdf:type owl:Class ;
+	rdfs:label "Loading Time" ;
+	rdfs:subClassOf emmo:Time .
+
+### emmo:Time
+emmo:Time rdf:type owl:Class ;
+	rdfs:label "Time" .
+
+### cd:IndentationShape
+cd:IndentationShape rdf:type owl:Class ;
+	rdfs:label "Indentation Shape" ;
+	rdfs:subClassOf emmo:Geometrical .
+
+### emmo:Geometrical
+emmo:Geometrical rdf:type owl:Class ;
+	rdfs:label "Geometrical" .
+
+### cd:Material
+cd:Material rdf:type owl:Class ;
+	rdfs:label "Material" .
+
+### chameo:CalibrationMeasurement
+chameo:CalibrationMeasurement rdf:type owl:Class ;
+	rdfs:label "Calibration Measurement" .
+
+### cd:Material
+cd:Material rdf:type owl:Class ;
+	rdfs:label "Material" .
+
+### chameo:ReferenceSpecimen
+chameo:ReferenceSpecimen rdf:type owl:Class ;
+	rdfs:label "Reference Specimen" .
+
+### cd:BrinellHardness
+cd:BrinellHardness rdf:type owl:Class ;
+	rdfs:label "Brinell Hardness" .
+
+### emmo:CategorizedPhysicalQuantity
+emmo:CategorizedPhysicalQuantity rdf:type owl:Class ;
+	rdfs:label "Categorized Physical Quantity" .
+
+### cd:ConstantSigmaMS
+cd:ConstantSigmaMS rdf:type owl:Class ;
+	rdfs:label "Constant Sigma M S" ;
+	rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+### emmo:CategorizedPhysicalQuantity
+emmo:CategorizedPhysicalQuantity rdf:type owl:Class ;
+	rdfs:label "Categorized Physical Quantity" .
+
+### cd:PermissibleError
+cd:PermissibleError rdf:type owl:Class ;
+	rdfs:label "Permissible Error" ;
+	rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+### emmo:CategorizedPhysicalQuantity
+emmo:CategorizedPhysicalQuantity rdf:type owl:Class ;
+	rdfs:label "Categorized Physical Quantity" .
+
+### cd:ConstantErel_Per
+cd:ConstantErel_Per rdf:type owl:Class ;
+	rdfs:label "Constant Erel_ Per" ;
+	rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+### emmo:CategorizedPhysicalQuantity
+emmo:CategorizedPhysicalQuantity rdf:type owl:Class ;
+	rdfs:label "Categorized Physical Quantity" .
+
+### cd:ConstantErel_Per
+cd:ConstantErel_Per rdf:type owl:Class ;
+	rdfs:label "Constant Erel_ Per" ;
+	rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+### emmo:CategorizedPhysicalQuantity
+emmo:CategorizedPhysicalQuantity rdf:type owl:Class ;
+	rdfs:label "Categorized Physical Quantity" .
+
+### cd:TestForce
+cd:TestForce rdf:type owl:Class ;
+	rdfs:label "Test Force" ;
+	rdfs:subClassOf emmo:Force .
+
+### emmo:Force
+emmo:Force rdf:type owl:Class ;
+	rdfs:label "Force" .
+
+#################################################################
+#    Instances
+#################################################################
+
+### method:HardnessTestExperiment
+method:HardnessTestExperiment rdf:type owl:NamedIndividual;
+		rdf:type cd:HardnessTestExperiment .
+
+### method:MeasurementTime
+method:MeasurementTime rdf:type owl:NamedIndividual;
+		rdf:type chameo:MeasurementTime .
+
+### method:FileLocation
+method:FileLocation rdf:type owl:NamedIndividual;
+		rdf:type cd:FileLocation .
+
+### method:Standard
+method:Standard rdf:type owl:NamedIndividual;
+		rdf:type cd:TestStandard .
+
+### method:HardnessTestingMachine
+method:HardnessTestingMachine rdf:type owl:NamedIndividual;
+		rdf:type mt:HardnessTestingMachine .
+
+### method:Material
+method:Material rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:Indenter
+method:Indenter rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:Material
+method:Material rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:Temperature
+method:Temperature rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:CRMCertifiedBrinellHardness
+method:CRMCertifiedBrinellHardness rdf:type owl:NamedIndividual;
+		rdf:type cd:CRMCertifiedBrinellHardness .
+
+### method:CRMIndentationReputation
+method:CRMIndentationReputation rdf:type owl:NamedIndividual;
+		rdf:type cd:CRMIndentationReputation .
+
+### method:Material
+method:Material rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:MachineName
+method:MachineName rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:Material
+method:Material rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:OpticalSystemName
+method:OpticalSystemName rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:IndenterName
+method:IndenterName rdf:type owl:NamedIndividual;
+		rdf:type cd:IndenterName .
+
+### method:IndenterDiameter
+method:IndenterDiameter rdf:type owl:NamedIndividual;
+		rdf:type cd:IndenterDiameter .
+
+### method:OpticalSystemName
+method:OpticalSystemName rdf:type owl:NamedIndividual;
+		rdf:type cd:OpticalSystemName .
+
+### method:IndenterShape
+method:IndenterShape rdf:type owl:NamedIndividual;
+		rdf:type cd:IndenterShape .
+
+### method:IndenterComposite
+method:IndenterComposite rdf:type owl:NamedIndividual;
+		rdf:type mt:MaterialName .
+
+### method:ForceDiameterIndex
+method:ForceDiameterIndex rdf:type owl:NamedIndividual;
+		rdf:type cd:ForceDiameterIndex .
+
+### method:TestPointEdgeDistance
+method:TestPointEdgeDistance rdf:type owl:NamedIndividual;
+		rdf:type cd:TestPointEdgeDistance .
+
+### method:TestPointDistance
+method:TestPointDistance rdf:type owl:NamedIndividual;
+		rdf:type cd:TestPointDistance .
+
+### method:LoadingTime
+method:LoadingTime rdf:type owl:NamedIndividual;
+		rdf:type cd:LoadingTime .
+
+### method:IndentationShape
+method:IndentationShape rdf:type owl:NamedIndividual;
+		rdf:type cd:IndentationShape .
+
+### method:Material
+method:Material rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:CalibrationMeasurement
+method:CalibrationMeasurement rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:Material
+method:Material rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:ReferenceSepcimen
+method:ReferenceSepcimen rdf:type owl:NamedIndividual;
+		rdf:type cd:Material .
+
+### method:ConstantSigmaMS
+method:ConstantSigmaMS rdf:type owl:NamedIndividual;
+		rdf:type cd:ConstantSigmaMS .
+
+### method:PermissibleError
+method:PermissibleError rdf:type owl:NamedIndividual;
+		rdf:type cd:PermissibleError .
+
+### method:PermissibleError
+method:PermissibleError rdf:type owl:NamedIndividual;
+		rdf:type cd:ConstantErel_Per .
+
+### method:PermissibleError
+method:PermissibleError rdf:type owl:NamedIndividual;
+		rdf:type cd:ConstantErel_Per .
+
+### method:TestForce
+method:TestForce rdf:type owl:NamedIndividual;
+		rdf:type cd:TestForce .
+
+method:HardnessTestExperiment chameo:hasMeasurementTime method:MeasurementTime .
+method:HardnessTestExperiment semiotics:hasProperty method:FileLocation .
+method:HardnessTestExperiment emmo:hasConventional method:Standard .
+method:HardnessTestExperiment emmo:hasParticipant method:HardnessTestingMachine .
+method:HardnessTestExperiment chameo:hasCharacterisationEnvironment method:Temperature .
+method:HardnessTestExperiment emmo:hasProperty method:ForceDiameterIndex .
+method:HardnessTestExperiment emmo:hasProperty method:TestPointEdgeDistance .
+method:HardnessTestExperiment emmo:hasProperty method:TestPointDistance .
+method:HardnessTestExperiment emmo:hasProperty method:IndentationShape .
+method:HardnessTestExperiment emmo:hasProperty method:LoadingTime .
+method:HardnessTestExperiment emmo:hasProperty method:TestForce .
+method:HardnessTestExperiment emmo:hasSubprocess method:CalibrationMeasurement .
+method:HardnessTestingMachine emmo:hasPart method:Indenter .
+method:HardnessTestingMachine emmo:hasSign method:MachineName .
+method:HardnessTestingMachine emmo:hasPart method:OpticalSystemName .
+method:Indenter emmo:hasSign method:IndenterName .
+method:Indenter emmo:hasProperty method:IndenterDiameter .
+method:Indenter emmo:hasProperty method:IndenterShape .
+method:Indenter emmo:hasProperty method:IndenterComposite .
+method:OpticalSystemName emmo:hasSign method:OpticalSystemName .
+method:CalibrationMeasurement chameo:hasMeasuredSpecimen method:ReferenceSepcimen .
+method:CalibrationMeasurement emmo:hasProperty method:CRMIndentationReputation .
+method:CalibrationMeasurement emmo:hasProperty method:ConstantSigmaMS .
+method:CalibrationMeasurement emmo:hasProperty method:PermissibleError .
+method:CalibrationMeasurement emmo:hasProperty method:PermissibleError .
+method:CalibrationMeasurement emmo:hasProperty method:PermissibleError .
+method:ReferenceSepcimen emmo:hasProperty method:CRMCertifiedBrinellHardness .
+#################################################################
+#    General Axioms
+#################################################################
+
