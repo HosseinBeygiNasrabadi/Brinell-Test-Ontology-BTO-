@@ -1,0 +1,559 @@
+ @prefix cd: <http://www.semanticweb.org/kupfer-digital#> .
+@prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix method: <http://tensile-test-method.org#> .
+@prefix mt: <http://emmo.info/emmo/domain/mechanical-testing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f a owl:ObjectProperty ;
+    rdfs:label "e m m o_17e27c22_37e1_468c_9dd7_95e137f73e7f" .
+
+emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 a owl:ObjectProperty ;
+    rdfs:label "e m m o_60577dea_9019_4537_ac41_80b0fb563d41" .
+
+emmo:EMMO_66bc9029_f473_45ff_bab9_c3509ff37a22 a owl:Class ;
+    rdfs:label "E M M O_66bc9029_f473_45ff_bab9_c3509ff37a22" .
+
+emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a a owl:ObjectProperty ;
+    rdfs:label "e m m o_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a" ;
+    rdfs:range cd:HardnessTestMeasurement .
+
+emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 a owl:ObjectProperty ;
+    rdfs:label "e m m o_e1097637_70d2_4895_973f_2396f04fa204" .
+
+emmo:hasConventional a owl:ObjectProperty ;
+    rdfs:label "has conventional" .
+
+emmo:hasProcessInput a owl:ObjectProperty ;
+    rdfs:label "has process input" .
+
+emmo:hasProcessOutput a owl:ObjectProperty ;
+    rdfs:label "has process output" .
+
+emmo:hasSubprocess a owl:ObjectProperty ;
+    rdfs:label "has subprocess" .
+
+chameo:ReferenceSpecimen a owl:Class ;
+    rdfs:label "Reference Specimen" .
+
+chameo:hasCharacterisationEnvironment a owl:ObjectProperty ;
+    rdfs:label "has characterisation environment" .
+
+chameo:hasMeasuredSpecimen a owl:ObjectProperty ;
+    rdfs:label "has measured specimen" .
+
+chameo:hasMeasurementTime a owl:ObjectProperty ;
+    rdfs:label "has measurement time" .
+
+mt: a owl:Ontology ;
+    dc:creator "Klesta Toti" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "EMMO ABox minimal" ;
+    owl:versionInfo "0.0.1" .
+
+method:BrinellHardnessUnvertainty a cd:BrinellHardnessUnvertainty,
+        owl:NamedIndividual ;
+    emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f method:BrinellHardness,
+        method:BrinellHardnessUncertainty .
+
+method:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 a cd:EMMO_4207e895_8b83_4318_996a_72cfb32acd94,
+        owl:NamedIndividual .
+
+method:HardnessTestExperiment a cd:HardnessTestExperiment,
+        owl:NamedIndividual ;
+    emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a method:HardnessTestingMachine ;
+    emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 method:ConstantLoadUnitConversion,
+        method:FileLocation,
+        method:ForceDiameterIndex,
+        method:IndentationShape,
+        method:LoadingTime,
+        method:Pi,
+        method:TestForce,
+        method:TestPointDistance,
+        method:TestPointEdgeDistance ;
+    emmo:hasConventional method:Standard ;
+    emmo:hasSubprocess method:CalibrationMeasurement ;
+    chameo:hasCharacterisationEnvironment method:Temperature ;
+    chameo:hasMeasurementTime method:MeasurementTime .
+
+method:HardnessTestMeasurement a cd:HardnessTestMeasurement,
+        owl:NamedIndividual ;
+    emmo:hasProcessOutput method:AverageBrinellHardness,
+        method:StandardDeviationBrinellHardness,
+        method:TotalAverageDiameter ;
+    emmo:hasSubprocess method:Indentation .
+
+cd:Indenter a owl:Class ;
+    rdfs:label "Indenter" ;
+    rdfs:subClassOf emmo:Component .
+
+cd:MachineName a owl:Class ;
+    rdfs:label "Machine Name" ;
+    rdfs:subClassOf mt:Identifier .
+
+emmo:Chemical a owl:Class ;
+    rdfs:label "Chemical" .
+
+emmo:Component a owl:Class ;
+    rdfs:label "Component" .
+
+emmo:EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef a owl:Class ;
+    rdfs:label "E M M O_1f087811_06cb_42d5_90fb_25d0e7e068ef" .
+
+emmo:EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9 a owl:Class ;
+    rdfs:label "E M M O_35d2e130_6e01_41ed_94f7_00b333d46cf9" .
+
+emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfbResult a owl:Class ;
+    rdfs:label "E M M O_463bcfda_867b_41d9_a967_211d4d437cfb Result" .
+
+emmo:EMMO_c9c8f824_9127_4f93_bc21_69fe78a7f6f2 a owl:Class ;
+    rdfs:label "E M M O_c9c8f824_9127_4f93_bc21_69fe78a7f6f2" .
+
+emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 a owl:Class ;
+    rdfs:label "E M M O_d4f7d378_5e3b_468a_baa1_a7e98358cda7" .
+
+emmo:MeasuringInstrument a owl:Class ;
+    rdfs:label "Measuring Instrument" .
+
+emmo:MeasuringSystem a owl:Class ;
+    rdfs:label "Measuring System" .
+
+emmo:Subprocess a owl:Class ;
+    rdfs:label "Subprocess" .
+
+chameo:CalibrationMeasurement a owl:Class ;
+    rdfs:label "Calibration Measurement" .
+
+chameo:MeasurementTime a owl:Class ;
+    rdfs:label "Measurement Time" .
+
+mt:HardnessTestingMachine a owl:Class ;
+    rdfs:label "Hardness Testing Machine" ;
+    rdfs:subClassOf emmo:MeasuringSystem .
+
+mt:Reference a owl:Class ;
+    rdfs:label "Reference" .
+
+mt:ShortName a owl:Class ;
+    rdfs:label "Short Name" ;
+    rdfs:subClassOf mt:MaterialName .
+
+mt:Specimen a owl:Class ;
+    rdfs:label "Specimen" .
+
+mt:SpecimenID a owl:Class ;
+    rdfs:label "Specimen I D" .
+
+method:AverageBrinellHardness a cd:AverageBrinellHardness,
+        owl:NamedIndividual .
+
+method:BrinellHardnessUncertainty a cd:BrinellHardnessUncertainty,
+        owl:NamedIndividual .
+
+method:CRMAverageBrinellHardness a cd:CRMAverageBrinellHardness,
+        owl:NamedIndividual .
+
+method:CRMCertifiedBrinellHardness a cd:CRMCertifiedBrinellHardness,
+        owl:NamedIndividual .
+
+method:CRMIndentationReputation a cd:CRMIndentationReputation,
+        owl:NamedIndividual .
+
+method:CRMStandardDeviationBrinellHardness a cd:CRMStandardDeviationBrinellHardness,
+        owl:NamedIndividual .
+
+method:CRMUncertainty a cd:CRMUncertainty,
+        owl:NamedIndividual .
+
+method:CalibrationMeasurement a chameo:CalibrationMeasurement,
+        owl:NamedIndividual ;
+    emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 method:CRMIndentationReputation,
+        method:ConstantErel_Per,
+        method:ConstantSigmaMS,
+        method:ConstantT,
+        method:PermissibleError ;
+    emmo:hasProcessOutput method:CRMAverageBrinellHardness,
+        method:CRMStandardDeviationBrinellHardness,
+        method:CRMUncertainty,
+        method:PermissibleUncertainty ;
+    chameo:hasMeasuredSpecimen method:ReferenceSepcimen .
+
+method:ConstantErel_Per a cd:ConstantErel_Per,
+        owl:NamedIndividual .
+
+method:ConstantLoadUnitConversion a cd:ConstantLoadUnitConversion,
+        owl:NamedIndividual .
+
+method:ConstantSigmaMS a cd:ConstantSigmaMS,
+        owl:NamedIndividual .
+
+method:ConstantT a cd:ConstantT,
+        owl:NamedIndividual .
+
+method:FileLocation a cd:FileLocation,
+        owl:NamedIndividual .
+
+method:ForceDiameterIndex a cd:ForceDiameterIndex,
+        owl:NamedIndividual .
+
+method:HardnessTestingMachine a mt:HardnessTestingMachine,
+        owl:NamedIndividual ;
+    emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f method:Indenter,
+        method:OpticalSystemName ;
+    emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 method:MachineName ;
+    emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 method:MeasurementResolutionUncertainty,
+        method:PermissibleUncertainty,
+        method:TestingMachineUncertainty .
+
+method:Indentation a cd:Indentation,
+        owl:NamedIndividual ;
+    emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 method:IndentationID ;
+    emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 method:IndentationRepetation,
+        method:IndentationRepetition ;
+    emmo:hasProcessInput method:Specimen ;
+    emmo:hasProcessOutput method:BrinellHardness,
+        method:IndentationAverageDiameter,
+        method:IndentationHorizontalDiameter,
+        method:IndentationVerticalDiameter .
+
+method:IndentationAverageDiameter a cd:IndentationAverageDiameter,
+        owl:NamedIndividual .
+
+method:IndentationHorizontalDiameter a cd:IndentationHorizontalDiameter,
+        owl:NamedIndividual .
+
+method:IndentationID a cd:IndentationID,
+        owl:NamedIndividual .
+
+method:IndentationRepetation a cd:IndentationRepetation,
+        owl:NamedIndividual .
+
+method:IndentationRepetition a cd:IndentationRepetition,
+        owl:NamedIndividual .
+
+method:IndentationShape a cd:IndentationShape,
+        owl:NamedIndividual .
+
+method:IndentationVerticalDiameter a cd:IndentationVerticalDiameter,
+        owl:NamedIndividual .
+
+method:Indenter a cd:EMMO_4207e895_8b83_4318_996a_72cfb32acd94,
+        owl:NamedIndividual ;
+    emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 method:IndenterName ;
+    emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 method:IndenterComposite,
+        method:IndenterDiameter,
+        method:IndenterShape .
+
+method:IndenterComposite a mt:MaterialName,
+        owl:NamedIndividual .
+
+method:IndenterDiameter a cd:IndenterDiameter,
+        owl:NamedIndividual .
+
+method:IndenterName a cd:IndenterName,
+        owl:NamedIndividual .
+
+method:IndenterShape a cd:IndenterShape,
+        owl:NamedIndividual .
+
+method:LoadingTime a cd:LoadingTime,
+        owl:NamedIndividual .
+
+method:MachineName a cd:EMMO_4207e895_8b83_4318_996a_72cfb32acd94,
+        owl:NamedIndividual .
+
+method:MeasurementResolutionUncertainty a cd:MeasurementResolutionUncertainty,
+        owl:NamedIndividual .
+
+method:MeasurementTime a chameo:MeasurementTime,
+        owl:NamedIndividual .
+
+method:PermissibleError a cd:PermissibleError,
+        owl:NamedIndividual .
+
+method:Pi a cd:Pi,
+        owl:NamedIndividual .
+
+method:ReferenceSepcimen a cd:EMMO_4207e895_8b83_4318_996a_72cfb32acd94,
+        owl:NamedIndividual ;
+    emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 method:CRMCertifiedBrinellHardness .
+
+method:ShortName a mt:ShortName,
+        owl:NamedIndividual .
+
+method:Specimen a mt:Specimen,
+        owl:NamedIndividual ;
+    emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 method:SpecimenID ;
+    emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 method:ShortName,
+        method:TestPiecePreparation,
+        method:TestPieceProcessing,
+        method:TestPieceProducer,
+        method:TestPieceThickness .
+
+method:SpecimenID a mt:SpecimenID,
+        owl:NamedIndividual .
+
+method:Standard a cd:TestStandard,
+        owl:NamedIndividual .
+
+method:StandardDeviationBrinellHardness a cd:StandardDeviationBrinellHardness,
+        owl:NamedIndividual .
+
+method:Temperature a cd:EMMO_4207e895_8b83_4318_996a_72cfb32acd94,
+        owl:NamedIndividual .
+
+method:TestForce a cd:TestForce,
+        owl:NamedIndividual .
+
+method:TestPiecePreparation a cd:TestPiecePreparation,
+        owl:NamedIndividual .
+
+method:TestPieceProcessing a cd:TestPieceProcessing,
+        owl:NamedIndividual .
+
+method:TestPieceProducer a cd:TestPieceProducer,
+        owl:NamedIndividual .
+
+method:TestPieceThickness a cd:TestPieceThickness,
+        owl:NamedIndividual .
+
+method:TestPointDistance a cd:TestPointDistance,
+        owl:NamedIndividual .
+
+method:TestPointEdgeDistance a cd:TestPointEdgeDistance,
+        owl:NamedIndividual .
+
+method:TestingMachineUncertainty a cd:TestingMachineUncertainty,
+        owl:NamedIndividual .
+
+method:TotalAverageDiameter a cd:TotalAverageDiameter,
+        owl:NamedIndividual .
+
+cd:AverageBrinellHardness a owl:Class ;
+    rdfs:label "Average Brinell Hardness" ;
+    rdfs:subClassOf cd:BrinellHardness .
+
+cd:BrinellHardnessUncertainty a owl:Class ;
+    rdfs:label "Brinell Hardness Uncertainty" ;
+    rdfs:subClassOf emmo:MeasuredUncertainty .
+
+cd:BrinellHardnessUnvertainty a owl:Class ;
+    rdfs:label "Brinell Hardness Unvertainty" ;
+    rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfbResult .
+
+cd:CRMAverageBrinellHardness a owl:Class ;
+    rdfs:label "C R M Average Brinell Hardness" ;
+    rdfs:subClassOf cd:BrinellHardness .
+
+cd:CRMCertifiedBrinellHardness a owl:Class ;
+    rdfs:label "C R M Certified Brinell Hardness" ;
+    rdfs:subClassOf cd:BrinellHardness .
+
+cd:CRMIndentationReputation a owl:Class ;
+    rdfs:label "C R M Indentation Reputation" ;
+    rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+cd:CRMStandardDeviationBrinellHardness a owl:Class ;
+    rdfs:label "C R M Standard Deviation Brinell Hardness" ;
+    rdfs:subClassOf emmo:MeasuredUncertainty .
+
+cd:CRMUncertainty a owl:Class ;
+    rdfs:label "C R M Uncertainty" ;
+    rdfs:subClassOf emmo:MeasuredUncertainty .
+
+cd:ConstantErel_Per a owl:Class ;
+    rdfs:label "Constant Erel_ Per" ;
+    rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+cd:ConstantLoadUnitConversion a owl:Class ;
+    rdfs:label "Constant Load Unit Conversion" ;
+    rdfs:subClassOf emmo:EMMO_ae15fb4f_8e4d_41de_a0f9_3997f89ba6a2 .
+
+cd:ConstantSigmaMS a owl:Class ;
+    rdfs:label "Constant Sigma M S" ;
+    rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+cd:ConstantT a owl:Class ;
+    rdfs:label "Constant T" ;
+    rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+cd:FileLocation a owl:Class ;
+    rdfs:label "File Location" ;
+    rdfs:subClassOf mt:Reference .
+
+cd:ForceDiameterIndex a owl:Class ;
+    rdfs:label "Force Diameter Index" ;
+    rdfs:subClassOf emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba .
+
+cd:HardnessTestExperiment a owl:Class ;
+    rdfs:label "Hardness Test Experiment" ;
+    rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb .
+
+cd:Indentation a owl:Class ;
+    rdfs:label "Indentation" ;
+    rdfs:subClassOf emmo:Subprocess .
+
+cd:IndentationAverageDiameter a owl:Class ;
+    rdfs:label "Indentation Average Diameter" ;
+    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac .
+
+cd:IndentationHorizontalDiameter a owl:Class ;
+    rdfs:label "Indentation Horizontal Diameter" ;
+    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac .
+
+cd:IndentationID a owl:Class ;
+    rdfs:label "Indentation I D" ;
+    rdfs:subClassOf mt:Identifier .
+
+cd:IndentationRepetation a owl:Class ;
+    rdfs:label "Indentation Repetation" ;
+    rdfs:subClassOf emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba .
+
+cd:IndentationRepetition a owl:Class ;
+    rdfs:label "Indentation Repetition" ;
+    rdfs:subClassOf mt:Identifier .
+
+cd:IndentationShape a owl:Class ;
+    rdfs:label "Indentation Shape" ;
+    rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd .
+
+cd:IndentationVerticalDiameter a owl:Class ;
+    rdfs:label "Indentation Vertical Diameter" ;
+    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac .
+
+cd:IndenterDiameter a owl:Class ;
+    rdfs:label "Indenter Diameter" ;
+    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac .
+
+cd:IndenterName a owl:Class ;
+    rdfs:label "Indenter Name" ;
+    rdfs:subClassOf mt:Identifier .
+
+cd:IndenterShape a owl:Class ;
+    rdfs:label "Indenter Shape" ;
+    rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd .
+
+cd:LoadingTime a owl:Class ;
+    rdfs:label "Loading Time" ;
+    rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 .
+
+cd:MeasurementResolutionUncertainty a owl:Class ;
+    rdfs:label "Measurement Resolution Uncertainty" ;
+    rdfs:subClassOf emmo:MeasuredUncertainty .
+
+cd:OpticalSystemName a owl:Class ;
+    rdfs:label "Optical System Name" ;
+    rdfs:subClassOf emmo:MeasuringInstrument,
+        mt:Identifier .
+
+cd:PermissibleError a owl:Class ;
+    rdfs:label "Permissible Error" ;
+    rdfs:subClassOf emmo:CategorizedPhysicalQuantity .
+
+cd:PermissibleUncertainty a owl:Class ;
+    rdfs:label "Permissible Uncertainty" ;
+    rdfs:subClassOf emmo:MeasuredUncertainty .
+
+cd:Pi a owl:Class ;
+    rdfs:label "Pi" ;
+    rdfs:subClassOf emmo:EMMO_ae15fb4f_8e4d_41de_a0f9_3997f89ba6a2 .
+
+cd:StandardDeviationBrinellHardness a owl:Class ;
+    rdfs:label "Standard Deviation Brinell Hardness" ;
+    rdfs:subClassOf emmo:MeasuredUncertainty .
+
+cd:TestForce a owl:Class ;
+    rdfs:label "Test Force" ;
+    rdfs:subClassOf emmo:EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef .
+
+cd:TestPiecePreparation a owl:Class ;
+    rdfs:label "Test Piece Preparation" ;
+    rdfs:subClassOf emmo:EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 .
+
+cd:TestPieceProcessing a owl:Class ;
+    rdfs:label "Test Piece Processing" ;
+    rdfs:subClassOf emmo:EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 .
+
+cd:TestPieceProducer a owl:Class ;
+    rdfs:label "Test Piece Producer" ;
+    rdfs:subClassOf emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba .
+
+cd:TestPieceThickness a owl:Class ;
+    rdfs:label "Test Piece Thickness" ;
+    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac .
+
+cd:TestPointDistance a owl:Class ;
+    rdfs:label "Test Point Distance" ;
+    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac .
+
+cd:TestPointEdgeDistance a owl:Class ;
+    rdfs:label "Test Point Edge Distance" ;
+    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac .
+
+cd:TestStandard a owl:Class ;
+    rdfs:label "Test Standard" ;
+    rdfs:subClassOf emmo:EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9 .
+
+cd:TestingMachineUncertainty a owl:Class ;
+    rdfs:label "Testing Machine Uncertainty" ;
+    rdfs:subClassOf emmo:MeasuredUncertainty .
+
+cd:TotalAverageDiameter a owl:Class ;
+    rdfs:label "Total Average Diameter" ;
+    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac .
+
+emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb a owl:Class ;
+    rdfs:label "E M M O_463bcfda_867b_41d9_a967_211d4d437cfb" .
+
+emmo:EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 a owl:Class ;
+    rdfs:label "E M M O_50ea1ec5_f157_41b0_b46b_a9032f17ca10" .
+
+emmo:EMMO_ae15fb4f_8e4d_41de_a0f9_3997f89ba6a2 a owl:Class ;
+    rdfs:label "E M M O_ae15fb4f_8e4d_41de_a0f9_3997f89ba6a2" .
+
+emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd a owl:Class ;
+    rdfs:label "E M M O_b5957cef_a287_442d_a3ce_fd39f20ba1cd" .
+
+mt:MaterialName a owl:Class ;
+    rdfs:label "Material Name" ;
+    rdfs:subClassOf emmo:Chemical .
+
+method:BrinellHardness a cd:BrinellHardness,
+        owl:NamedIndividual .
+
+method:OpticalSystemName a cd:EMMO_4207e895_8b83_4318_996a_72cfb32acd94,
+        cd:OpticalSystemName,
+        owl:NamedIndividual ;
+    emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 method:OpticalSystemName .
+
+method:PermissibleUncertainty a cd:PermissibleUncertainty,
+        owl:NamedIndividual .
+
+cd:HardnessTestMeasurement a owl:Class ;
+    rdfs:label "Hardness Test Measurement" ;
+    rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb .
+
+emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba a owl:Class ;
+    rdfs:label "E M M O_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba" .
+
+cd:BrinellHardness a owl:Class ;
+    rdfs:label "Brinell Hardness" ;
+    rdfs:subClassOf emmo:EMMO_c9c8f824_9127_4f93_bc21_69fe78a7f6f2 .
+
+emmo:CategorizedPhysicalQuantity a owl:Class ;
+    rdfs:label "Categorized Physical Quantity" .
+
+mt:Identifier a owl:Class ;
+    rdfs:label "Identifier" .
+
+cd:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 a owl:Class ;
+    rdfs:label "E M M O_4207e895_8b83_4318_996a_72cfb32acd94" .
+
+emmo:MeasuredUncertainty a owl:Class ;
+    rdfs:label "Measured Uncertainty" .
+
+emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac a owl:Class ;
+    rdfs:label "E M M O_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac" .
+
