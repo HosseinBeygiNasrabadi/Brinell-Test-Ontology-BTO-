@@ -1,15 +1,15 @@
-Werkstoff:;Kupfer
+Werkstoff:;Kupfer;
 Prüfkraft F:;612,915625;N
 Kugeldurchmesser:;2,5;mm
 Einwirkdauer der Prüfkraft:;14;s
-rrel;0,52;%;
-Härteprüfgerät der Bauart:;EMCOTEST M4C 025 G3
-Eindringkörper:;B3688
-BAM Inv-Nr.:;5025206
-Messmikroskop:;-
-letzte Kalibrierung am:;14.03.2022
-Unsicherheit 5,5;HBW 2,5/62,5
-Berlin, d.;21.04.2022
+rrel:;0,52;%
+Härteprüfgerät der Bauart:;EMCOTEST M4C 025 G3;
+Eindringkörper:;B3688;
+BAM Inv-Nr.:;5025206;
+Messmikroskop:;-;
+letzte Kalibrierung am:;14.03.2022;
+Unsicherheit;5,5;HBW 2,5/62,5
+Berlin, d.;21.04.2022;
 RT:;22,7;°C
 RH:;33,7;%
 Probennummer;d1;d2;d;HBW;Bemerkung
