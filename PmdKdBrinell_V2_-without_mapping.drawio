@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-26T07:46:34.615Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="BRdfE_jqthVrrCaC5IOu" version="20.5.1" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2022-10-26T09:47:18.414Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="MlFjcs9NucEvwJ77eH_A" version="20.5.1" type="gitlab">
   <diagram name="Brinell (CCO) 22.10.19 without mapping" id="3rhomC4VvfZKUB2qN9Vk">
-    <mxGraphModel dx="1005" dy="5205" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="294" dy="4824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-0" />
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-1" parent="fDeGnrVTXnE1T36zsoJ_-0" />
@@ -476,7 +476,7 @@
           </mxCell>
         </object>
         <object label="&lt;span&gt;kd:TestDateIdentifier&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-48">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;" parent="fDeGnrVTXnE1T36zsoJ_-41" vertex="1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;fillColor=#f8cecc;strokeColor=#b85450;" parent="fDeGnrVTXnE1T36zsoJ_-41" vertex="1">
             <mxGeometry x="726.5500000000002" y="187" width="280.12" height="30" as="geometry" />
           </mxCell>
         </object>
@@ -510,19 +510,6 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&quot;21.04.2022&quot;^^xsd:dateTime&lt;/font&gt;&lt;/span&gt;" Type="DataValue" id="fDeGnrVTXnE1T36zsoJ_-54">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-41" vertex="1">
-            <mxGeometry x="1581.46" y="182.8199999999997" width="170" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font&gt;cco:has_date_value&lt;/font&gt;&lt;/span&gt;" Type="DatatypeProperty" id="fDeGnrVTXnE1T36zsoJ_-55">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontFamily=Helvetica;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3;exitDx=0;exitDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-41" source="fDeGnrVTXnE1T36zsoJ_-66" target="fDeGnrVTXnE1T36zsoJ_-54" edge="1">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="1456.67" y="176" as="sourcePoint" />
-              <mxPoint x="1587.46" y="198" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot; ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font&gt;cco:Day&lt;/font&gt;&lt;/span&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-58">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-41" vertex="1">
             <mxGeometry x="296.6700000000001" y="159.82000000000016" width="223.5" height="30" as="geometry" />
@@ -551,26 +538,8 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="&lt;font&gt;cco:InformationBearingEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-65">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-41" vertex="1">
-            <mxGeometry x="1194.0599999999995" y="156.99999999999955" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;u&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1&quot;&gt;kd:&lt;/font&gt;&lt;/u&gt;TestDateIdentifier&lt;u&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1&quot;&gt;Data&lt;/font&gt;&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-66">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;" parent="fDeGnrVTXnE1T36zsoJ_-41" vertex="1">
-            <mxGeometry x="1194.0599999999995" y="186.99999999999955" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;bfo:generally_depend_on&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-67">
-          <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endSize=8;fontFamily=Helvetica;rounded=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-41" source="fDeGnrVTXnE1T36zsoJ_-48" target="fDeGnrVTXnE1T36zsoJ_-66" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="1007.3199999999997" y="201" as="sourcePoint" />
-              <mxPoint x="1096.0600000000013" y="241.49999999999955" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-76" value="Test Piece" style="swimlane;strokeWidth=3;fontSize=33;startSize=26;" parent="fDeGnrVTXnE1T36zsoJ_-1" vertex="1">
-          <mxGeometry x="2840" y="-2862.18" width="2700" height="761" as="geometry">
+          <mxGeometry x="2840" y="-2862.18" width="2700" height="582.18" as="geometry">
             <mxRectangle x="3430" y="-3920" width="100" height="23" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -595,7 +564,7 @@
           </mxCell>
         </object>
         <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;kd:&lt;/u&gt;&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;TestPieceIdentifier&lt;/u&gt;&lt;/font&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-81">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#b85450;fillColor=#f8cecc;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
             <mxGeometry x="1585" y="155.64000000000033" width="285" height="30" as="geometry" />
           </mxCell>
         </object>
@@ -609,9 +578,9 @@
             <mxGeometry x="675" y="251.8199999999997" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;font style=&quot;font-size: 12px ; background-color: rgb(255 , 255 , 255)&quot;&gt;cco:&lt;span style=&quot;text-align: left&quot;&gt;Thickness&lt;/span&gt;&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-84">
+        <object label="&lt;font style=&quot;font-size: 12px ; background-color: rgb(255 , 255 , 255)&quot;&gt;cco:&lt;span style=&quot;text-align: left&quot;&gt;ThreeDimensionalExtent&lt;/span&gt;&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-84">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1129" y="669.8199999999999" width="241" height="30" as="geometry" />
+            <mxGeometry x="1129" y="501.81999999999994" width="241" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font&gt;cco:hasFunction&lt;/font&gt;&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-89">
@@ -648,7 +617,7 @@
         </object>
         <object label="&lt;font&gt;cco:DescriptiveInformationContentEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-92">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="2051" y="401.5" width="199" height="30" as="geometry" />
+            <mxGeometry x="2051" y="314.5" width="199" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: helvetica; background-color: rgb(255, 255, 255);&quot;&gt;cco:NonNameIdentifier&lt;/span&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-93">
@@ -665,7 +634,7 @@
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;u&gt;kd:AlloyCompositionIdentifier&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-95">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#b85450;fillColor=#f8cecc;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
             <mxGeometry x="1590" y="252.82000000000016" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
@@ -674,14 +643,14 @@
             <mxGeometry x="247" y="71.63999999999987" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;kd:TestPieceThickness&lt;/u&gt;&lt;/font&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-97">
+        <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;kd:TestPieceDimension&lt;/u&gt;&lt;/font&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1129" y="699.8199999999999" width="241" height="30" as="geometry" />
+            <mxGeometry x="1129" y="531.8199999999999" width="241" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;u&gt;kd:ProducerName&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-98">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="2051" y="431.5" width="199" height="30" as="geometry" />
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#b85450;fillColor=#f8cecc;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
+            <mxGeometry x="2051" y="344.5" width="199" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font&gt;cco:has_process_part&lt;/font&gt;&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-103">
@@ -697,101 +666,62 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;“8”^^xsd:double&lt;/span&gt;" Type="DataValue" id="fDeGnrVTXnE1T36zsoJ_-111">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Helvetica;strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="2442.789999999999" y="665.8199999999999" width="170" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;cco:has_double_value&lt;/span&gt;" Type="DatatypeProperty" id="fDeGnrVTXnE1T36zsoJ_-112">
-          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontFamily=Helvetica;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3;exitDx=0;exitDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="fDeGnrVTXnE1T36zsoJ_-140" target="fDeGnrVTXnE1T36zsoJ_-111" edge="1">
-            <mxGeometry x="0.0826" y="15" relative="1" as="geometry">
-              <mxPoint x="2252.789999999999" y="710.0000000000005" as="sourcePoint" />
-              <mxPoint x="-1" as="offset" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object label="&lt;u&gt;&lt;font&gt;cco:MillimeterMeasurementUnit&lt;/font&gt;&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-113">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="2441.789999999999" y="698.8199999999999" width="172" height="30" as="geometry" />
-          </mxCell>
-        </object>
         <object label="&lt;font&gt;cco:MeasurementInformationContentEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-114">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1584.8799999999992" y="671.0000000000002" width="280.91" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;font&gt;cco:InformationBearingEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-115">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="2051.529999999999" y="671.0000000000002" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:uses_measurement_unit&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-116">
-          <mxCell style="endArrow=classic;html=1;endSize=8;fontFamily=Helvetica;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="fDeGnrVTXnE1T36zsoJ_-140" target="fDeGnrVTXnE1T36zsoJ_-113" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="2252.789999999999" y="710.0000000000005" as="sourcePoint" />
-              <mxPoint x="2440.789999999999" y="708.8199999999999" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;bfo:generally_depend_on&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-117">
-          <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endSize=8;fontFamily=Helvetica;rounded=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="fDeGnrVTXnE1T36zsoJ_-139" target="fDeGnrVTXnE1T36zsoJ_-140" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="1865.789999999999" y="716.0000000000005" as="sourcePoint" />
-              <mxPoint x="2051.529999999999" y="716.0000000000005" as="targetPoint" />
-            </mxGeometry>
+            <mxGeometry x="1584.8799999999992" y="503.0000000000002" width="280.91" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:is_measured_by&lt;/font&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-118">
           <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endSize=8;fontFamily=Helvetica;rounded=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="fDeGnrVTXnE1T36zsoJ_-97" target="fDeGnrVTXnE1T36zsoJ_-139" edge="1">
             <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="1234" y="705.8199999999995" as="sourcePoint" />
-              <mxPoint x="1585" y="716.1799999999998" as="targetPoint" />
+              <mxPoint x="1234" y="537.8199999999995" as="sourcePoint" />
+              <mxPoint x="1585" y="548.1799999999998" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </object>
         <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&quot;Smoothing, polishing, and cleaning, according to the sandard&quot;^^&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;xsd:&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;string&lt;/font&gt;&lt;/font&gt;" Type="DataValue" id="fDeGnrVTXnE1T36zsoJ_-121">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Helvetica;strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="2444.79" y="601.6399999999999" width="170" height="30" as="geometry" />
+            <mxGeometry x="2444.79" y="433.6399999999999" width="170" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:has_text_value&lt;/span&gt;" Type="DatatypeProperty" id="fDeGnrVTXnE1T36zsoJ_-122">
           <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontFamily=Helvetica;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="fDeGnrVTXnE1T36zsoJ_-143" target="fDeGnrVTXnE1T36zsoJ_-121" edge="1">
             <mxGeometry x="-0.0445" y="6" relative="1" as="geometry">
-              <mxPoint x="2253.789999999999" y="617.6399999999999" as="sourcePoint" />
+              <mxPoint x="2253.789999999999" y="449.6399999999999" as="sourcePoint" />
               <mxPoint as="offset" />
             </mxGeometry>
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:DescriptiveInformationContentEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-123">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1589" y="573.6400000000003" width="280" height="30" as="geometry" />
+            <mxGeometry x="1589" y="405.6400000000003" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:InformationBearingEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-124">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="2052.5299999999997" y="572.6399999999999" width="201.26" height="30" as="geometry" />
+            <mxGeometry x="2052.5299999999997" y="404.6399999999999" width="201.26" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;bfo:generally_depend_on&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-125">
           <mxCell style="endArrow=classic;html=1;endSize=8;fontFamily=Helvetica;rounded=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="fDeGnrVTXnE1T36zsoJ_-142" target="fDeGnrVTXnE1T36zsoJ_-143" edge="1">
             <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="1869" y="618.6399999999999" as="sourcePoint" />
-              <mxPoint x="2052.5299999999997" y="617.6399999999999" as="targetPoint" />
+              <mxPoint x="1869" y="450.6399999999999" as="sourcePoint" />
+              <mxPoint x="2052.5299999999997" y="449.6399999999999" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;&quot;&gt;cco:ActOfArtifactProcessing&lt;/span&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-126">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="665.5" y="573.6399999999999" width="190" height="30" as="geometry" />
+            <mxGeometry x="665.5" y="405.6399999999999" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font&gt;cco:has_output&lt;/font&gt;&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-127">
           <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;fontFamily=Helvetica;edgeStyle=elbowEdgeStyle;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="fDeGnrVTXnE1T36zsoJ_-144" target="fDeGnrVTXnE1T36zsoJ_-97" edge="1">
             <mxGeometry x="0.6211" width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="855.5" y="618.6399999999999" as="sourcePoint" />
-              <mxPoint x="633" y="344.6399999999999" as="targetPoint" />
+              <mxPoint x="855.5" y="450.6399999999999" as="sourcePoint" />
+              <mxPoint x="633" y="176.63999999999987" as="targetPoint" />
               <Array as="points">
-                <mxPoint x="889" y="675.8199999999999" />
+                <mxPoint x="889" y="507.81999999999994" />
               </Array>
               <mxPoint as="offset" />
             </mxGeometry>
@@ -799,7 +729,7 @@
         </object>
         <object label="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;cco:&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;ProcessHistory&lt;/span&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-128">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="667.5" y="404.8199999999997" width="190" height="30" as="geometry" />
+            <mxGeometry x="667.5" y="317.8199999999997" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
         <mxCell id="LJorLniBoPWnoPFTK9NH-3" value="cco:has_part" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="fDeGnrVTXnE1T36zsoJ_-129" target="LJorLniBoPWnoPFTK9NH-1" edge="1">
@@ -807,7 +737,7 @@
         </mxCell>
         <object label="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;u&gt;kd:TestPieceManufacturing&lt;/u&gt;&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-129">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;strokeColor=#6c8ebf;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="667.5" y="434.82000000000016" width="190" height="30" as="geometry" />
+            <mxGeometry x="667.5" y="347.82000000000016" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font&gt;cco:has_process_part&lt;/font&gt;&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-130">
@@ -825,58 +755,53 @@
         <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:designated_by&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-136">
           <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;fontFamily=Helvetica;rounded=1;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="fDeGnrVTXnE1T36zsoJ_-144" target="fDeGnrVTXnE1T36zsoJ_-142" edge="1">
             <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="855.5" y="618.6399999999999" as="sourcePoint" />
-              <mxPoint x="1589" y="618.6399999999999" as="targetPoint" />
+              <mxPoint x="855.5" y="450.6399999999999" as="sourcePoint" />
+              <mxPoint x="1589" y="450.6399999999999" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font&gt;cco:starts_at&lt;/font&gt;&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-137">
           <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="LJorLniBoPWnoPFTK9NH-1" target="LJorLniBoPWnoPFTK9NH-5" edge="1">
             <mxGeometry x="-0.021" y="4" width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="437" y="86.63999999999987" as="sourcePoint" />
-              <mxPoint x="1047" y="449.8199999999997" as="targetPoint" />
+              <mxPoint x="437" y="-0.36000000000012733" as="sourcePoint" />
+              <mxPoint x="1047" y="362.8199999999997" as="targetPoint" />
               <mxPoint as="offset" />
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;kd:&lt;/u&gt;&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;MeasurementOfTestPieceThickness&lt;/u&gt;&lt;/font&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-139">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1584.88" y="701" width="280" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;kd:&lt;/u&gt;&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;TestPieceThicknessData&lt;/u&gt;&lt;/font&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-140">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="2050" y="701" width="202.79" height="30" as="geometry" />
+        <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;kd:&lt;/u&gt;&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;MeasurementOfTestPieceDimension&lt;/u&gt;&lt;/font&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-139">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#f8cecc;strokeColor=#b85450;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
+            <mxGeometry x="1584.88" y="533" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;u&gt;kd:TestPiecePreparatiomMethod&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-142">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1589" y="603.6400000000004" width="280" height="30" as="geometry" />
+            <mxGeometry x="1589" y="435.64000000000044" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1&quot;&gt;&lt;u&gt;kd:&lt;/u&gt;&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1&quot;&gt;&lt;u&gt;TestPiecePreparation&lt;/u&gt;&lt;/font&gt;&lt;u&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; direction: ltr ; line-height: 19.2px ; opacity: 1&quot;&gt;Data&lt;/font&gt;&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-143">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="2052.5299999999997" y="603.6399999999998" width="201.26" height="30" as="geometry" />
+            <mxGeometry x="2052.5299999999997" y="435.63999999999976" width="201.26" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;u style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;kd:TestPiecePreparation&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-144">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;strokeColor=#6c8ebf;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="665.5" y="603.6400000000003" width="190" height="30" as="geometry" />
+            <mxGeometry x="665.5" y="435.6400000000003" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:ActOfLocationChange&lt;/font&gt;" Type="Class" id="LJorLniBoPWnoPFTK9NH-0">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1100" y="404.82000000000016" width="280" height="30" as="geometry" />
+            <mxGeometry x="1100" y="317.82000000000016" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;u&gt;kd:TransportFromProducer&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;" Type="Individual" id="LJorLniBoPWnoPFTK9NH-1">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1100" y="434.82000000000016" width="280" height="30" as="geometry" />
+            <mxGeometry x="1100" y="347.82000000000016" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:Organisation&lt;/font&gt;" Type="Class" id="LJorLniBoPWnoPFTK9NH-4">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1584.88" y="397.82000000000016" width="280" height="30" as="geometry" />
+            <mxGeometry x="1584.88" y="310.82000000000016" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
         <mxCell id="LJorLniBoPWnoPFTK9NH-6" value="cco:designated_by" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="LJorLniBoPWnoPFTK9NH-5" target="fDeGnrVTXnE1T36zsoJ_-98" edge="1">
@@ -884,9 +809,12 @@
         </mxCell>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;u&gt;kd:Producer&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;" Type="Individual" id="LJorLniBoPWnoPFTK9NH-5">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1584.88" y="427.82000000000016" width="280" height="30" as="geometry" />
+            <mxGeometry x="1584.88" y="340.82000000000016" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
+        <mxCell id="XKURwqoQqFjWcZPEIXqu-0" value="I want to map it.&lt;br&gt;Should not be an &quot;information bearing entity:?" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="fDeGnrVTXnE1T36zsoJ_-76">
+          <mxGeometry x="1850" y="112.18" width="380" height="80" as="geometry" />
+        </mxCell>
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-145" value="Equipment" style="swimlane;strokeWidth=3;fontSize=33;" parent="fDeGnrVTXnE1T36zsoJ_-1" vertex="1">
           <mxGeometry x="2830" y="-2066.18" width="2710" height="1550" as="geometry">
             <mxRectangle x="3430" y="-3920" width="100" height="23" as="alternateBounds" />
@@ -912,8 +840,8 @@
             <mxGeometry x="1583.0000000000005" y="194" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;kd:&lt;/u&gt;&lt;/font&gt;&lt;/font&gt;&lt;font face=&quot;helvetica&quot;&gt;&lt;u&gt;Emco_Test_M4C_025_G3&lt;/u&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-150">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
+        <object label="&lt;u style=&quot;font-family: helvetica;&quot;&gt;kd:BrinellTestingMachineIdentifier&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-150">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#f8cecc;strokeColor=#b85450;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
             <mxGeometry x="1583.0000000000005" y="224" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
@@ -1075,8 +1003,8 @@
             <mxGeometry x="1583.0000000000005" y="374.18000000000006" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;kd:&lt;/u&gt;&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;&lt;u&gt;Indenter_3688&lt;/u&gt;&lt;/font&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-175">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
+        <object label="&lt;u style=&quot;font-family: helvetica;&quot;&gt;kd:BrinellIndenterIdentifier&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-175">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#f8cecc;strokeColor=#b85450;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
             <mxGeometry x="1583.0000000000005" y="404.18000000000006" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
@@ -1124,8 +1052,8 @@
             <mxGeometry x="1583.0000000000005" y="318.18000000000006" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1&quot;&gt;&lt;u&gt;kd:&lt;/u&gt;&lt;/font&gt;&lt;font face=&quot;helvetica&quot;&gt;&lt;u&gt;Emco_Test_M4C_025_G3_Optical_System&lt;/u&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-181">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
+        <object label="&lt;u style=&quot;font-family: helvetica;&quot;&gt;kd:BrinellOpticalMeasuringSystemIdentifier&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-181">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#f8cecc;strokeColor=#b85450;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
             <mxGeometry x="1590.5000000000005" y="884.8199999999999" width="277.5" height="30" as="geometry" />
           </mxCell>
         </object>
@@ -1259,58 +1187,14 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;“2.5”^^xsd:double&lt;/span&gt;" Type="DataValue" id="fDeGnrVTXnE1T36zsoJ_-204">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Helvetica;strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
-            <mxGeometry x="2447.65" y="677.8199999999997" width="170" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:has_double_value&lt;/span&gt;" Type="DatatypeProperty" id="fDeGnrVTXnE1T36zsoJ_-205">
-          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontFamily=Helvetica;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3;exitDx=0;exitDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-145" source="fDeGnrVTXnE1T36zsoJ_-210" target="fDeGnrVTXnE1T36zsoJ_-204" edge="1">
-            <mxGeometry x="0.0826" y="15" relative="1" as="geometry">
-              <mxPoint x="2261.65" y="725.8199999999997" as="sourcePoint" />
-              <mxPoint x="-1" as="offset" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object label="&lt;u&gt;&lt;font&gt;cco:MillimeterMeasurementUnit&lt;/font&gt;&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-206">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
-            <mxGeometry x="2446.65" y="710.8199999999997" width="172" height="30" as="geometry" />
-          </mxCell>
-        </object>
         <object label="&lt;font&gt;cco:MeasurementInformationContentEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-207">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
             <mxGeometry x="1589.7400000000002" y="688" width="280.91" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;font face=&quot;helvetica&quot;&gt;kd:MeasurementOfIndenterDiameter&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-208">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;fillColor=#FFFFFF;strokeColor=#6c8ebf;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;fillColor=#f8cecc;strokeColor=#b85450;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
             <mxGeometry x="1589.7400000000002" y="718" width="280.91" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;font&gt;cco:InformationBearingEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-209">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
-            <mxGeometry x="2056.39" y="688" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;font face=&quot;helvetica&quot;&gt;kd:IndenterDiameterData&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-210">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;fillColor=#FFFFFF;strokeColor=#6c8ebf;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
-            <mxGeometry x="2056.39" y="718" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:uses_measurement_unit&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-211">
-          <mxCell style="endArrow=classic;html=1;endSize=8;fontFamily=Helvetica;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-145" source="fDeGnrVTXnE1T36zsoJ_-210" target="fDeGnrVTXnE1T36zsoJ_-206" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="2261.65" y="725.8199999999997" as="sourcePoint" />
-              <mxPoint x="2445.65" y="725.8199999999997" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;bfo:generally_depend_on&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-212">
-          <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endSize=8;fontFamily=Helvetica;rounded=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-145" source="fDeGnrVTXnE1T36zsoJ_-208" target="fDeGnrVTXnE1T36zsoJ_-210" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="1768.3900000000017" y="772.5000000000002" as="sourcePoint" />
-              <mxPoint x="1960.3900000000017" y="772.5" as="targetPoint" />
-            </mxGeometry>
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:is_measured_by&lt;/font&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-213">
@@ -1691,7 +1575,7 @@
             <mxGeometry x="2240" y="178.18" width="450" height="231.82" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;div&gt;&lt;b&gt;dc:creator:&lt;/b&gt;&amp;nbsp;Hossein Beygi Nasrabadi&lt;/div&gt;&lt;div&gt;&lt;b&gt;dc:creator:&lt;/b&gt;&amp;nbsp;Yue Chen&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;dc:creator:&lt;/b&gt;&amp;nbsp;Birgit Skrotzki&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;owl:versionInfo:&lt;/b&gt; 2.0.0&lt;/div&gt;&lt;div&gt;&lt;b&gt;dc:title:&lt;/b&gt;&amp;nbsp;Brinell Hardness Ontology&lt;/div&gt;" Type="Metadata" id="fDeGnrVTXnE1T36zsoJ_-268">
+        <object label="&lt;div&gt;&lt;b&gt;dc:creator:&lt;/b&gt;&amp;nbsp;Hossein Beygi Nasrabadi&lt;/div&gt;&lt;div&gt;&lt;b&gt;dc:creator:&lt;/b&gt;&amp;nbsp;Yue Chen&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;dc:creator:&lt;/b&gt;&amp;nbsp;Birgit Skrotzki&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;owl:versionInfo:&lt;/b&gt; 2.1.0&lt;/div&gt;&lt;div&gt;&lt;b&gt;dc:title:&lt;/b&gt;&amp;nbsp;Brinell Hardness Ontology&lt;/div&gt;" Type="Metadata" id="fDeGnrVTXnE1T36zsoJ_-268">
           <mxCell style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fontSize=12;size=0.23333333333333334;align=left;" parent="fDeGnrVTXnE1T36zsoJ_-145" vertex="1">
             <mxGeometry x="2314" y="49.999999999999545" width="210" height="110" as="geometry" />
           </mxCell>
@@ -1726,11 +1610,6 @@
             <mxGeometry x="1158" y="217.82" width="220" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;“612.9”^^xsd:double&lt;/font&gt;&lt;/span&gt;" Type="DataValue" id="fDeGnrVTXnE1T36zsoJ_-275">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2452.6499999999996" y="215.81999999999994" width="170" height="30" as="geometry" />
-          </mxCell>
-        </object>
         <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 17.28px ; opacity: 1 ; font-size: 12px&quot;&gt;&quot;In the standard range&quot;^^xsd:&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 17.28px ; opacity: 1 ; font-size: 12px&quot;&gt;string&lt;/font&gt;&lt;/font&gt;" Type="DataValue" id="fDeGnrVTXnE1T36zsoJ_-276">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
             <mxGeometry x="2451.6499999999996" y="327.81999999999994" width="170" height="30" as="geometry" />
@@ -1751,11 +1630,6 @@
             <mxGeometry x="2455.6499999999996" y="430.81999999999994" width="170" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 17.28px ; opacity: 1&quot;&gt;&quot;In the standard range (7 s from initial to full test force, and 14 s maintain the test force.)&quot;^^xsd:&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 17.28px ; opacity: 1&quot;&gt;string&lt;/font&gt;" Type="DataValue" id="fDeGnrVTXnE1T36zsoJ_-280">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2454.6499999999996" y="527.8199999999999" width="170" height="30" as="geometry" />
-          </mxCell>
-        </object>
         <object label="&lt;span style=&quot;&quot;&gt;cco:ActOfMeasuring&lt;/span&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-281">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
             <mxGeometry x="684" y="530.8199999999999" width="190" height="30" as="geometry" />
@@ -1764,15 +1638,6 @@
         <object label="&lt;font&gt;mseo:MeasurementRegion&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-282">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
             <mxGeometry x="764" y="631.8199999999999" width="150" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:has_double_value&lt;/span&gt;" Type="DatatypeProperty" id="fDeGnrVTXnE1T36zsoJ_-283">
-          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontFamily=Helvetica;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3;exitDx=0;exitDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-269" source="fDeGnrVTXnE1T36zsoJ_-401" target="fDeGnrVTXnE1T36zsoJ_-275" edge="1">
-            <mxGeometry x="-0.0791" y="15" relative="1" as="geometry">
-              <mxPoint x="2265.6500000000005" y="257.82000000000016" as="sourcePoint" />
-              <mxPoint as="offset" />
-              <mxPoint x="2463.6499999999996" y="-15.180000000000064" as="targetPoint" />
-            </mxGeometry>
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:has_text_value&lt;/span&gt;" Type="DatatypeProperty" id="fDeGnrVTXnE1T36zsoJ_-284">
@@ -1788,15 +1653,6 @@
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="2268.6499999999996" y="473.90999999999985" as="sourcePoint" />
               <mxPoint x="2461.6499999999996" y="352.81999999999994" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:has_text_value&lt;/span&gt;" Type="DatatypeProperty" id="fDeGnrVTXnE1T36zsoJ_-286">
-          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontFamily=Helvetica;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-269" source="fDeGnrVTXnE1T36zsoJ_-421" target="fDeGnrVTXnE1T36zsoJ_-280" edge="1">
-            <mxGeometry x="-0.0123" y="5" relative="1" as="geometry">
-              <mxPoint x="2268.6499999999996" y="574.73" as="sourcePoint" />
-              <mxPoint x="2471.6499999999996" y="362.81999999999994" as="targetPoint" />
-              <mxPoint as="offset" />
             </mxGeometry>
           </mxCell>
         </object>
@@ -2205,16 +2061,6 @@
             <mxGeometry x="2454.6499999999996" y="463.81999999999994" width="172" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;u&gt;&lt;font&gt;cco:NewtonMeasurementUnit&lt;/font&gt;&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-357">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2451.6499999999996" y="247.81999999999988" width="172" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;u&gt;&lt;font&gt;cco:SecondMeasurementUnit&lt;/font&gt;&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-358">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2452.6499999999996" y="560.8199999999999" width="172" height="30" as="geometry" />
-          </mxCell>
-        </object>
         <object label="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;u&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;kd:IndentationDiameter&lt;/font&gt;&lt;font style=&quot;letter-spacing: 0px ; font-family: &amp;quot;helvetica&amp;quot; ; direction: ltr ; line-height: 19.2px ; opacity: 1 ; font-size: 12px&quot;&gt;Vertical&lt;/font&gt;&lt;/u&gt;&lt;/font&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-362">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
             <mxGeometry x="1161" y="858.8199999999999" width="217" height="30" as="geometry" />
@@ -2416,57 +2262,14 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;“22.7”^^xsd:double&lt;/span&gt;" Type="DataValue" id="fDeGnrVTXnE1T36zsoJ_-388">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2458.6499999999996" y="83.68999999999994" width="172" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;cco:has_double_value&lt;/span&gt;" Type="DatatypeProperty" id="fDeGnrVTXnE1T36zsoJ_-389">
-          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontFamily=Helvetica;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-269" source="fDeGnrVTXnE1T36zsoJ_-394" target="fDeGnrVTXnE1T36zsoJ_-388" edge="1">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="2190.649999999998" y="146.86999999999983" as="sourcePoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object label="&lt;u&gt;&lt;font&gt;cco:DegreeCelsiusMeasurementUnit&lt;/font&gt;&lt;/u&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-390">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2459.6499999999996" y="116.86999999999989" width="172" height="30" as="geometry" />
-          </mxCell>
-        </object>
         <object label="&lt;font&gt;cco:MeasurementInformationContentEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-391">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
             <mxGeometry x="1609.7399999999998" y="86.87" width="280.91" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span&gt;kd:MeasurementOfTestTemperature&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-392">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;fillColor=#f8cecc;strokeColor=#b85450;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
             <mxGeometry x="1609.7399999999998" y="116.87" width="280.91" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;font&gt;cco:InformationBearingEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-393">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2064.3899999999994" y="86.87" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span&gt;kd:TestTemperatureData&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-394">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2064.3899999999994" y="116.87" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:uses_measurement_unit&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-395">
-          <mxCell style="endArrow=classic;html=1;endSize=8;fontFamily=Helvetica;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-269" source="fDeGnrVTXnE1T36zsoJ_-394" target="fDeGnrVTXnE1T36zsoJ_-390" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="2220.6499999999996" y="149.87" as="sourcePoint" />
-              <mxPoint x="2384.6499999999996" y="149.86999999999972" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;bfo:generally_depend_on&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-396">
-          <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endSize=8;fontFamily=Helvetica;rounded=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-269" source="fDeGnrVTXnE1T36zsoJ_-392" target="fDeGnrVTXnE1T36zsoJ_-394" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="1817.3900000000012" y="171.3700000000003" as="sourcePoint" />
-              <mxPoint x="2009.3900000000012" y="171.37000000000006" as="targetPoint" />
-            </mxGeometry>
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:is_measured_by&lt;/font&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-397">
@@ -2483,34 +2286,8 @@
           </mxCell>
         </object>
         <object label="&lt;span&gt;kd:AppliedTestForce&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-399">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;fillColor=#f8cecc;strokeColor=#b85450;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
             <mxGeometry x="1609.7399999999998" y="247.82" width="280.91" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;font&gt;cco:InformationBearingEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-400">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2064.3899999999994" y="217.82" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span&gt;kd:TestForceData&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-401">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2064.3899999999994" y="247.82" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:uses_measurement_unit&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-402">
-          <mxCell style="endArrow=classic;html=1;endSize=8;fontFamily=Helvetica;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-269" source="fDeGnrVTXnE1T36zsoJ_-401" target="fDeGnrVTXnE1T36zsoJ_-357" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="2265.6500000000005" y="257.82000000000016" as="sourcePoint" />
-              <mxPoint x="2450.6499999999996" y="257.8199999999997" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;bfo:generally_depend_on&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-403">
-          <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endSize=8;fontFamily=Helvetica;rounded=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-269" source="fDeGnrVTXnE1T36zsoJ_-399" target="fDeGnrVTXnE1T36zsoJ_-401" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="1817.3900000000012" y="302.3200000000003" as="sourcePoint" />
-              <mxPoint x="2009.3900000000012" y="302.32000000000005" as="targetPoint" />
-            </mxGeometry>
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:is_measured_by&lt;/font&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-404">
@@ -2607,26 +2384,8 @@
           </mxCell>
         </object>
         <object label="&lt;span&gt;kd:AppliedLoadingTime&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-419">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;fillColor=#f8cecc;strokeColor=#b85450;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
             <mxGeometry x="1609.7399999999998" y="560.8199999999999" width="280.91" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;font&gt;cco:InformationBearingEntity&lt;/font&gt;" Type="Class" id="fDeGnrVTXnE1T36zsoJ_-420">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2064.3899999999994" y="530.8199999999999" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span&gt;kd:LoadingTimeData&lt;/span&gt;" Type="Individual" id="fDeGnrVTXnE1T36zsoJ_-421">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Helvetica;fontStyle=4;" parent="fDeGnrVTXnE1T36zsoJ_-269" vertex="1">
-            <mxGeometry x="2064.3899999999994" y="560.8199999999999" width="201.26" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;bfo:generally_depend_on&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-422">
-          <mxCell style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endSize=8;fontFamily=Helvetica;rounded=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-269" source="fDeGnrVTXnE1T36zsoJ_-419" target="fDeGnrVTXnE1T36zsoJ_-421" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="1817.3900000000012" y="615.3200000000003" as="sourcePoint" />
-              <mxPoint x="2009.3900000000012" y="615.32" as="targetPoint" />
-            </mxGeometry>
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:is_measured_by&lt;/font&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-423">
@@ -2735,14 +2494,6 @@
             <mxGeometry width="50" height="50" relative="1" as="geometry">
               <mxPoint x="1291" y="1091.1799999999998" as="sourcePoint" />
               <mxPoint x="1434.6499999999996" y="1101.18" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object label="&lt;span style=&quot;font-family: helvetica;&quot;&gt;cco:uses_measurement_unit&lt;/span&gt;" Type="ObjectProperty" id="fDeGnrVTXnE1T36zsoJ_-456">
-          <mxCell style="endArrow=classic;html=1;endSize=8;fontFamily=Helvetica;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-269" source="fDeGnrVTXnE1T36zsoJ_-421" target="fDeGnrVTXnE1T36zsoJ_-358" edge="1">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-              <mxPoint x="2268.6499999999996" y="574.73" as="sourcePoint" />
-              <mxPoint x="2452.6499999999996" y="575.8199999999993" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </object>
