@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-26T09:47:18.414Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="MlFjcs9NucEvwJ77eH_A" version="20.5.1" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2022-11-02T11:53:03.064Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="vQVmdR7zeQWp22SyYbHa" version="20.5.1" type="gitlab">
   <diagram name="Brinell (CCO) 22.10.19 without mapping" id="3rhomC4VvfZKUB2qN9Vk">
-    <mxGraphModel dx="294" dy="4824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="578" dy="5044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-0" />
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-1" parent="fDeGnrVTXnE1T36zsoJ_-0" />
@@ -812,7 +812,7 @@
             <mxGeometry x="1584.88" y="340.82000000000016" width="280" height="30" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="XKURwqoQqFjWcZPEIXqu-0" value="I want to map it.&lt;br&gt;Should not be an &quot;information bearing entity:?" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="fDeGnrVTXnE1T36zsoJ_-76">
+        <mxCell id="XKURwqoQqFjWcZPEIXqu-0" value="I want to map it.&lt;br&gt;Should not be an &quot;information bearing entity:?" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
           <mxGeometry x="1850" y="112.18" width="380" height="80" as="geometry" />
         </mxCell>
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-145" value="Equipment" style="swimlane;strokeWidth=3;fontSize=33;" parent="fDeGnrVTXnE1T36zsoJ_-1" vertex="1">
