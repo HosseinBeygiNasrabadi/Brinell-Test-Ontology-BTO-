@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-08T10:59:49.578Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="6JewZcOZRNUrQZjgtkjQ" version="20.5.3" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2022-11-08T11:00:43.825Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="E0pD9bHFc2IvH73xtW2u" version="20.5.3" type="gitlab">
   <diagram name="Brinell (CCO) 22.10.19 without mapping" id="3rhomC4VvfZKUB2qN9Vk">
-    <mxGraphModel dx="2190" dy="5650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1513" dy="5314" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-0" />
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-1" parent="fDeGnrVTXnE1T36zsoJ_-0" />
@@ -757,17 +757,17 @@
         </object>
         <object label="&lt;font&gt;cco:ActOfLocationChange&lt;/font&gt;" Type="Class" id="LJorLniBoPWnoPFTK9NH-0">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1037" y="317.82" width="150" height="30" as="geometry" />
+            <mxGeometry x="964" y="317.82" width="150" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;u&gt;kd:TransportFromProducer&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;" Type="Individual" id="LJorLniBoPWnoPFTK9NH-1">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1037" y="347.82" width="150" height="30" as="geometry" />
+            <mxGeometry x="964" y="347.82" width="150" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;font&gt;cco:Organisation&lt;/font&gt;" Type="Class" id="LJorLniBoPWnoPFTK9NH-4">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1328.88" y="310.82" width="95.12" height="30" as="geometry" />
+            <mxGeometry x="1220" y="310.82" width="147" height="30" as="geometry" />
           </mxCell>
         </object>
         <mxCell id="LJorLniBoPWnoPFTK9NH-6" value="cco:designated_by" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" parent="fDeGnrVTXnE1T36zsoJ_-76" source="LJorLniBoPWnoPFTK9NH-5" target="fDeGnrVTXnE1T36zsoJ_-98" edge="1">
@@ -775,7 +775,7 @@
         </mxCell>
         <object label="&lt;span style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;u&gt;kd:Producer&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;" Type="Individual" id="LJorLniBoPWnoPFTK9NH-5">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];strokeWidth=1;strokeColor=#000000;" parent="fDeGnrVTXnE1T36zsoJ_-76" vertex="1">
-            <mxGeometry x="1328.88" y="340.82" width="95.12" height="30" as="geometry" />
+            <mxGeometry x="1220" y="340.82" width="147" height="30" as="geometry" />
           </mxCell>
         </object>
         <mxCell id="fDeGnrVTXnE1T36zsoJ_-145" value="Equipment" style="swimlane;strokeWidth=3;fontSize=33;" parent="fDeGnrVTXnE1T36zsoJ_-1" vertex="1">
