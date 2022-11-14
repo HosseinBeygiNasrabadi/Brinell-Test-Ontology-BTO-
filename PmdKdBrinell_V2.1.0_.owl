@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bfo="http://purl.obolibrary.org/obo/"
+   xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:mseo="https://purl.matolab.org/mseo/mid/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical3">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfIndentationResulution">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardnessUncertainity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUncertainityOfIndentationResolution"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfMaximumPermissibleError">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CertifiedReferenceMaterialCRM"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfMaximumPermissibleError"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfCRMHardness"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfMaximumOermissibleErrorFunction"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BribellHardnessMeasurement">
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ControlTemperature"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ChooseTestForce"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ApplyTestForce"/>
+    <bfo:has_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestPiece"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessTestEquipmentID"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BribellHardnessMeasurementAnalysis"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#OpticalMeasurementTheIndentationDiameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PositioningTestPiece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness1"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageBrinellHardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateStandardDeviationBrinellHardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUncertainityOfIndentationResolution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessStandardDeviation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardnessStandardDeviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#OpticalMeasurementTheIndentationDiameter">
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal4"/>
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellOpticalMeasuringSystem"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical4"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical2"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical5"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal1"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical1"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical3"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal2"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageBrinellHardness"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness2"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateStandardDeviationBrinellHardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateFinalBrinellHardnessAndUncertainity">
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#SummationFunctionHardness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#FinalBrinellHardnessAndUncertainity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellIndenter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndenterShape"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellIndenterIdentifier"/>
+    <cco:hasFunction rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellIndenterArtifactFunction"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Indenter"/>
+    <cco:is_made_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TungstenCarbideCompositeOrSteel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfMaximumOermissibleErrorFunction">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Specimen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDateFileLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessUncertainityFunction">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionTotalDiameter"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion1">
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal3"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal4"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical4"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical5"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical2"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal5"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID1"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical1"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical3"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal2"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/MeasurementRegion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMMeasuredBrinellHardnessStandardDeviation">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfTestingMachine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfCRMBrinellHardnessStandardDeviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMConstant-Erel">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMConstant-Erel"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/Quality"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfMaximumPermissibleError"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal2">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal2"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMCertifiedBrinellHardnessUncertainity">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ReliabilityMeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMBrinellHardnessUncertainity"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfCRMHardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TransportFromProducer">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfLocationChange"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:starts_at rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Producer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceManufacturing">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProcessHistory"/>
+    <cco:has_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TransportFromProducer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CopperAlloy">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCompositionIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestTemperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestTemperature"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageBrinellHardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateStandardDeviationBrinellHardness"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal3"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfTestingMachine">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfTestingMachineFunction"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfTestingMachine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CertifiedReferenceMaterialCRM"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfIndentationResolution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical5">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#LoadingTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MultiSecondTemporalInterval"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AppliedLoadingTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean3">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessTest_">
+    <cco:process_started_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BribellHardnessMeasurement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_input rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestPiece"/>
+    <mseo:in_accordance_with rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDataFile"/>
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessTestEquipmentID"/>
+    <cco:occurs_on rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDate"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessTest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical4">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageBrinellHardness">
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionHardness"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateStandardDeviationBrinellHardness"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessAverage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionTotalDiameter"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean3"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionDiameter"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean2"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean1"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean5"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionTotalDiameter"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionTotalDiameter">
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TotalIndentationDiameterMean"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionTotalDiameter"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfIndentationResolution">
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfindentationResolutionFunction"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfIndentationResulution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardnessUncertainity"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Indenter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CertifiedReferenceMaterialCRM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:hasFunction rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CertifiedReferenceMaterialArtifactFunction"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMCertifiedBrinellHardnessUncertainity"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMIdentifier"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMConstant-Erel"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMConstant-SigmaMS"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMConstant-t"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMMeasuredBrinellHardnessAverage"/>
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMCertifiedBrinellHardness"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CallibrationAccessory"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMMeasuredBrinellHardnessStandardDeviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndenterShape">
+    <bfo:has_quality rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndenterDiameter"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Spherical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMCertifiedBrinellHardness">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/MeasurementRegion"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionDiameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness3">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal4">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestPiece">
+    <cco:hasFunction rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellSpecimenFunction"/>
+    <cco:is_made_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CopperAlloy"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPiecePreparation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceManufacturing"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceIdentifier"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Specimen"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionHardness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PositioningTestPiece">
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationEdgeDistanceID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ApplyTestForce"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfPositionChange"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationsDistanceID"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfMaximumPermissibleError">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardnessUncertainity"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUncertainityOfMaximumPermissibleError"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMMeasuredBrinellHardnessAverage">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfCRMBrinellHardnessAverage"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfTestingMachine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AppliedLoadingTime">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean5">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionTotalDiameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BribellHardnessMeasurementAnalysis">
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageBrinellHardness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfMaximumPermissibleError"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardnessUncertainity"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfCRMHardness"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfTestingMachine"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionTotalDiameter"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfIndentationResolution"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateFinalBrinellHardnessAndUncertainity"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAnalysing"/>
+    <cco:has_process_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateStandardDeviationBrinellHardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal2">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessTestEquipmentID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessTestEquipment"/>
+    <bfo:has_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellIndenter"/>
+    <bfo:contains rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CertifiedReferenceMaterialCRM"/>
+    <bfo:has_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellOpticalMeasuringSystem"/>
+    <bfo:has_part rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestingMachine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessAverage">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateFinalBrinellHardnessAndUncertainity"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardnessAverage"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfIndentationResolution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTotalIndentationDiameterMean">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/derives_into">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AppliedTestForce">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndenterDiameter">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfIndentationResolution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndenterDiameter"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfCRMHardness">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardnessUncertainity"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUncertainityOfCRMHardness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestingMachineIdentifier">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#HardnessTestMachine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationsDistanceID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DistanceBetweenIndentations"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationsDistanceData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ApplyTestForce">
+    <cco:occures_on rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#LoadingTime"/>
+    <cco:is_cause_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion3"/>
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellOpticalMeasuringSystem"/>
+    <cco:is_cause_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion2"/>
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellIndenter"/>
+    <cco:is_cause_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion5"/>
+    <cco:is_cause_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion4"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <cco:is_cause_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#OpticalMeasurementTheIndentationDiameter"/>
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestingMachine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUncertainityOfTestingMachine">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical2">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUncertainityOfCRMHardness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#FinalBrinellHardnessAndUncertainity">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+    <cco:uses_measurement_unit rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessUnit"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfFinalBrinellHardnessAndUncertainty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean2"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionTotalDiameter"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfindentationResolutionFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ControlTemperature">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ChooseTestForce"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestTemperature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal5">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TungstenCarbideCompositeOrSteel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndenterMaterialCompositionIdentifier"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID5">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical5">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#OpticalMeasuringSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness5">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMCertifiedBrinellHardness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMCertifiedBrinellHardness"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfMaximumPermissibleError"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterMean1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean1"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AverageFunctionTotalDiameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfCRMHardnessFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CRMConstant-t">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/Quality"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfTestingMachine"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMConstant-t"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CertifiedReferenceMaterialArtifactFunction">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessFunction"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness4"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness5"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness1"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageBrinellHardness"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness2"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StandardDeviationFunctionHardness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#">
+    <dc:creator>Thomas Hanke</dc:creator>
+    <owl:versionInfo>2.1.0</owl:versionInfo>
+    <dc:creator>Birgit Skrotzki</dc:creator>
+    <dc:creator>Hossein Beygi Nasrabadi</dc:creator>
+    <dc:title>Brinell Hardness Ontology</dc:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:creator>Yue Chen</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellIndenterArtifactFunction">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardnessUncertainity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessUncertainity"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateFinalBrinellHardnessAndUncertainity"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessUncertainityFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessTestEquipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://purl.matolab.org/mseo/mid/Equipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDataFile">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDateFileLocation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/File"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfTestingMachineFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDateIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CalendarDateIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_output">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellOpticalMeasuringSystemIdentifier">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAnalysing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness_">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessTest_"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ChooseTestForce">
+    <cco:has_accessory rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestingMachine"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestForce"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#PositioningTestPiece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMConstant-SigmaMS">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMConstant-SigmaMS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfIndentationResolution"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/Quality"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellOpticalMeasuringSystemArtifactFunction">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterHorizontal1">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean5">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://qudt.org/2.1/schema/qudt/DerivedUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness3">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness3"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageBrinellHardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateStandardDeviationBrinellHardness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CallibrationAccessory">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestPieceDimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationDiameterVertical1">
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical1"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageDiameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfCRMHardness">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/ActOfAnalysing"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CertifiedReferenceMaterialCRM"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfCRMHardnessFunction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfCRMHardness"/>
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfTestingMachine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestingMachineArtifactFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical2">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDate">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Day"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestDateIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateStandardDeviationBrinellHardness">
+    <cco:process_precedes rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfMaximumPermissibleError"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:uses rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#StandardDeviationFunctionHardness"/>
+    <bfo:derives_into rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessStandardDeviation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ProducerName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfCRMBrinellHardnessAverage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfCRMBrinellHardnessStandardDeviation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/starts_at">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/MeasurementRegion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness4">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfFinalBrinellHardnessAndUncertainty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/uses">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUncertainityOfMaximumPermissibleError">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_process_part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestingMachine">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestingMachineIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:hasFunction rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellTestingMachineArtifactFunction"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#HardnessTestMachine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TotalIndentationDiameterMean">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateUncertainityOfIndentationResolution"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTotalIndentationDiameterMean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness4"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateAverageBrinellHardness"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateStandardDeviationBrinellHardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_cause_of">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Expriment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMBrinellHardnessUncertainity">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#SummationFunctionHardness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/File">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceDimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ThreeDimensionalExtent"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestPieceDimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ProcessHistory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandardIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID4">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ReliabilityMeasurementInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndenterDiameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#UncertainityOfTestingMachine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfUncertainityOfTestingMachine"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardnessUncertainity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestForce">
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateBrinellHardness"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Force"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#AppliedTestForce"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_made_of">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ReferenceCRMConstant-t">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardness1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellIndenterIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NonNameIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardnessStandardDeviation">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion4">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID4"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/MeasurementRegion"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical3">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfPositionChange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_input">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/has_quality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterVertical4">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID3"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/MeasurementRegion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfLocationChange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationEdgeDistanceID">
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DistanceBetweenIndentationAndEdge"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationEdgeDistanceData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessUncertainity">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity"/>
+    <cco:is_input_of rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#CalculateFinalBrinellHardnessAndUncertainity"/>
+    <cco:is_measured_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardnessUncertainty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/hasFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessTest">
+    <rdfs:subClassOf rdf:resource="https://purl.matolab.org/mseo/mid/Expriment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardnessFunction">
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellSpecimenFunction">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_accessory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DistanceBetweenIndentationAndEdge">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Diameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationRegion2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationID2"/>
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/MeasurementRegion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfTestTemperature">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndenterMaterialCompositionIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Organisation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardnessAverage">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPiecePreparation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPiecePreparatiomMethod"/>
+    <cco:has_output rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceDimension"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationsDistanceData">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/occures_on">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/has_part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterHorizontal3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPiecePreparatiomMethod">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfBrinellHardnessUncertainty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Spherical">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandard">
+    <rdf:type rdf:resource="https://purl.matolab.org/mseo/mid/Regulation"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestStandardIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/occurs_on">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#MeasurementOfIndentationDiameterMean2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Force">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ThreeDimensionalExtent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellHardness">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Hardness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellOpticalMeasuringSystem">
+    <cco:hasFunction rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellOpticalMeasuringSystemArtifactFunction"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#BrinellOpticalMeasuringSystemIdentifier"/>
+    <rdf:type rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#OpticalMeasuringSystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/Quality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#TestPieceCompositionIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/contains">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#Producer">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Organisation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cco:designated_by rdf:resource="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#ProducerName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Regulation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Day">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/Equipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://qudt.org/2.1/schema/qudt/DerivedUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#IndentationEdgeDistanceData">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/in_accordance_with">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/ActOfAnalysing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#DistanceBetweenIndentations">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DistanceMeasurementInformationContentEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CalendarDateIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MultiSecondTemporalInterval">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
