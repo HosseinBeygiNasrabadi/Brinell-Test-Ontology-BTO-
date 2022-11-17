@@ -1,0 +1,347 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "oa": "http://www.w3.org/ns/oa#",
+            "label": "http://www.w3.org/2000/01/rdf-schema#label",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "qudt": "http://qudt.org/schema/qudt/"
+        }
+    ],
+    "@id": "",
+    "url": "BAM_BrinellHardness_FakePrimary.csv",
+    "notes": [
+        {
+            "@id": "Werkstoff0",
+            "label": "Werkstoff:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 0,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "TextualBody",
+                    "@purpose": "tagging",
+                    "@value": "Kupfer"
+                },
+                {}
+            ]
+        },
+        {
+            "@id": "PruefkraftF1",
+            "label": "Pr\u00fcfkraft F:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 1,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "612,915625",
+                        "@type": "xsd:decimal"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/N",
+                        "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "Kugeldurchmesser2",
+            "label": "Kugeldurchmesser:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 2,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "2,5",
+                        "@type": "xsd:decimal"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/MilliM",
+                        "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "EinwirkdauerDerPruefkraft3",
+            "label": "Einwirkdauer der Pr\u00fcfkraft:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 3,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "14",
+                        "@type": "xsd:integer"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/SEC",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "Rrel4",
+            "label": "rrel:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 4,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "0,52",
+                        "@type": "xsd:decimal"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/PERCENT",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "HaertepruefgeraetDerBauart5",
+            "label": "H\u00e4rtepr\u00fcfger\u00e4t der Bauart:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 5,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "TextualBody",
+                    "@purpose": "tagging",
+                    "@value": "EMCOTEST M4C 025 G3"
+                },
+                {}
+            ]
+        },
+        {
+            "@id": "Eindringkoerper6",
+            "label": "Eindringk\u00f6rper:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 6,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "TextualBody",
+                    "@purpose": "tagging",
+                    "@value": "B3688"
+                },
+                {}
+            ]
+        },
+        {
+            "@id": "BamInvNr7",
+            "label": "BAM Inv-Nr.:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 7,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "5025206",
+                        "@type": "xsd:integer"
+                    }
+                },
+                {}
+            ]
+        },
+        {
+            "@id": "Messmikroskop8",
+            "label": "Messmikroskop:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 8,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "TextualBody",
+                    "@purpose": "tagging",
+                    "@value": "-"
+                },
+                {}
+            ]
+        },
+        {
+            "@id": "LetzteKalibrierungAm9",
+            "label": "letzte Kalibrierung am:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 9,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "2022-03-14 00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {}
+            ]
+        },
+        {
+            "@id": "Unsicherheit10",
+            "label": "Unsicherheit",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 10,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "5,5",
+                        "@type": "xsd:decimal"
+                    }
+                },
+                {
+                    "@type": "TextualBody",
+                    "@purpose": "tagging",
+                    "@value": "HBW 2,5/62,5"
+                }
+            ]
+        },
+        {
+            "@id": "BerlinD11",
+            "label": "Berlin, d.",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 11,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "2022-04-21 00:00:00",
+                        "@type": "xsd:dateTime"
+                    }
+                },
+                {}
+            ]
+        },
+        {
+            "@id": "Rt12",
+            "label": "RT:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 12,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "22,7",
+                        "@type": "xsd:decimal"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/DEG_C",
+                        "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "Rh13",
+            "label": "RH:",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 13,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:Quantity",
+                    "qudt:value": {
+                        "@value": "33,7",
+                        "@type": "xsd:decimal"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/PERCENT",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        }
+    ],
+    "dialect": {
+        "delimiter": ";",
+        "skipRows": 14,
+        "headerRowCount": 2,
+        "encoding": "utf-8"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "titles": "Probennummer",
+                "@id": "Probennummer",
+                "@type": "Column"
+            },
+            {
+                "titles": "d1",
+                "@id": "D1",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM",
+                    "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                }
+            },
+            {
+                "titles": "d2",
+                "@id": "D2",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM",
+                    "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                }
+            },
+            {
+                "titles": "d",
+                "@id": "D",
+                "@type": "Column",
+                "qudt:unit": {
+                    "@id": "http://qudt.org/vocab/unit/MilliM",
+                    "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                }
+            },
+            {
+                "titles": "HBW",
+                "@id": "Hbw",
+                "@type": "Column"
+            },
+            {
+                "titles": "Bemerkung",
+                "@id": "Bemerkung",
+                "@type": "Column"
+            }
+        ]
+    }
+}
