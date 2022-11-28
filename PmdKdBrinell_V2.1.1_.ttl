@@ -1,0 +1,878 @@
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix kd: <https://gitlab.com/kupferdigital/ontologies/brinell-hardness-test#> .
+@prefix mseo: <https://purl.matolab.org/mseo/mid/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <https://qudt.org/2.1/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bfo:contains a owl:ObjectProperty .
+
+bfo:derives_into a owl:ObjectProperty .
+
+bfo:has_part a owl:ObjectProperty .
+
+bfo:has_quality a owl:ObjectProperty .
+
+cco:designated_by a owl:ObjectProperty .
+
+cco:hasFunction a owl:ObjectProperty .
+
+cco:has_accessory a owl:ObjectProperty .
+
+cco:has_input a owl:ObjectProperty .
+
+cco:has_output a owl:ObjectProperty .
+
+cco:has_part a owl:ObjectProperty .
+
+cco:has_process_part a owl:ObjectProperty .
+
+cco:is_cause_of a owl:ObjectProperty .
+
+cco:is_input_of a owl:ObjectProperty .
+
+cco:is_made_of a owl:ObjectProperty .
+
+cco:is_measured_by a owl:ObjectProperty .
+
+cco:occures_on a owl:ObjectProperty .
+
+cco:occurs_on a owl:ObjectProperty .
+
+cco:process_precedes a owl:ObjectProperty .
+
+cco:process_started_by a owl:ObjectProperty .
+
+cco:starts_at a owl:ObjectProperty .
+
+cco:uses a owl:ObjectProperty .
+
+cco:uses_measurement_unit a owl:ObjectProperty .
+
+kd: a owl:Ontology ;
+    dc:creator "Birgit Skrotzki",
+        "Hossein Beygi Nasrabadi",
+        "Thomas Hanke",
+        "Yue Chen" ;
+    dc:title "Brinell Hardness Ontology" ;
+    owl:versionInfo "2.1.1" .
+
+kd:BrinellHardnessTest_ a owl:NamedIndividual,
+        kd:BrinellHardnessTest ;
+    cco:has_accessory kd:BrinellHardnessTestEquipmentID ;
+    cco:has_input kd:BrinellTestPiece ;
+    cco:has_output kd:TestDataFile ;
+    cco:occurs_on kd:TestDate ;
+    cco:process_started_by kd:BrinellHardnessMeasurement ;
+    mseo:in_accordance_with kd:TestStandard .
+
+mseo:in_accordance_with a owl:ObjectProperty .
+
+cco:ActOfAnalysing a owl:Class .
+
+cco:ActOfArtifactProcessing a owl:Class .
+
+cco:ActOfLocationChange a owl:Class .
+
+cco:ActOfPositionChange a owl:Class .
+
+cco:CalendarDateIdentifier a owl:Class .
+
+cco:Day a owl:Class .
+
+cco:DirectiveInformationContentEntity a owl:Class .
+
+cco:Force a owl:Class .
+
+cco:MultiSecondTemporalInterval a owl:Class .
+
+cco:Organisation a owl:Class .
+
+cco:ProcessHistory a owl:Class .
+
+cco:ReliabilityMeasurementInformationContentEntity a owl:Class .
+
+cco:Spherical a owl:Class .
+
+cco:Temperature a owl:Class .
+
+cco:ThreeDimensionalExtent a owl:Class .
+
+kd:AppliedLoadingTime a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:AppliedTestForce a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:AverageFunctionDiameter a cco:Algorithm,
+        owl:NamedIndividual .
+
+kd:AverageFunctionHardness a cco:Algorithm,
+        owl:NamedIndividual .
+
+kd:BrinellHardness1 a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageBrinellHardness,
+        kd:CalculateStandardDeviationBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfBrinellHardness1 .
+
+kd:BrinellHardness2 a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageBrinellHardness,
+        kd:CalculateStandardDeviationBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfBrinellHardness2 .
+
+kd:BrinellHardness3 a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageBrinellHardness,
+        kd:CalculateStandardDeviationBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfBrinellHardness3 .
+
+kd:BrinellHardness4 a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageBrinellHardness,
+        kd:CalculateStandardDeviationBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfBrinellHardness4 .
+
+kd:BrinellHardness5 a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageBrinellHardness,
+        kd:CalculateStandardDeviationBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfBrinellHardness5 .
+
+kd:BrinellHardnessAverage a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateFinalBrinellHardnessAndUncertainity,
+        kd:CalculateUncertainityOfIndentationResolution ;
+    cco:is_measured_by kd:MeasurementOfBrinellHardnessAverage .
+
+kd:BrinellHardnessFunction a cco:Algorithm,
+        owl:NamedIndividual ;
+    cco:designated_by kd:TestStandard .
+
+kd:BrinellHardnessMeasurement a cco:ActOfMeasuring,
+        owl:NamedIndividual ;
+    bfo:has_part kd:BrinellTestPiece ;
+    cco:has_process_part kd:ApplyTestForce,
+        kd:ChooseTestForce,
+        kd:ControlTemperature,
+        kd:OpticalMeasurementTheIndentationDiameter,
+        kd:PositioningTestPiece ;
+    cco:is_measured_by kd:BrinellHardnessTestEquipmentID ;
+    cco:process_precedes kd:BrinellHardnessMeasurementAnalysis .
+
+kd:BrinellHardnessMeasurementAnalysis a cco:ActOfAnalysing,
+        owl:NamedIndividual ;
+    cco:has_process_part kd:AverageFunctionTotalDiameter,
+        kd:CalculateAverageBrinellHardness,
+        kd:CalculateAverageDiameter,
+        kd:CalculateBrinellHardness,
+        kd:CalculateBrinellHardnessUncertainity,
+        kd:CalculateFinalBrinellHardnessAndUncertainity,
+        kd:CalculateStandardDeviationBrinellHardness,
+        kd:CalculateUncertainityOfCRMHardness,
+        kd:CalculateUncertainityOfIndentationResolution,
+        kd:CalculateUncertainityOfMaximumPermissibleError,
+        kd:CalculateUncertainityOfTestingMachine .
+
+kd:BrinellHardnessStandardDeviation a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_measured_by kd:MeasurementOfBrinellHardnessStandardDeviation .
+
+kd:BrinellHardnessTest a owl:Class ;
+    rdfs:subClassOf mseo:Expriment .
+
+kd:BrinellHardnessTestEquipment a owl:Class ;
+    rdfs:subClassOf mseo:Equipment .
+
+kd:BrinellHardnessUncertainity a cco:DeviationMeasurementInformationContentEntity,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateFinalBrinellHardnessAndUncertainity ;
+    cco:is_measured_by kd:MeasurementOfBrinellHardnessUncertainty .
+
+kd:BrinellHardnessUncertainityFunction a cco:Algorithm,
+        owl:NamedIndividual ;
+    cco:designated_by kd:TestStandard .
+
+kd:BrinellHardnessUnit a owl:NamedIndividual,
+        qudt:DerivedUnit .
+
+kd:BrinellIndenterArtifactFunction a cco:ArtifactFunction,
+        owl:NamedIndividual .
+
+kd:BrinellIndenterIdentifier a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:BrinellOpticalMeasuringSystemArtifactFunction a cco:ArtifactFunction,
+        owl:NamedIndividual .
+
+kd:BrinellOpticalMeasuringSystemIdentifier a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:BrinellSpecimenFunction a cco:ArtifactFunction,
+        owl:NamedIndividual .
+
+kd:BrinellTestingMachineArtifactFunction a cco:ArtifactFunction,
+        owl:NamedIndividual .
+
+kd:BrinellTestingMachineIdentifier a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:CRMCertifiedBrinellHardness a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateUncertainityOfMaximumPermissibleError ;
+    cco:is_measured_by kd:ReferenceCRMCertifiedBrinellHardness .
+
+kd:CRMCertifiedBrinellHardnessUncertainity a cco:ReliabilityMeasurementInformationContentEntity,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateUncertainityOfCRMHardness ;
+    cco:is_measured_by kd:ReferenceCRMBrinellHardnessUncertainity .
+
+kd:CRMConstant-t a bfo:Quality,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateUncertainityOfTestingMachine ;
+    cco:is_measured_by kd:ReferenceCRMConstant-t .
+
+kd:CRMIdentifier a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:CRMMeasuredBrinellHardnessAverage a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateUncertainityOfTestingMachine ;
+    cco:is_measured_by kd:MeasurementOfCRMBrinellHardnessAverage .
+
+kd:CRMMeasuredBrinellHardnessStandardDeviation a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateUncertainityOfTestingMachine ;
+    cco:is_measured_by kd:MeasurementOfCRMBrinellHardnessStandardDeviation .
+
+kd:CallibrationAccessory a owl:Class ;
+    rdfs:subClassOf cco:Artifact .
+
+kd:CertifiedReferenceMaterialArtifactFunction a cco:ArtifactFunction,
+        owl:NamedIndividual .
+
+kd:ControlTemperature a cco:ActOfMeasuring,
+        owl:NamedIndividual ;
+    cco:has_output kd:TestTemperature ;
+    cco:process_precedes kd:ChooseTestForce .
+
+kd:CopperAlloy a cco:PortionOfMaterial,
+        owl:NamedIndividual ;
+    cco:designated_by kd:TestPieceCompositionIdentifier .
+
+kd:DistanceBetweenIndentationAndEdge a owl:Class ;
+    rdfs:subClassOf cco:DistanceMeasurementInformationContentEntity .
+
+kd:DistanceBetweenIndentations a owl:Class ;
+    rdfs:subClassOf cco:DistanceMeasurementInformationContentEntity .
+
+kd:FinalBrinellHardnessAndUncertainity a cco:Hardness,
+        owl:NamedIndividual ;
+    cco:is_measured_by kd:MeasurementOfFinalBrinellHardnessAndUncertainty ;
+    cco:uses_measurement_unit kd:BrinellHardnessUnit .
+
+kd:HardnessTestMachine a owl:Class ;
+    rdfs:subClassOf cco:Artifact .
+
+kd:IndentationDiameterMean1 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:AverageFunctionTotalDiameter,
+        kd:CalculateBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterMean1 .
+
+kd:IndentationDiameterMean2 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:AverageFunctionTotalDiameter,
+        kd:CalculateBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterMean2 .
+
+kd:IndentationDiameterMean3 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:AverageFunctionTotalDiameter,
+        kd:CalculateBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterMean3 .
+
+kd:IndentationDiameterMean4 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:AverageFunctionTotalDiameter,
+        kd:CalculateBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterMean4 .
+
+kd:IndentationDiameterMean5 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:AverageFunctionTotalDiameter,
+        kd:CalculateBrinellHardness ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterMean5 .
+
+kd:IndentationEdgeDistanceData a cco:DistanceMeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:IndentationEdgeDistanceID a owl:NamedIndividual,
+        kd:DistanceBetweenIndentationAndEdge ;
+    cco:is_measured_by kd:IndentationEdgeDistanceData .
+
+kd:IndentationID1 a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:IndentationID2 a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:IndentationID3 a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:IndentationID4 a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:IndentationID5 a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:IndentationRegion1 a owl:NamedIndividual,
+        mseo:MeasurementRegion ;
+    bfo:has_quality kd:IndentationDiameterHorizontal1,
+        kd:IndentationDiameterHorizontal2,
+        kd:IndentationDiameterHorizontal3,
+        kd:IndentationDiameterHorizontal4,
+        kd:IndentationDiameterHorizontal5,
+        kd:IndentationDiameterVertical1,
+        kd:IndentationDiameterVertical2,
+        kd:IndentationDiameterVertical3,
+        kd:IndentationDiameterVertical4,
+        kd:IndentationDiameterVertical5 ;
+    cco:designated_by kd:IndentationID1 .
+
+kd:IndentationRegion2 a owl:NamedIndividual,
+        mseo:MeasurementRegion ;
+    cco:designated_by kd:IndentationID2 .
+
+kd:IndentationRegion3 a owl:NamedIndividual,
+        mseo:MeasurementRegion ;
+    cco:designated_by kd:IndentationID3 .
+
+kd:IndentationRegion4 a owl:NamedIndividual,
+        mseo:MeasurementRegion ;
+    cco:designated_by kd:IndentationID4 .
+
+kd:IndentationRegion5 a owl:NamedIndividual,
+        mseo:MeasurementRegion ;
+    cco:designated_by kd:IndentationID5 .
+
+kd:IndentationsDistanceData a cco:DistanceMeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:IndentationsDistanceID a owl:NamedIndividual,
+        kd:DistanceBetweenIndentations ;
+    cco:is_measured_by kd:IndentationsDistanceData .
+
+kd:Indenter a owl:Class ;
+    rdfs:subClassOf cco:Artifact .
+
+kd:IndenterDiameter a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateBrinellHardness,
+        kd:CalculateUncertainityOfIndentationResolution ;
+    cco:is_measured_by kd:MeasurementOfIndenterDiameter .
+
+kd:IndenterMaterialCompositionIdentifier a owl:NamedIndividual .
+
+kd:IndenterShape a cco:Spherical,
+        owl:NamedIndividual ;
+    bfo:has_quality kd:IndenterDiameter .
+
+kd:LoadingTime a cco:MultiSecondTemporalInterval,
+        owl:NamedIndividual ;
+    cco:is_measured_by kd:AppliedLoadingTime .
+
+kd:MeasurementOfBrinellHardness1 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfBrinellHardness2 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfBrinellHardness3 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfBrinellHardness4 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfBrinellHardness5 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfBrinellHardnessAverage a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfBrinellHardnessStandardDeviation a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfBrinellHardnessUncertainty a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfCRMBrinellHardnessAverage a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfCRMBrinellHardnessStandardDeviation a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfFinalBrinellHardnessAndUncertainty a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterHorizontal1 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterHorizontal2 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterHorizontal3 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterHorizontal4 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterHorizontal5 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterMean1 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterMean2 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterMean3 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterMean4 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterMean5 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterVertical1 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterVertical2 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterVertical3 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterVertical4 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndentationDiameterVertical5 a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfIndenterDiameter a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfTestPieceDimension a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfTestTemperature a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfTotalIndentationDiameterMean a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfUncertainityOfCRMHardness a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfUncertainityOfIndentationResolution a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfUncertainityOfMaximumPermissibleError a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:MeasurementOfUncertainityOfTestingMachine a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:OpticalMeasuringSystem a owl:Class ;
+    rdfs:subClassOf cco:Artifact .
+
+kd:Producer a cco:Organisation,
+        owl:NamedIndividual ;
+    cco:designated_by kd:ProducerName .
+
+kd:ProducerName a cco:DescriptiveInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:ReferenceCRMBrinellHardnessUncertainity a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:ReferenceCRMCertifiedBrinellHardness a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:ReferenceCRMConstant-t a cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:StandardDeviationFunctionHardness a cco:Algorithm,
+        owl:NamedIndividual .
+
+kd:SummationFunctionHardness a cco:Algorithm,
+        owl:NamedIndividual .
+
+kd:TestDataFile a owl:NamedIndividual,
+        mseo:File ;
+    cco:designated_by kd:TestDateFileLocation .
+
+kd:TestDate a cco:Day,
+        owl:NamedIndividual ;
+    cco:designated_by kd:TestDateIdentifier .
+
+kd:TestDateFileLocation a cco:DirectiveInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:TestDateIdentifier a cco:CalendarDateIdentifier,
+        owl:NamedIndividual .
+
+kd:TestForce a cco:Force,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateBrinellHardness ;
+    cco:is_measured_by kd:AppliedTestForce .
+
+kd:TestPieceCompositionIdentifier a owl:NamedIndividual .
+
+kd:TestPieceDimension a cco:ThreeDimensionalExtent,
+        owl:NamedIndividual ;
+    cco:is_measured_by kd:MeasurementOfTestPieceDimension .
+
+kd:TestPieceIdentifier a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:TestPieceManufacturing a cco:ProcessHistory,
+        owl:NamedIndividual ;
+    cco:has_part kd:TransportFromProducer .
+
+kd:TestPiecePreparatiomMethod a cco:DescriptiveInformationContentEntity,
+        owl:NamedIndividual .
+
+kd:TestPiecePreparation a cco:ActOfArtifactProcessing,
+        owl:NamedIndividual ;
+    cco:designated_by kd:TestPiecePreparatiomMethod ;
+    cco:has_output kd:TestPieceDimension .
+
+kd:TestStandardIdentifier a cco:NonNameIdentifier,
+        owl:NamedIndividual .
+
+kd:TestTemperature a cco:Temperature,
+        owl:NamedIndividual ;
+    cco:is_measured_by kd:MeasurementOfTestTemperature .
+
+kd:TotalIndentationDiameterMean a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateUncertainityOfIndentationResolution ;
+    cco:is_measured_by kd:MeasurementOfTotalIndentationDiameterMean .
+
+kd:TransportFromProducer a cco:ActOfLocationChange,
+        owl:NamedIndividual ;
+    cco:starts_at kd:Producer .
+
+kd:TungstenCarbideCompositeOrSteel a cco:PortionOfMaterial,
+        owl:NamedIndividual ;
+    cco:designated_by kd:IndenterMaterialCompositionIdentifier .
+
+kd:UncertainityOfCRMHardness a cco:DeviationMeasurementInformationContentEntity,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateBrinellHardnessUncertainity ;
+    cco:is_measured_by kd:MeasurementOfUncertainityOfCRMHardness .
+
+kd:UncertainityOfCRMHardnessFunction a cco:Algorithm,
+        owl:NamedIndividual ;
+    cco:designated_by kd:TestStandard .
+
+kd:UncertainityOfIndentationResulution a cco:DeviationMeasurementInformationContentEntity,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateBrinellHardnessUncertainity ;
+    cco:is_measured_by kd:MeasurementOfUncertainityOfIndentationResolution .
+
+kd:UncertainityOfMaximumOermissibleErrorFunction a cco:Algorithm,
+        owl:NamedIndividual ;
+    cco:designated_by kd:TestStandard .
+
+kd:UncertainityOfMaximumPermissibleError a cco:DeviationMeasurementInformationContentEntity,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateBrinellHardnessUncertainity ;
+    cco:is_measured_by kd:MeasurementOfUncertainityOfMaximumPermissibleError .
+
+kd:UncertainityOfTestingMachine a cco:DeviationMeasurementInformationContentEntity,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateBrinellHardnessUncertainity ;
+    cco:is_measured_by kd:MeasurementOfUncertainityOfTestingMachine .
+
+kd:UncertainityOfTestingMachineFunction a cco:Algorithm,
+        owl:NamedIndividual ;
+    cco:designated_by kd:TestStandard .
+
+kd:UncertainityOfindentationResolutionFunction a cco:Algorithm,
+        owl:NamedIndividual ;
+    cco:designated_by kd:TestStandard .
+
+mseo:Equipment a owl:Class .
+
+mseo:Expriment a owl:Class .
+
+mseo:File a owl:Class .
+
+mseo:Regulation a owl:Class .
+
+mseo:Specimen a owl:Class .
+
+qudt:DerivedUnit a owl:Class .
+
+cco:DescriptiveInformationContentEntity a owl:Class .
+
+cco:PortionOfMaterial a owl:Class .
+
+kd:ApplyTestForce a cco:ActOfMeasuring,
+        owl:NamedIndividual ;
+    cco:has_accessory kd:BrinellIndenter,
+        kd:BrinellOpticalMeasuringSystem,
+        kd:BrinellTestingMachine ;
+    cco:is_cause_of kd:IndentationRegion1,
+        kd:IndentationRegion2,
+        kd:IndentationRegion3,
+        kd:IndentationRegion4,
+        kd:IndentationRegion5 ;
+    cco:occures_on kd:LoadingTime ;
+    cco:process_precedes kd:OpticalMeasurementTheIndentationDiameter .
+
+kd:BrinellHardnessTestEquipmentID a owl:NamedIndividual,
+        kd:BrinellHardnessTestEquipment ;
+    bfo:contains kd:CertifiedReferenceMaterialCRM ;
+    bfo:has_part kd:BrinellIndenter,
+        kd:BrinellOpticalMeasuringSystem,
+        kd:BrinellTestingMachine .
+
+kd:BrinellIndenter a owl:NamedIndividual,
+        kd:Indenter ;
+    bfo:has_quality kd:IndenterShape ;
+    cco:designated_by kd:BrinellIndenterIdentifier ;
+    cco:hasFunction kd:BrinellIndenterArtifactFunction ;
+    cco:is_made_of kd:TungstenCarbideCompositeOrSteel .
+
+kd:BrinellTestPiece a owl:NamedIndividual,
+        mseo:Specimen ;
+    cco:designated_by kd:TestPieceIdentifier ;
+    cco:hasFunction kd:BrinellSpecimenFunction ;
+    cco:has_process_part kd:TestPieceManufacturing,
+        kd:TestPiecePreparation ;
+    cco:is_made_of kd:CopperAlloy .
+
+kd:ChooseTestForce a cco:ActOfMeasuring,
+        owl:NamedIndividual ;
+    cco:has_accessory kd:BrinellTestingMachine ;
+    cco:has_output kd:TestForce ;
+    cco:process_precedes kd:PositioningTestPiece .
+
+kd:IndentationDiameterHorizontal1 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterHorizontal1 .
+
+kd:IndentationDiameterHorizontal2 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterHorizontal2 .
+
+kd:IndentationDiameterHorizontal3 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterHorizontal3 .
+
+kd:IndentationDiameterHorizontal4 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterHorizontal4 .
+
+kd:IndentationDiameterHorizontal5 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterHorizontal5 .
+
+kd:IndentationDiameterVertical1 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterVertical1 .
+
+kd:IndentationDiameterVertical2 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterVertical2 .
+
+kd:IndentationDiameterVertical3 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterVertical3 .
+
+kd:IndentationDiameterVertical4 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterVertical4 .
+
+kd:IndentationDiameterVertical5 a cco:Diameter,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateAverageDiameter ;
+    cco:is_measured_by kd:MeasurementOfIndentationDiameterVertical5 .
+
+kd:OpticalMeasurementTheIndentationDiameter a cco:ActOfMeasuring,
+        owl:NamedIndividual ;
+    cco:has_accessory kd:BrinellOpticalMeasuringSystem ;
+    cco:has_output kd:IndentationDiameterHorizontal1,
+        kd:IndentationDiameterHorizontal2,
+        kd:IndentationDiameterHorizontal3,
+        kd:IndentationDiameterHorizontal4,
+        kd:IndentationDiameterHorizontal5,
+        kd:IndentationDiameterVertical1,
+        kd:IndentationDiameterVertical2,
+        kd:IndentationDiameterVertical3,
+        kd:IndentationDiameterVertical4,
+        kd:IndentationDiameterVertical5 ;
+    cco:process_precedes kd:CalculateAverageDiameter .
+
+kd:PositioningTestPiece a cco:ActOfPositionChange,
+        owl:NamedIndividual ;
+    cco:has_output kd:IndentationEdgeDistanceID,
+        kd:IndentationsDistanceID ;
+    cco:process_precedes kd:ApplyTestForce .
+
+kd:ReferenceCRMConstant-Erel a bfo:Quality,
+        cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateUncertainityOfMaximumPermissibleError ;
+    cco:is_measured_by kd:ReferenceCRMConstant-Erel .
+
+kd:ReferenceCRMConstant-SigmaMS a bfo:Quality,
+        cco:MeasurementInformationContentEntity,
+        owl:NamedIndividual ;
+    cco:is_input_of kd:CalculateUncertainityOfIndentationResolution ;
+    cco:is_measured_by kd:ReferenceCRMConstant-SigmaMS .
+
+bfo:Quality a owl:Class .
+
+kd:BrinellOpticalMeasuringSystem a owl:NamedIndividual,
+        kd:OpticalMeasuringSystem ;
+    cco:designated_by kd:BrinellOpticalMeasuringSystemIdentifier ;
+    cco:hasFunction kd:BrinellOpticalMeasuringSystemArtifactFunction .
+
+kd:BrinellTestingMachine a owl:NamedIndividual,
+        kd:HardnessTestMachine ;
+    cco:designated_by kd:BrinellTestingMachineIdentifier ;
+    cco:hasFunction kd:BrinellTestingMachineArtifactFunction .
+
+kd:CalculateUncertainityOfCRMHardness a owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:UncertainityOfCRMHardness ;
+    cco:is_measured_by kd:CertifiedReferenceMaterialCRM ;
+    cco:process_precedes kd:CalculateUncertainityOfTestingMachine ;
+    cco:uses kd:UncertainityOfCRMHardnessFunction .
+
+cco:Artifact a owl:Class .
+
+cco:DistanceMeasurementInformationContentEntity a owl:Class .
+
+kd:CalculateFinalBrinellHardnessAndUncertainity a owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:FinalBrinellHardnessAndUncertainity ;
+    cco:uses kd:SummationFunctionHardness .
+
+kd:CalculateUncertainityOfMaximumPermissibleError a owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:UncertainityOfMaximumPermissibleError ;
+    cco:is_measured_by kd:CertifiedReferenceMaterialCRM ;
+    cco:process_precedes kd:CalculateUncertainityOfCRMHardness ;
+    cco:uses kd:UncertainityOfMaximumOermissibleErrorFunction .
+
+kd:CertifiedReferenceMaterialCRM a owl:NamedIndividual,
+        kd:CallibrationAccessory ;
+    bfo:has_quality kd:CRMCertifiedBrinellHardness,
+        kd:CRMCertifiedBrinellHardnessUncertainity,
+        kd:CRMConstant-t,
+        kd:ReferenceCRMConstant-Erel,
+        kd:ReferenceCRMConstant-SigmaMS ;
+    cco:designated_by kd:CRMIdentifier ;
+    cco:hasFunction kd:CertifiedReferenceMaterialArtifactFunction ;
+    cco:has_output kd:CRMMeasuredBrinellHardnessAverage,
+        kd:CRMMeasuredBrinellHardnessStandardDeviation .
+
+cco:ActOfMeasuring a owl:Class .
+
+cco:ArtifactFunction a owl:Class .
+
+cco:DeviationMeasurementInformationContentEntity a owl:Class .
+
+kd:CalculateUncertainityOfTestingMachine a owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:UncertainityOfTestingMachine ;
+    cco:is_measured_by kd:CertifiedReferenceMaterialCRM ;
+    cco:process_precedes kd:CalculateUncertainityOfIndentationResolution ;
+    cco:uses kd:UncertainityOfTestingMachineFunction .
+
+mseo:MeasurementRegion a owl:Class .
+
+kd:CalculateBrinellHardnessUncertainity a owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:BrinellHardnessUncertainity ;
+    cco:process_precedes kd:CalculateFinalBrinellHardnessAndUncertainity ;
+    cco:uses kd:BrinellHardnessUncertainityFunction .
+
+kd:CalculateUncertainityOfIndentationResolution a owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:UncertainityOfIndentationResulution ;
+    cco:process_precedes kd:CalculateBrinellHardnessUncertainity ;
+    cco:uses kd:UncertainityOfindentationResolutionFunction .
+
+kd:CalculateAverageBrinellHardness a owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:BrinellHardnessAverage ;
+    cco:process_precedes kd:CalculateStandardDeviationBrinellHardness ;
+    cco:uses kd:AverageFunctionHardness .
+
+kd:CalculateStandardDeviationBrinellHardness a owl:NamedIndividual ;
+    bfo:derives_into kd:BrinellHardnessStandardDeviation ;
+    cco:process_precedes kd:CalculateUncertainityOfMaximumPermissibleError ;
+    cco:uses kd:StandardDeviationFunctionHardness .
+
+kd:TestStandard a owl:NamedIndividual,
+        mseo:Regulation ;
+    cco:designated_by kd:TestStandardIdentifier .
+
+kd:AverageFunctionTotalDiameter a cco:Algorithm,
+        owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:TotalIndentationDiameterMean ;
+    cco:process_precedes kd:CalculateBrinellHardness ;
+    cco:uses kd:AverageFunctionTotalDiameter .
+
+kd:CalculateBrinellHardness a owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:BrinellHardness1,
+        kd:BrinellHardness2,
+        kd:BrinellHardness3,
+        kd:BrinellHardness4,
+        kd:BrinellHardness5 ;
+    cco:process_precedes kd:CalculateAverageBrinellHardness ;
+    cco:uses kd:BrinellHardnessFunction .
+
+mseo:ActOfAnalysing a owl:Class .
+
+cco:Algorithm a owl:Class .
+
+cco:Hardness a owl:Class .
+
+cco:NonNameIdentifier a owl:Class .
+
+kd:CalculateAverageDiameter a owl:NamedIndividual,
+        mseo:ActOfAnalysing ;
+    bfo:derives_into kd:IndentationDiameterMean1,
+        kd:IndentationDiameterMean2,
+        kd:IndentationDiameterMean3,
+        kd:IndentationDiameterMean4,
+        kd:IndentationDiameterMean5 ;
+    cco:process_precedes kd:AverageFunctionTotalDiameter ;
+    cco:uses kd:AverageFunctionDiameter .
+
+cco:Diameter a owl:Class .
+
+cco:MeasurementInformationContentEntity a owl:Class .
+
