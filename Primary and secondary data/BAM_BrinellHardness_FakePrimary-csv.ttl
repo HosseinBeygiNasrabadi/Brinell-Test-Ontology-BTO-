@@ -1,0 +1,237 @@
+@prefix base: <https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/-/raw/main/Primary%20and%20secondary%20data/> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base:BAM_BrinellHardness_FakePrimary-metadata.json csvw:dialect [ csvw:delimiter ";" ;
+            csvw:encoding "utf-8" ;
+            csvw:headerRowCount "2"^^xsd:nonNegativeInteger ;
+            csvw:skipRows "14"^^xsd:nonNegativeInteger ] ;
+    csvw:note base:BamInvNr7,
+        base:BerlinD11,
+        base:Eindringkoerper6,
+        base:EinwirkdauerDerPruefkraft3,
+        base:HaertepruefgeraetDerBauart5,
+        base:Kugeldurchmesser2,
+        base:LetzteKalibrierungAm9,
+        base:Messmikroskop8,
+        base:Pruefkraft1,
+        base:Rh13,
+        base:Rrel4,
+        base:Rt12,
+        base:Unsicherheit10,
+        base:Werkstoff0 ;
+    csvw:tableSchema [ csvw:aboutUrl "#gid-{GID}"^^csvw:uriTemplate ;
+            csvw:column ( [ a csvw:Column ;
+                        csvw:datatype xsd:string ;
+                        csvw:name "GID" ;
+                        csvw:required true ;
+                        csvw:suppressOutput true ;
+                        csvw:title "GID",
+                            "Generic Identifier" ] base:Probennummer base:D1 base:D2 base:D base:Hbw base:Bemerkung ) ;
+            csvw:primaryKey "GID" ] ;
+    csvw:url "BAM_BrinellHardness_FakePrimary.csv"^^xsd:anyURI .
+
+<#gid-0> base:Bemerkung " " ;
+    base:D "0,83449" ;
+    base:D1 "0,84611" ;
+    base:D2 "0,82287" ;
+    base:Hbw "111,0" ;
+    base:Probennummer "A-3" .
+
+<#gid-1> base:Bemerkung " " ;
+    base:D "0,86471" ;
+    base:D1 "0,86161" ;
+    base:D2 "0,86781" ;
+    base:Hbw "103,2" ;
+    base:Probennummer "A-4" .
+
+<#gid-2> base:Bemerkung " " ;
+    base:D "0,80737" ;
+    base:D1 "0,81512" ;
+    base:D2 "0,79962" ;
+    base:Hbw "118,8" ;
+    base:Probennummer "A-5" .
+
+<#gid-3> base:Bemerkung " " ;
+    base:D "0,81202" ;
+    base:D1 "0,80892" ;
+    base:D2 "0,81512" ;
+    base:Hbw "117,4" ;
+    base:Probennummer "A-6" .
+
+<http://qudt.org/vocab/unit/DEG_C> a qudt:DerivedUnit .
+
+<http://qudt.org/vocab/unit/F> a qudt:Unit .
+
+<http://qudt.org/vocab/unit/SEC> a qudt:Unit .
+
+base:BamInvNr7 a oa:Annotation ;
+    rdfs:label "BAM Inv-Nr." ;
+    csvw:rownum 7 ;
+    oa:hasBody [ a qudt:QuantityValue ;
+            qudt:value 5025206 ] .
+
+base:Bemerkung a csvw:Column ;
+    csvw:name "Bemerkung" ;
+    csvw:title "Bemerkung",
+        "Unnamed: 5_level_1" .
+
+base:BerlinD11 a oa:Annotation ;
+    rdfs:label "Berlin, d." ;
+    csvw:rownum 11 ;
+    oa:hasBody [ a qudt:QuantityValue ;
+            qudt:value "2022-04-21T00:00:00"^^xsd:dateTime ] .
+
+base:D a qudt:QuantityValue,
+        csvw:Column ;
+    qudt:unit <http://qudt.org/vocab/unit/MilliM> ;
+    csvw:name "D" ;
+    csvw:title "D",
+        "d",
+        "mm" .
+
+base:D1 a qudt:QuantityValue,
+        csvw:Column ;
+    qudt:unit <http://qudt.org/vocab/unit/MilliM> ;
+    csvw:name "D1" ;
+    csvw:title "D1",
+        "d1",
+        "mm" .
+
+base:D2 a qudt:QuantityValue,
+        csvw:Column ;
+    qudt:unit <http://qudt.org/vocab/unit/MilliM> ;
+    csvw:name "D2" ;
+    csvw:title "D2",
+        "d2",
+        "mm" .
+
+base:Eindringkoerper6 a oa:Annotation ;
+    rdfs:label "Eindringkörper" ;
+    csvw:rownum 6 ;
+    oa:hasBody [ a oa:TextualBody ;
+            oa:format "text/plain" ;
+            oa:purpose "oa:tagging" ;
+            oa:value "B3688" ] .
+
+base:EinwirkdauerDerPruefkraft3 a oa:Annotation ;
+    rdfs:label "Einwirkdauer der Prüfkraft" ;
+    csvw:rownum 3 ;
+    oa:hasBody [ a qudt:QuantityValue ;
+            qudt:unit <http://qudt.org/vocab/unit/SEC> ;
+            qudt:value 14 ] .
+
+base:HaertepruefgeraetDerBauart5 a oa:Annotation ;
+    rdfs:label "Härteprüfgerät der Bauart" ;
+    csvw:rownum 5 ;
+    oa:hasBody [ a oa:TextualBody ;
+            oa:format "text/plain" ;
+            oa:purpose "oa:tagging" ;
+            oa:value "EMCOTEST M4C 025 G3" ] .
+
+base:Hbw a csvw:Column ;
+    csvw:name "Hbw" ;
+    csvw:title "BW 2,5/62,5",
+        "HBW",
+        "Hbw" .
+
+base:Kugeldurchmesser2 a oa:Annotation ;
+    rdfs:label "Kugeldurchmesser" ;
+    csvw:rownum 2 ;
+    oa:hasBody [ a qudt:QuantityValue ;
+            qudt:unit <http://qudt.org/vocab/unit/MilliM> ;
+            qudt:value 2.5 ] .
+
+base:LetzteKalibrierungAm9 a oa:Annotation ;
+    rdfs:label "letzte Kalibrierung am" ;
+    csvw:rownum 9 ;
+    oa:hasBody [ a qudt:QuantityValue ;
+            qudt:value "2022-03-14T00:00:00"^^xsd:dateTime ] .
+
+base:Messmikroskop8 a oa:Annotation ;
+    rdfs:label "Messmikroskop" ;
+    csvw:rownum 8 ;
+    oa:hasBody [ a oa:TextualBody ;
+            oa:format "text/plain" ;
+            oa:purpose "oa:tagging" ;
+            oa:value "-" ] .
+
+base:Probennummer a csvw:Column ;
+    csvw:name "Probennummer" ;
+    csvw:title "Probennummer",
+        "Unnamed: 0_level_1" .
+
+base:Pruefkraft1 a oa:Annotation ;
+    rdfs:label "Prüfkraft" ;
+    csvw:rownum 1 ;
+    oa:hasBody [ a qudt:QuantityValue ;
+            qudt:unit <http://qudt.org/vocab/unit/F> ;
+            qudt:value 612.915625 ],
+        [ a oa:TextualBody ;
+            oa:format "text/plain" ;
+            oa:purpose "oa:tagging" ;
+            oa:value "N" ] .
+
+base:Rh13 a oa:Annotation ;
+    rdfs:label "RH" ;
+    csvw:rownum 13 ;
+    oa:hasBody [ a qudt:QuantityValue ;
+            qudt:unit <http://qudt.org/vocab/unit/PERCENT> ;
+            qudt:value 33.7 ] .
+
+base:Rrel4 a oa:Annotation ;
+    rdfs:label "rrel" ;
+    csvw:rownum 4 ;
+    oa:hasBody [ a qudt:QuantityValue ;
+            qudt:unit <http://qudt.org/vocab/unit/PERCENT> ;
+            qudt:value 0.52 ] .
+
+base:Rt12 a oa:Annotation ;
+    rdfs:label "RT" ;
+    csvw:rownum 12 ;
+    oa:hasBody [ a qudt:QuantityValue ;
+            qudt:unit <http://qudt.org/vocab/unit/DEG_C> ;
+            qudt:value 22.7 ] .
+
+base:Unsicherheit10 a oa:Annotation ;
+    rdfs:label "Unsicherheit" ;
+    csvw:rownum 10 ;
+    oa:hasBody [ a oa:TextualBody ;
+            oa:format "text/plain" ;
+            oa:purpose "oa:tagging" ;
+            oa:value "HBW 2,5/62,5" ],
+        [ a qudt:QuantityValue ;
+            qudt:value 5.5 ] .
+
+base:Werkstoff0 a oa:Annotation ;
+    rdfs:label "Werkstoff" ;
+    csvw:rownum 0 ;
+    oa:hasBody [ a oa:TextualBody ;
+            oa:format "text/plain" ;
+            oa:purpose "oa:tagging" ;
+            oa:value "Kupfer" ] .
+
+<http://qudt.org/vocab/unit/PERCENT> a qudt:Unit .
+
+<http://qudt.org/vocab/unit/MilliM> a qudt:DerivedUnit .
+
+[] a csvw:row ;
+    csvw:describes <#gid-0> ;
+    csvw:url <https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/-/raw/main/Primary%20and%20secondary%20data/BAM_BrinellHardness_FakePrimary.csv/row=16> .
+
+[] a csvw:row ;
+    csvw:describes <#gid-2> ;
+    csvw:url <https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/-/raw/main/Primary%20and%20secondary%20data/BAM_BrinellHardness_FakePrimary.csv/row=18> .
+
+[] a csvw:row ;
+    csvw:describes <#gid-3> ;
+    csvw:url <https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/-/raw/main/Primary%20and%20secondary%20data/BAM_BrinellHardness_FakePrimary.csv/row=19> .
+
+[] a csvw:row ;
+    csvw:describes <#gid-1> ;
+    csvw:url <https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/-/raw/main/Primary%20and%20secondary%20data/BAM_BrinellHardness_FakePrimary.csv/row=17> .
+
