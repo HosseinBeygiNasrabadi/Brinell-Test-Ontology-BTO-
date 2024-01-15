@@ -1,0 +1,808 @@
+@prefix : <https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/> .
+@prefix bto: <https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/> .
+@prefix ns1: <http://www.w3.org/ns/prov#> .
+@prefix ns2: <http://qudt.org/schema/qudt/> .
+@prefix ns3: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmd: <https://w3id.org/pmd/co/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <https://w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/> .
+
+<https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/> rdf:type owl:Ontology ;
+                                                                          owl:imports <https://w3id.org/pmd/co/2.0.7> ;
+                                                                          dcterms:biblographicCitation "Hossein Beygi Nasrabadi. (2024.01.15) Brinell Test Ontology (BTO). Version 4.0.1, www.gitlab.com/kupferdigital/process-graphs/brinell-hardness-test" ;
+                                                                          dcterms:created "2024.01.15" ;
+                                                                          dcterms:creator "Hossein Beygi Nasrabadi (www.orcid.org/0000-0002-3092-0532)" ;
+                                                                          dcterms:licence "www.creativecommons.org/licenses/by/4.0/" ;
+                                                                          dcterms:title "Brinell Test Ontology (BTO)" ;
+                                                                          rdfs:comment "Brinell Test Ontology (BTO) has developed for representing the Brinell testing process, testing equipment requirements, test pieces charactristics, and related testing parameters and their measurement procedure according to DIN EN ISO 6506-1 standard." ,
+                                                                                       "KuferDigital project (www.materialdigital.de/project/1)" ;
+                                                                          owl:imports "https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmd_core.ttl" ;
+                                                                          owl:versionInfo "4.0.1 (PROV, PMDco)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/biblographicCitation
+dcterms:biblographicCitation rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/licence
+dcterms:licence rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#imports
+owl:imports rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+ns3:definition rdf:type owl:AnnotationProperty .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/definitionSource
+bto:definitionSource rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/achivedBy
+bto:achivedBy rdf:type owl:ObjectProperty .
+
+
+###  https://w3.org/ns/prov#actedOnBehalfOf
+prov:actedOnBehalfOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3.org/ns/prov#atLocation
+prov:atLocation rdf:type owl:ObjectProperty .
+
+
+###  https://w3.org/ns/prov#hasAssociatedWith
+prov:hasAssociatedWith rdf:type owl:ObjectProperty .
+
+
+###  https://w3.org/ns/prov#influenced
+prov:influenced rdf:type owl:ObjectProperty .
+
+
+###  https://w3.org/ns/prov#qualifiedInfluenceOf
+prov:qualifiedInfluenceOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3.org/ns/prov#wasActivityOfInfluence
+prov:wasActivityOfInfluence rdf:type owl:ObjectProperty .
+
+
+###  https://w3.org/ns/prov#wasAssociatedWith
+prov:wasAssociatedWith rdf:type owl:ObjectProperty .
+
+
+###  https://w3.org/ns/prov#wasDrivedFrom
+prov:wasDrivedFrom rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/characteristic
+pmd:characteristic rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/component
+pmd:component rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/composedOf
+pmd:composedOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/executedBy
+pmd:executedBy rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/hasFunction
+pmd:hasFunction rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/hasIdentifier
+pmd:hasIdentifier rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/input
+pmd:input rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/nextProcess
+pmd:nextProcess rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/output
+pmd:output rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/participant
+pmd:participant rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/process
+pmd:process rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/resource
+pmd:resource rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/subordinateProcess
+pmd:subordinateProcess rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pmd/co/unit
+pmd:unit rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/ns/prov#value
+ns1:value rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://qudt.org/schema/qudt/Unit
+ns2:Unit rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+ns1:Activity rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+ns1:Agent rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+ns1:Entity rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Organization
+ns1:Organization rdf:type owl:Class ;
+                 rdfs:subClassOf ns1:Agent .
+
+
+###  http://www.w3.org/ns/prov#Person
+ns1:Person rdf:type owl:Class ;
+           rdfs:subClassOf ns1:Agent .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellHardness
+bto:BrinellHardness rdf:type owl:Class ;
+                    rdfs:subClassOf bto:Hardness .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellHardnessTest
+bto:BrinellHardnessTest rdf:type owl:Class ;
+                        rdfs:subClassOf bto:HardnessTest .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellHardnessTestEquipment
+bto:BrinellHardnessTestEquipment rdf:type owl:Class ;
+                                 rdfs:subClassOf bto:HardnessMeasurementDevice ;
+                                 ns3:definition "equipment for measuring the Brinell indentation hardness of a material" ;
+                                 bto:definitionSource "" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/CalibrationAccessory
+bto:CalibrationAccessory rdf:type owl:Class ;
+                         rdfs:subClassOf pmd:ProcessingNode ;
+                         ns3:definition "the artifact that uses for calibration of a machine or device" ;
+                         bto:definitionSource "ISO 24131-1:2023" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/CollibrationProcess
+bto:CollibrationProcess rdf:type owl:Class ;
+                        rdfs:subClassOf pmd:Process ;
+                        ns3:definition "process of determining the capacity of a tank, or the partial capacities corresponding to different levels" ;
+                        bto:definitionSource "ISO 7507-1:2003" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/Diameter
+bto:Diameter rdf:type owl:Class ;
+             rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/Hardness
+bto:Hardness rdf:type owl:Class ;
+             rdfs:subClassOf pmd:Mechanical ;
+             ns3:definition "resistance of the lining to the penetration of a ball under defined test conditions" ;
+             bto:definitionSource "" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/HardnessMeasurementDevice
+bto:HardnessMeasurementDevice rdf:type owl:Class ;
+                              rdfs:subClassOf pmd:TestingMachine ;
+                              ns3:definition "an indentation testing machine used for performing indentation hardness tests" ;
+                              bto:definitionSource "ISO 23718:2007(en)" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/HardnessTest
+bto:HardnessTest rdf:type owl:Class ;
+                 rdfs:subClassOf pmd:MechanicalTestingProcess ;
+                 ns3:definition "indentation test carried out using a hardness testing machine to measure the hardness of a material" ;
+                 bto:definitionSource "ISO 17918:2015(en)" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/Indenter
+bto:Indenter rdf:type owl:Class ;
+             rdfs:subClassOf pmd:ProcessingNode ;
+             ns3:definition "body with a hard tip, typically of diamond, hardmetal (tungsten carbide alloy), or, in special cases, steel, of specified geometry through which the test force is applied in the course of an indentation test" ;
+             bto:definitionSource "ISO 23718:2007(en)" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/ReferenceBlock
+bto:ReferenceBlock rdf:type owl:Class ;
+                   rdfs:subClassOf bto:CalibrationAccessory ;
+                   ns3:definition "The certified reference material is equivalent to the hardness reference block, i.e. a piece of material with a certified value and associated uncertainty." ;
+                   bto:definitionSource "ISO 6506-1:2015-02" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestForceApplicationTime
+bto:TestForceApplicationTime rdf:type owl:Class ;
+                             rdfs:subClassOf pmd:Duration ;
+                             ns3:definition "period from the start of application of force to the material until the test force is reached" ;
+                             bto:definitionSource "ISO 23718_2007(en)" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestForceDuration
+bto:TestForceDuration rdf:type owl:Class ;
+                      rdfs:subClassOf pmd:Duration ;
+                      ns3:definition "period during which the test force is held constant during a hardness test, beginning when the test force is fully applied and ending either at the start of its removal or at the start of the application of an additional force" ;
+                      bto:definitionSource "ISO 23718_2007(en)" .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/indentation
+bto:indentation rdf:type owl:Class ;
+                rdfs:subClassOf pmd:Location ;
+                ns3:definition "impression made in the surface of the material by the indenter in an indentation test" ;
+                bto:definitionSource "ISO 23718_2007(en)" .
+
+
+###  https://w3id.org/pmd/co/Algorithm
+pmd:Algorithm rdf:type owl:Class ;
+              rdfs:subClassOf pmd:Method .
+
+
+###  https://w3id.org/pmd/co/AnalysingProcess
+pmd:AnalysingProcess rdf:type owl:Class ;
+                     rdfs:subClassOf pmd:Process .
+
+
+###  https://w3id.org/pmd/co/AssemblingProcess
+pmd:AssemblingProcess rdf:type owl:Class ;
+                      rdfs:subClassOf pmd:Process .
+
+
+###  https://w3id.org/pmd/co/ChemicalComposition
+pmd:ChemicalComposition rdf:type owl:Class ;
+                        rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/ConditioningProcess
+pmd:ConditioningProcess rdf:type owl:Class ;
+                        rdfs:subClassOf pmd:Process .
+
+
+###  https://w3id.org/pmd/co/DataScope
+pmd:DataScope rdf:type owl:Class ;
+              rdfs:subClassOf ns1:Entity .
+
+
+###  https://w3id.org/pmd/co/Date
+pmd:Date rdf:type owl:Class ;
+         rdfs:subClassOf pmd:Time .
+
+
+###  https://w3id.org/pmd/co/Duration
+pmd:Duration rdf:type owl:Class ;
+             rdfs:subClassOf pmd:Time .
+
+
+###  https://w3id.org/pmd/co/EngineeredMaterial
+pmd:EngineeredMaterial rdf:type owl:Class ;
+                       rdfs:subClassOf pmd:Object .
+
+
+###  https://w3id.org/pmd/co/Force
+pmd:Force rdf:type owl:Class ;
+          rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/Identifier
+pmd:Identifier rdf:type owl:Class ;
+               rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/Location
+pmd:Location rdf:type owl:Class ;
+             rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/MaterialProperty
+pmd:MaterialProperty rdf:type owl:Class ;
+                     rdfs:subClassOf pmd:MaterialRelated .
+
+
+###  https://w3id.org/pmd/co/MaterialRelated
+pmd:MaterialRelated rdf:type owl:Class ;
+                    rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/Measurement
+pmd:Measurement rdf:type owl:Class ;
+                rdfs:subClassOf pmd:ValueScope .
+
+
+###  https://w3id.org/pmd/co/MeasuringDevice
+pmd:MeasuringDevice rdf:type owl:Class ;
+                    rdfs:subClassOf pmd:ProcessingNode .
+
+
+###  https://w3id.org/pmd/co/MeasuringProcess
+pmd:MeasuringProcess rdf:type owl:Class ;
+                     rdfs:subClassOf pmd:AnalysingProcess .
+
+
+###  https://w3id.org/pmd/co/Mechanical
+pmd:Mechanical rdf:type owl:Class ;
+               rdfs:subClassOf pmd:MaterialProperty .
+
+
+###  https://w3id.org/pmd/co/MechanicalTestingProcess
+pmd:MechanicalTestingProcess rdf:type owl:Class ;
+                             rdfs:subClassOf pmd:AnalysingProcess .
+
+
+###  https://w3id.org/pmd/co/Metadata
+pmd:Metadata rdf:type owl:Class ;
+             rdfs:subClassOf pmd:DataScope .
+
+
+###  https://w3id.org/pmd/co/Method
+pmd:Method rdf:type owl:Class ;
+           rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/NodeInfo
+pmd:NodeInfo rdf:type owl:Class ;
+             rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/Norm
+pmd:Norm rdf:type owl:Class ;
+         rdfs:subClassOf pmd:Method .
+
+
+###  https://w3id.org/pmd/co/Object
+pmd:Object rdf:type owl:Class ;
+           rdfs:subClassOf ns1:Entity .
+
+
+###  https://w3id.org/pmd/co/Operator
+pmd:Operator rdf:type owl:Class ;
+             rdfs:subClassOf ns1:Person .
+
+
+###  https://w3id.org/pmd/co/PrimaryData
+pmd:PrimaryData rdf:type owl:Class ;
+                rdfs:subClassOf pmd:DataScope .
+
+
+###  https://w3id.org/pmd/co/Process
+pmd:Process rdf:type owl:Class ;
+            rdfs:subClassOf ns1:Activity .
+
+
+###  https://w3id.org/pmd/co/ProcessingNode
+pmd:ProcessingNode rdf:type owl:Class ;
+                   rdfs:subClassOf ns1:Agent .
+
+
+###  https://w3id.org/pmd/co/Sample
+pmd:Sample rdf:type owl:Class ;
+           rdfs:subClassOf pmd:EngineeredMaterial .
+
+
+###  https://w3id.org/pmd/co/SecondaryData
+pmd:SecondaryData rdf:type owl:Class ;
+                  rdfs:subClassOf pmd:DataScope .
+
+
+###  https://w3id.org/pmd/co/SetPoint
+pmd:SetPoint rdf:type owl:Class ;
+             rdfs:subClassOf pmd:ValueScope .
+
+
+###  https://w3id.org/pmd/co/Shape
+pmd:Shape rdf:type owl:Class ;
+          rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/Temperature
+pmd:Temperature rdf:type owl:Class ;
+                rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/TestPiece
+pmd:TestPiece rdf:type owl:Class ;
+              rdfs:subClassOf pmd:Sample .
+
+
+###  https://w3id.org/pmd/co/TestPieceName
+pmd:TestPieceName rdf:type owl:Class ;
+                  rdfs:subClassOf pmd:Identifier .
+
+
+###  https://w3id.org/pmd/co/TestingMachine
+pmd:TestingMachine rdf:type owl:Class ;
+                   rdfs:subClassOf pmd:ProcessingNode .
+
+
+###  https://w3id.org/pmd/co/Time
+pmd:Time rdf:type owl:Class ;
+         rdfs:subClassOf pmd:ValueObject .
+
+
+###  https://w3id.org/pmd/co/ValueObject
+pmd:ValueObject rdf:type owl:Class ;
+                rdfs:subClassOf ns1:Entity .
+
+
+###  https://w3id.org/pmd/co/ValueScope
+pmd:ValueScope rdf:type owl:Class ;
+               rdfs:subClassOf ns1:Entity .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellHardness
+bto:BrinellHardness rdf:type owl:NamedIndividual ,
+                             bto:BrinellHardness ,
+                             pmd:Measurement ,
+                             pmd:SecondaryData ;
+                    pmd:characteristic bto:BrinellTestPiece ;
+                    pmd:output bto:BrinellHardnessTest ;
+                    pmd:unit pmd:PixelUnit ;
+                    ns1:value "BrinellHardnessValue"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellHardnessEquation
+bto:BrinellHardnessEquation rdf:type owl:NamedIndividual ,
+                                     pmd:Algorithm ,
+                                     pmd:Metadata ;
+                            bto:achivedBy bto:BrinellHardness .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellHardnessTest
+bto:BrinellHardnessTest rdf:type owl:NamedIndividual ,
+                                 bto:BrinellHardnessTest ;
+                        prov:atLocation bto:TestingLaboratory ;
+                        prov:wasAssociatedWith bto:TestingOperator ;
+                        pmd:characteristic bto:TestingDate ,
+                                           bto:TestingStandard ;
+                        pmd:executedBy bto:HardnessTestingEquipment ;
+                        pmd:input bto:BrinellTestPiece ;
+                        pmd:process bto:BrinellTestMeasurment .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellIndentation
+bto:BrinellIndentation rdf:type owl:NamedIndividual ,
+                                bto:indentation ;
+                       prov:influenced bto:BrinellTestPiece ;
+                       ns1:value "IndentationID"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellIndenter
+bto:BrinellIndenter rdf:type owl:NamedIndividual ,
+                             bto:Indenter ;
+                    prov:qualifiedInfluenceOf bto:BrinellIndentation ;
+                    pmd:characteristic bto:IndenterDiameter ,
+                                       bto:IndenterTipShape ;
+                    pmd:composedOf bto:IndenterMaterial .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellTestMeasurment
+bto:BrinellTestMeasurment rdf:type owl:NamedIndividual ,
+                                   pmd:MeasuringProcess ;
+                          prov:actedOnBehalfOf bto:TestingOperator ;
+                          pmd:executedBy bto:HardnessTestingEquipment ;
+                          pmd:nextProcess bto:CalculatingHardness ;
+                          pmd:participant bto:BrinellTestPiece ;
+                          pmd:subordinateProcess bto:CheckingTemperature ,
+                                                 bto:CheckingTestingMachine ,
+                                                 bto:ChoosingTestForce ,
+                                                 bto:Loading ,
+                                                 bto:OpticalMeasuringOfIndentation ,
+                                                 bto:PlacingTestPiece ,
+                                                 bto:Unloading .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/BrinellTestPiece
+bto:BrinellTestPiece rdf:type owl:NamedIndividual ,
+                              pmd:TestPiece ;
+                     pmd:composedOf bto:TestPieceMaterialComposition ;
+                     pmd:hasIdentifier bto:TestPieceID .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/CalculatingAverageDiameter
+bto:CalculatingAverageDiameter rdf:type owl:NamedIndividual ,
+                                        pmd:AnalysingProcess ;
+                               pmd:nextProcess bto:CalculatingBrinellHardness ;
+                               pmd:output bto:IndentationAverageDiameter .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/CalculatingBrinellHardness
+bto:CalculatingBrinellHardness rdf:type owl:NamedIndividual ,
+                                        pmd:AnalysingProcess ;
+                               pmd:hasFunction bto:BrinellHardnessEquation ;
+                               pmd:output bto:BrinellHardness .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/CalculatingHardness
+bto:CalculatingHardness rdf:type owl:NamedIndividual ,
+                                 pmd:AnalysingProcess ;
+                        prov:actedOnBehalfOf bto:TestingOperator ;
+                        prov:hasAssociatedWith bto:HardnessTestingEquipment ;
+                        pmd:subordinateProcess bto:CalculatingAverageDiameter ,
+                                               bto:CalculatingBrinellHardness .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/CheckingTemperature
+bto:CheckingTemperature rdf:type owl:NamedIndividual ,
+                                 pmd:ConditioningProcess ;
+                        pmd:characteristic bto:TestTemperature ;
+                        pmd:nextProcess bto:CheckingTestingMachine .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/CheckingTestingMachine
+bto:CheckingTestingMachine rdf:type owl:NamedIndividual ,
+                                    bto:CollibrationProcess ;
+                           pmd:nextProcess bto:ChoosingTestForce .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/ChoosingTestForce
+bto:ChoosingTestForce rdf:type owl:NamedIndividual ,
+                               pmd:ConditioningProcess ;
+                      pmd:characteristic bto:TestForce ;
+                      pmd:nextProcess bto:PlacingTestPiece .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/HardnessTestingEquipment
+bto:HardnessTestingEquipment rdf:type owl:NamedIndividual ,
+                                      bto:BrinellHardnessTestEquipment ;
+                             prov:atLocation bto:TestingLaboratory ;
+                             pmd:component bto:BrinellIndenter ;
+                             pmd:hasIdentifier bto:TestingMachineID .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/IndentationAverageDiameter
+bto:IndentationAverageDiameter rdf:type owl:NamedIndividual ,
+                                        bto:Diameter ,
+                                        pmd:Measurement ,
+                                        pmd:SecondaryData ;
+                               pmd:input bto:CalculatingBrinellHardness ;
+                               pmd:unit pmd:PixelUnit ;
+                               ns1:value "IndentationAverageDiameterValue"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/IndentationHorizontalDiameter
+bto:IndentationHorizontalDiameter rdf:type owl:NamedIndividual ,
+                                           bto:Diameter ,
+                                           pmd:Measurement ,
+                                           pmd:PrimaryData ;
+                                  pmd:characteristic bto:BrinellIndentation ;
+                                  pmd:input bto:CalculatingAverageDiameter ;
+                                  pmd:unit pmd:PixelUnit ;
+                                  ns1:value "IndentationHorizontalDiameterValue"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/IndentationVerticalDiameter
+bto:IndentationVerticalDiameter rdf:type owl:NamedIndividual ,
+                                         bto:Diameter ,
+                                         pmd:Measurement ,
+                                         pmd:PrimaryData ;
+                                pmd:characteristic bto:BrinellIndentation ;
+                                pmd:input bto:CalculatingAverageDiameter ;
+                                pmd:unit pmd:PixelUnit ;
+                                ns1:value "IndentationVerticalDiameterValue"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/IndenterDiameter
+bto:IndenterDiameter rdf:type owl:NamedIndividual ,
+                              bto:Diameter ,
+                              pmd:Metadata ;
+                     pmd:input bto:CalculatingBrinellHardness ;
+                     pmd:unit pmd:PixelUnit ;
+                     ns1:value "BrinellIndenterDiameterValue"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/IndenterMaterial
+bto:IndenterMaterial rdf:type owl:NamedIndividual ,
+                              pmd:ChemicalComposition ,
+                              pmd:Metadata ;
+                     ns1:value "TungstenCarbideComposite"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/IndenterTipShape
+bto:IndenterTipShape rdf:type owl:NamedIndividual ,
+                              pmd:Metadata ,
+                              pmd:Shape ;
+                     ns1:value "Spherical"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/Loading
+bto:Loading rdf:type owl:NamedIndividual ,
+                     pmd:MeasuringProcess ;
+            prov:wasActivityOfInfluence bto:BrinellIndentation ;
+            pmd:characteristic bto:LoadingTime ,
+                               bto:MaintainingTime ;
+            pmd:nextProcess bto:PlacingTestPiece ,
+                            bto:Unloading ;
+            pmd:participant bto:HardnessTestingEquipment .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/LoadingTime
+bto:LoadingTime rdf:type owl:NamedIndividual ,
+                         bto:TestForceApplicationTime ,
+                         pmd:PrimaryData ,
+                         pmd:SetPoint ;
+                pmd:unit pmd:PixelUnit ;
+                ns1:value "LoadingTimeValue"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/MaintainingTime
+bto:MaintainingTime rdf:type owl:NamedIndividual ,
+                             bto:TestForceDuration ,
+                             pmd:Metadata ,
+                             pmd:SetPoint ;
+                    pmd:unit pmd:PixelUnit ;
+                    ns1:value "MaintainingTimeValue"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/OpticalMeasuringOfIndentation
+bto:OpticalMeasuringOfIndentation rdf:type owl:NamedIndividual ,
+                                           pmd:MeasuringProcess ;
+                                  pmd:executedBy bto:HardnessTestingEquipment ;
+                                  pmd:nextProcess bto:CalculatingAverageDiameter ;
+                                  pmd:output bto:IndentationHorizontalDiameter ,
+                                             bto:IndentationVerticalDiameter .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/PlacingTestPiece
+bto:PlacingTestPiece rdf:type owl:NamedIndividual ,
+                              pmd:AssemblingProcess ;
+                     pmd:participant bto:HardnessTestingEquipment .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestForce
+bto:TestForce rdf:type owl:NamedIndividual ,
+                       pmd:Force ,
+                       pmd:PrimaryData ,
+                       pmd:SetPoint ;
+              pmd:input bto:CalculatingBrinellHardness ;
+              pmd:unit pmd:PixelUnit ;
+              ns1:value "TestForceValue"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestPieceID
+bto:TestPieceID rdf:type owl:NamedIndividual ,
+                         pmd:Metadata ,
+                         pmd:TestPieceName ;
+                ns1:value "TestPieceIndenter"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestPieceMaterialComposition
+bto:TestPieceMaterialComposition rdf:type owl:NamedIndividual ,
+                                          pmd:ChemicalComposition ,
+                                          pmd:Metadata ;
+                                 ns1:value "TestPieceComposition"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestTemperature
+bto:TestTemperature rdf:type owl:NamedIndividual ,
+                             pmd:Measurement ,
+                             pmd:Metadata ,
+                             pmd:Temperature ;
+                    pmd:unit pmd:PixelUnit ;
+                    ns1:value "TestTemperatureValue"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestingDate
+bto:TestingDate rdf:type owl:NamedIndividual ,
+                         pmd:Date ,
+                         pmd:Metadata ;
+                ns1:value "TestDateIdentifier"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestingLaboratory
+bto:TestingLaboratory rdf:type owl:NamedIndividual ,
+                               pmd:Location ,
+                               pmd:Metadata ,
+                               pmd:NodeInfo ;
+                      ns1:value "LaboratoryNameAndLocation"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestingMachineID
+bto:TestingMachineID rdf:type owl:NamedIndividual ,
+                              pmd:Identifier ,
+                              pmd:Metadata ;
+                     ns1:value "BrinellTestingMachineIdentifier"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestingOperator
+bto:TestingOperator rdf:type owl:NamedIndividual ,
+                             pmd:Metadata ,
+                             pmd:Operator ;
+                    ns1:value "TestOperator"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/TestingStandard
+bto:TestingStandard rdf:type owl:NamedIndividual ,
+                             pmd:Metadata ,
+                             pmd:Norm ;
+                    prov:wasDrivedFrom bto:BrinellHardnessEquation ,
+                                       bto:IndenterMaterial ,
+                                       bto:IndenterTipShape ;
+                    pmd:resource bto:CheckingTestingMachine ,
+                                 bto:ChoosingTestForce ,
+                                 bto:OpticalMeasuringOfIndentation ,
+                                 bto:PlacingTestPiece ,
+                                 bto:Unloading ;
+                    ns1:value "DIN EN ISO 6506-1:2015-02"^^xsd:string .
+
+
+###  https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/Unloading
+bto:Unloading rdf:type owl:NamedIndividual ,
+                       pmd:MeasuringProcess ;
+              pmd:nextProcess bto:OpticalMeasuringOfIndentation .
+
+
+###  https://w3id.org/pmd/co/PixelUnit
+pmd:PixelUnit rdf:type owl:NamedIndividual ,
+                       ns2:Unit .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+bto:BrinellHardness bto:definitionSource "ISO 6506-1:2015-02" ;
+                    ns3:definition "The Brinell hardness is proportional to the quotient obtained by dividing the test force by the curved surface area of the indentation." .
+
+
+bto:BrinellHardnessTest bto:definitionSource "ISO 15156-2:2020(en)" ;
+                        ns3:definition "hardness value of a material measured normally using a 10 mm diameter tungsten carbide ball indenter with a force of 29,42 kN" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
