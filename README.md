@@ -10,6 +10,6 @@ V3 developed using EMMO+CHAMEO top-level ontologies.
 
 V4 developed using PROVO+PMDco top-level ontologies.
 
-V5 developed using BFO+IOF top-level ontologies.
+V5 developed using BFO+IOF top-level ontologies.  
 
 - [Wiki page](https://gitlab.com/kupferdigital/wiki/-/wikis/Brinell-hardness-test)
