@@ -521,7 +521,7 @@ iof:ProcessCharacteristic rdf:type owl:Class ;
 ###  https://spec.industrialontologies.org/ontology/core/Core/ValueExpression
 iof:ValueExpression rdf:type owl:Class ;
                     rdfs:subClassOf iof:InformationContentEntity ;
-                    rdfs:label "Value expression" .
+                    rdfs:label "Value expression"@en .
 
 
 #################################################################
